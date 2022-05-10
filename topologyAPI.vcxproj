@@ -141,7 +141,7 @@
   <ItemGroup>
     <ClCompile Include="Components\Component.cpp" />
     <ClCompile Include="Components\CurrentSource.cpp" />
-    <ClCompile Include="Components\NOMS.cpp" />
+    <ClCompile Include="Components\NMOS.cpp" />
     <ClCompile Include="Components\PMOS.cpp" />
     <ClCompile Include="Components\Resistor.cpp" />
     <ClCompile Include="Components\ThreeTerminal.cpp" />
@@ -152,7 +152,7 @@
   <ItemGroup>
     <ClInclude Include="Components\Component.h" />
     <ClInclude Include="Components\CurrentSource.h" />
-    <ClInclude Include="Components\NOMS.h" />
+    <ClInclude Include="Components\NMOS.h" />
     <ClInclude Include="Components\PMOS.h" />
     <ClInclude Include="Components\Resistor.h" />
     <ClInclude Include="Components\ThreeTerminal.h" />

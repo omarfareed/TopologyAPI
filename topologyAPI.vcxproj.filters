@@ -21,7 +21,7 @@
     <ClCompile Include="Components\Component.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Components\NOMS.cpp">
+    <ClCompile Include="Components\NMOS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Components\PMOS.cpp">
@@ -50,26 +50,26 @@
     <ClInclude Include="JSON\json.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Components\NOMS.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="Components\CurrentSource.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Components\PMOS.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Components\Resistor.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Components\ThreeTerminal.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="Components\NMOS.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Components\TwoTerminal.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Components\CurrentSource.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="Components\ThreeTerminal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\PMOS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Resistor.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Components\VoltageSource.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
