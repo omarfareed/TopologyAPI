@@ -1,29 +1,28 @@
 #include "Component.h"
 
 
-bool Component::validComponentValues(map<string, int>& info)
+bool Component::validComponentValues(map<string, double>& info)
 {
 	// count returns 1 if the key exist else it returns 0
-	if (info.count("min") || info.count("max") || info.count("default"))
-	{
+	if (!info.count("min") || !info.count("max") || !info.count("default"))
 		return false;
-	}
 	// min < default < max && min >= 0
 	return info["default"] >= info["min"] && info["defualt"] <= info["max"] && info["min"] >= 0;
 }
 
-Component::Component( string id, map<string,int> &componentValues)
+Component::Component( string id, map<string,double> &componentValues)
 {
 	this->setID(id);
 	this->setComponentValues(componentValues);
 }
-void Component::setComponentValues(map<string, int>& componentValues)
+void Component::setComponentValues(map<string, double>& componentValues)
 {
-
+	if (!validComponentValues(componentValues))
+		printf("invalid component values\n");
+	this->defaultValue = componentValues["default"];
+	this->minValue = componentValues["min"];
+	this->maxValue = componentValues["max"];
 }
-
-
-
 
 void Component::setID(string id)
 {
@@ -40,42 +39,49 @@ string Component::getID()
 	return id;
 }
 
-void Component::setMaxValue(int val)
+void Component::setMaxValue(double val)
 {
 	if (val < this->minValue)
 	{
-		printf("Wrong max value\n");
+		printf("wrong max value %d\n" , val);
 		return;
 	}
 	this->maxValue = val;
 }
 
-int Component::getMaxValue()
+double Component::getMaxValue()
 {
-	return maxValue;
+	return this->maxValue;
 }
 
-void Component::setMinValue(int val)
+void Component::setMinValue(double val)
 {
-	if (this->maxValue > val && val > 0 && this->defaultValue > val)
-		printf("error in setting the component min value");
+	if (val > 0 && this->defaultValue < val)
+		printf("wrong min value %d\n" , val);
 	this->minValue = val;
 }
 
-int Component::getMinValue()
+double Component::getMinValue()
 {
 	return this->minValue;
 }
 
-void Component::setDefaultValue(int val)
+void Component::setDefaultValue(double val)
 {
 	if (val > this->maxValue || val < this->minValue)
-		printf("error in setting the component default value");
+		printf("wrong default value %d\n" , val);
 	this->defaultValue = val;
 }
 
-int Component::getDefaultValue()
+double Component::getDefaultValue()
 {
 	return this->defaultValue;
+}
+
+void Component::setSingleNetlistTerminal(string terminal, string value)
+{
+	if (value == "" || terminal == "")
+		printf("wrong terminal value\n");
+	this->netlist[terminal] = value;
 }
 
