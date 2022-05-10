@@ -4,7 +4,8 @@ protected:
 	bool validNetlist( map<string, string>& netlist);
 	void setNetlist( map<string, string>& netlist);
 public:
-	ThreeTerminal( string id, map<string, string>& netlist, map<string, int>& info);
+	ThreeTerminal( string id, map<string, string>& netlist, map<string, double>& info);	
+	bool connectedTo(Component* component);
 	void setT1(string terminal);
 	void setT2(string terminal);
 	void setT3(string terminal);
