@@ -3,7 +3,7 @@ class PMOS : public ThreeTerminal
 {
 
 public:
-	PMOS(string id , map<string,int>&info , map<string,string>&netlist);
+	PMOS(string id , map<string,double>&info , map<string,string>&netlist);
 	string getType();
 	void printComponentInfo();
 };

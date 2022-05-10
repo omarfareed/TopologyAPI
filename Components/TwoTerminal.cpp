@@ -15,10 +15,20 @@ void TwoTerminal::setNetlist(map<string, string>& netlist)
 	this->netlist = netlist;
 }
 
-TwoTerminal::TwoTerminal( string id, map<string, string>& netlist, map<string, int>& info)
+TwoTerminal::TwoTerminal( string id, map<string, string>& netlist, map<string, double>& info)
 	:Component(id, info)
 {
 	setNetlist(netlist);
+}
+
+bool TwoTerminal::twoTerminalComponent()
+{
+	return true;
+}
+
+bool TwoTerminal::threeTerminalComponent()
+{
+	return false;
 }
 
 void TwoTerminal::setT1(string terminal)
@@ -29,6 +39,12 @@ void TwoTerminal::setT1(string terminal)
 void TwoTerminal::setT2(string terminal)
 {
 	setSingleNetlistTerminal("t2", terminal);
+}
+
+bool TwoTerminal::connectedTo(Component* component)
+{
+	string componentID = component->getID();
+	return componentID == getT1() || componentID == getT2();
 }
 
 string TwoTerminal::getT1()

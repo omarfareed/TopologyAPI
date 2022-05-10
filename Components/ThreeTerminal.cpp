@@ -14,10 +14,16 @@ void ThreeTerminal::setNetlist( map<string, string>& netlist)
 	this->netlist = netlist;
 }
 
-ThreeTerminal::ThreeTerminal( string id, map<string, string>& netlist, map<string, int>& info)
+ThreeTerminal::ThreeTerminal( string id, map<string, string>& netlist, map<string, double>& info)
 	:Component(id, info)
 {
 	setNetlist(netlist);
+}
+
+bool ThreeTerminal::connectedTo(Component* component)
+{
+	string componentID = component->getID();
+	return componentID == getT1() || componentID == getT2() || componentID == getT3();
 }
 
 void ThreeTerminal::setT1(string terminal)

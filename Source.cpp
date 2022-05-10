@@ -4,4 +4,8 @@
 using json = nlohmann::json;
 int main()
 {
+	auto j3 = json::parse(R"({"happy": true, "pi": 3.141 , "arr": [{"second" : "third"}]})");
+	std::cout << j3.dump(4) << std::endl;
+	return 0;
+
 }

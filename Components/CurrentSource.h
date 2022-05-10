@@ -3,7 +3,7 @@ class CurrentSource : public TwoTerminal
 {
 private:
 public:
-	CurrentSource(string id, map<string, string>& CurrentSourceNetlist, map<string, int>& CurrentSourceValues);
+	CurrentSource(string id, map<string, string>& CurrentSourceNetlist, map<string, double>& CurrentSourceValues);
 	string getType();
 	void printComponentInfo();
 };
