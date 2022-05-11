@@ -78,6 +78,11 @@ double Component::getDefaultValue()
 	return this->defaultValue;
 }
 
+map<string, string> Component::getNetlist()
+{
+	return this->netlist;
+}
+
 void Component::setSingleNetlistTerminal(string terminal, string value)
 {
 	if (value == "" || terminal == "")

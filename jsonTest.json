@@ -1,0 +1,30 @@
+{
+    "components": [
+        {
+            "id": "res1",
+            "info": {
+                "default": 100.0,
+                "max": 1000.0,
+                "min": 10.0
+            },
+            "netlist": {
+                "t1": "vdd",
+                "t2": "n1"
+            }
+        },
+        {
+            "id": "m1",
+            "info": {
+                "default": 1.5,
+                "max": 2.0,
+                "min": 1.0
+            },
+            "netlist": {
+                "drain": "n1",
+                "gate": "vin",
+                "source": "vss"
+            }
+        }
+    ],
+    "id": "top1"
+}

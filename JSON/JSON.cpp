@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <string>
 #include "JSON.h"
+#include <fstream>
 
 Component* JSON::_createComponent(json componentParser)
 {
@@ -60,4 +61,32 @@ Topology* JSON::readTopology(string fileName)
 	{ 
 		printf("there exist exception\n");
 	}
+}
+
+json JSON::_getTopologyInfo(Component* component)
+{
+	return { {"default" , component->getDefaultValue()} , {"min" , component->getMinValue() } , {"max" , component->getMaxValue()} };
+}
+json JSON::_writeTopologyComponent(Component* component)
+{
+	json JSONComponent;
+	string id = component->getID();
+	double defaultVal = component->getDefaultValue(), minVal = component->getMinValue(), maxVal = component->getMaxValue();
+	JSONComponent = { {"id" , id }, {"netlist" , component->getNetlist()} ,{ "info" , this->_getTopologyInfo(component)} };
+	return JSONComponent;
+}
+json JSON::_writeTopologyComponents(Topology* topology)
+{
+	vector<json> components;
+	for (auto component : topology->getComponents())
+		components.push_back(_writeTopologyComponent(component));
+	return (json)components;
+}
+void JSON::writeTopology( Topology *topology, string fileName)
+{
+	json outJson;
+	outJson = { {"id" , topology->getID()} ,{"components" , this->_writeTopologyComponents(topology)} };
+	std::ofstream  file(fileName);
+	file << outJson << endl;
+	cout << "JSON file created\n";
 }

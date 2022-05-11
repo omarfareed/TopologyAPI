@@ -13,8 +13,11 @@ private:
 	Component* _createComponent(json componentParser);
 	Component* _createResistor(json componentParser);
 	Component* _createNMOS(json componentParser);
+	json _writeTopologyComponents(Topology*);
+	json _writeTopologyComponent(Component*);
+	json _getTopologyInfo(Component*);
 public:
 	JSON();
 	Topology* readTopology(string fileName);
-	//void writeTopology(const Topology& topology, string fileName);	
+	void writeTopology( Topology* topology, string fileName);	
 };
