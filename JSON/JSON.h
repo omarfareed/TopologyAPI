@@ -15,6 +15,7 @@ private:
 	Component* _createNMOS(json componentParser);
 	json _writeTopologyComponents(Topology*);
 	json _writeTopologyComponent(Component*);
+	json _getTopologyInfo(Component*);
 public:
 	JSON();
 	Topology* readTopology(string fileName);

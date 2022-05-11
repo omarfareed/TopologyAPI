@@ -4,5 +4,7 @@
 using json = nlohmann::json;
 int main()
 {
-	(new JSON())->readTopology("topology.json");
+	JSON js;
+	Topology* topology = js.readTopology("toplogy.json");
+	js.writeTopology(topology, "jsonTest.json");
 }

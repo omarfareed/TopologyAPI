@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <string>
 #include "JSON.h"
+#include <fstream>
 
 Component* JSON::_createComponent(json componentParser)
 {
@@ -62,12 +63,16 @@ Topology* JSON::readTopology(string fileName)
 	}
 }
 
+json JSON::_getTopologyInfo(Component* component)
+{
+	return { {"default" , component->getDefaultValue()} , {"min" , component->getMinValue() } , {"max" , component->getMaxValue()} };
+}
 json JSON::_writeTopologyComponent(Component* component)
 {
 	json JSONComponent;
 	string id = component->getID();
 	double defaultVal = component->getDefaultValue(), minVal = component->getMinValue(), maxVal = component->getMaxValue();
-	JSONComponent = { "id" , id , "netlist" , component->getNetlist() , "info" , {"default" , defaultVal , "min" , minVal , "max" , maxVal}};
+	JSONComponent = { {"id" , id }, {"netlist" , component->getNetlist()} ,{ "info" , this->_getTopologyInfo(component)} };
 	return JSONComponent;
 }
 json JSON::_writeTopologyComponents(Topology* topology)
@@ -81,5 +86,7 @@ void JSON::writeTopology( Topology *topology, string fileName)
 {
 	json outJson;
 	outJson = { {"id" , topology->getID()} ,{"components" , this->_writeTopologyComponents(topology)} };
-	outJson.dump(3);
+	std::ofstream  file(fileName);
+	file << outJson << endl;
+	cout << "JSON file created\n";
 }
