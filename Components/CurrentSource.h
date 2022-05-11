@@ -1,3 +1,4 @@
+#pragma once
 #include "TwoTerminal.h"
 class CurrentSource : public TwoTerminal
 {

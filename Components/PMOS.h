@@ -1,3 +1,4 @@
+#pragma once
 #include "ThreeTerminal.h"
 class PMOS : public ThreeTerminal
 {

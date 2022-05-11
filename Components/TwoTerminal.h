@@ -1,3 +1,4 @@
+#pragma once
 #include "Component.h"
 class TwoTerminal : public Component {
 protected:

@@ -2,7 +2,7 @@
 
 bool ThreeTerminal::validNetlist( map<string, string>& netlist)
 {
-	return netlist.size() == 3 && netlist["t1"] != "" && netlist["t2"] != "" && netlist["t3"] != "";
+	return netlist.size() == 3 && netlist["drain"] != "" && netlist["gate"] != "" && netlist["source"] != "";
 }
 
 void ThreeTerminal::setNetlist( map<string, string>& netlist)
@@ -23,35 +23,36 @@ ThreeTerminal::ThreeTerminal( string id, map<string, string>& netlist, map<strin
 bool ThreeTerminal::connectedTo(Component* component)
 {
 	string componentID = component->getID();
-	return componentID == getT1() || componentID == getT2() || componentID == getT3();
+	return componentID == getDrain() || componentID == getGate() || componentID == getSource();
 }
 
-void ThreeTerminal::setT1(string terminal)
+
+void ThreeTerminal::setDrain(string terminal)
 {
-	setSingleNetlistTerminal("t1", terminal);
+	setSingleNetlistTerminal("drain", terminal);
 }
 
-void ThreeTerminal::setT2(string terminal)
+void ThreeTerminal::setGate(string terminal)
 {
-	setSingleNetlistTerminal("t2", terminal);
+	setSingleNetlistTerminal("gate", terminal);
 }
-void ThreeTerminal::setT3(string terminal)
+void ThreeTerminal::setSource(string terminal)
 {
-	setSingleNetlistTerminal("t3", terminal);
-}
-
-string ThreeTerminal::getT1()
-{
-	return this->netlist["t1"];
+	setSingleNetlistTerminal("source", terminal);
 }
 
-string ThreeTerminal::getT2()
+string ThreeTerminal::getDrain()
 {
-	return this->netlist["t2"];
+	return this->netlist["drain"];
 }
-string ThreeTerminal::getT3()
+
+string ThreeTerminal::getGate()
 {
-	return this->netlist["t3"];
+	return this->netlist["gate"];
+}
+string ThreeTerminal::getSource()
+{
+	return this->netlist["source"];
 }
 
 
