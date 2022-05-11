@@ -1,3 +1,4 @@
+#pragma once
 #include "Component.h"
 class ThreeTerminal : public Component {
 protected:
@@ -6,11 +7,11 @@ protected:
 public:
 	ThreeTerminal( string id, map<string, string>& netlist, map<string, double>& info);	
 	bool connectedTo(Component* component);
-	void setT1(string terminal);
-	void setT2(string terminal);
-	void setT3(string terminal);
-	string getT1();
-	string getT2();
-	string getT3();
+	void setDrain(string terminal);
+	void setGate(string terminal);
+	void setSource(string terminal);
+	string getDrain();
+	string getGate();
+	string getSource();
 	virtual void printComponentInfo() = 0;
 };

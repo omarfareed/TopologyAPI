@@ -147,6 +147,7 @@
     <ClCompile Include="Components\ThreeTerminal.cpp" />
     <ClCompile Include="Components\TwoTerminal.cpp" />
     <ClCompile Include="Components\VoltageSource.cpp" />
+    <ClCompile Include="JSON\JSON.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Topology\Topology.cpp" />
   </ItemGroup>
@@ -159,8 +160,12 @@
     <ClInclude Include="Components\ThreeTerminal.h" />
     <ClInclude Include="Components\TwoTerminal.h" />
     <ClInclude Include="Components\VoltageSource.h" />
+    <ClInclude Include="JSON\JSON.h" />
     <ClInclude Include="JSON\json.hpp" />
     <ClInclude Include="Topology\Topology.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JSON\topology.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

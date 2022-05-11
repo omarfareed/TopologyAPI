@@ -45,6 +45,9 @@
     <ClCompile Include="Topology\Topology.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="JSON\JSON.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Components\Component.h">
@@ -77,5 +80,11 @@
     <ClInclude Include="Topology\Topology.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="JSON\JSON.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JSON\topology.json" />
   </ItemGroup>
 </Project>

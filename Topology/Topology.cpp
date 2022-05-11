@@ -1,6 +1,12 @@
 #include "Topology.h"
 
 
+Topology::Topology(string id, vector<Component*> components)
+{
+	setID(id);
+	setComponents(components);
+}
+
 Component* Topology::getComponent(string id)
 {
 	for (auto component : this->components)
@@ -12,10 +18,7 @@ Component* Topology::getComponent(string id)
 }
 
 
-Topology::Topology(string id)
-{
-	setID(id);
-}
+
 
 void Topology::addComponent(Component* component)
 {
@@ -58,4 +61,10 @@ vector<Component*> Topology::getComponentsWithNetlistNode(string netlistNodeID)
 			netlist.push_back(component);
 	}
 	return netlist;
+}
+
+void Topology::printComponents()
+{
+	for (auto component : this->components)
+		component->printComponentInfo();
 }

@@ -2,6 +2,7 @@
 
 bool TwoTerminal::validNetlist(map<string, string>& netlist)
 {
+	cout << netlist.size() << " " << netlist["t1"] << " " << netlist["t2"] << endl;
 	return netlist.size() == 2 && netlist["t1"] != "" && netlist["t2"] != "";
 }
 
@@ -9,7 +10,7 @@ void TwoTerminal::setNetlist(map<string, string>& netlist)
 {
 	if (!validNetlist(netlist)) 
 	{
-		printf("invalie netlist in two terminal component");
+		printf("invalid netlist in two terminal component");
 		return;
 	}
 	this->netlist = netlist;
@@ -21,15 +22,6 @@ TwoTerminal::TwoTerminal( string id, map<string, string>& netlist, map<string, d
 	setNetlist(netlist);
 }
 
-bool TwoTerminal::twoTerminalComponent()
-{
-	return true;
-}
-
-bool TwoTerminal::threeTerminalComponent()
-{
-	return false;
-}
 
 void TwoTerminal::setT1(string terminal)
 {

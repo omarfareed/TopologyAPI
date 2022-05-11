@@ -6,7 +6,7 @@ private:
 	string id;
 	vector<Component* > components;
 public:
-	Topology(string id);
+	Topology(string id , vector<Component*> components);
 	Component* getComponent(string id);
 	void addComponent(Component* component);
 	void setComponents(vector<Component*> components);
@@ -14,4 +14,5 @@ public:
 	string getID();
 	vector<Component*> getComponents();
 	vector<Component*> getComponentsWithNetlistNode(string netlistNodeID);
+	void printComponents();
 };

@@ -10,5 +10,6 @@ string PMOS::getType()
 
 void PMOS::printComponentInfo()
 {
-	printf("PMOS component with default value : %lf and three terminals : %s %s %s", this->defaultValue, this->getT1().c_str(), this->getT2().c_str(), this->getT3().c_str());
+	//printf("PMOS component with default value : %lf and three terminals : %s %s %s", this->defaultValue, this->getT1().c_str(), this->getT2().c_str(), this->getT3().c_str());
+	cout << "PMOS with defualt value : " << this->defaultValue << " Drain : " << getDrain() << ", Gate : " << getGate() << ", Source: " << getSource() << endl;
 }
