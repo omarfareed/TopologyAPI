@@ -61,3 +61,25 @@ Topology* JSON::readTopology(string fileName)
 		printf("there exist exception\n");
 	}
 }
+
+json JSON::_writeTopologyComponent(Component* component)
+{
+	json JSONComponent;
+	string id = component->getID();
+	double defaultVal = component->getDefaultValue(), minVal = component->getMinValue(), maxVal = component->getMaxValue();
+	JSONComponent = { "id" , id , "netlist" , component->getNetlist() , "info" , {"default" , defaultVal , "min" , minVal , "max" , maxVal}};
+	return JSONComponent;
+}
+json JSON::_writeTopologyComponents(Topology* topology)
+{
+	vector<json> components;
+	for (auto component : topology->getComponents())
+		components.push_back(_writeTopologyComponent(component));
+	return (json)components;
+}
+void JSON::writeTopology( Topology *topology, string fileName)
+{
+	json outJson;
+	outJson = { {"id" , topology->getID()} ,{"components" , this->_writeTopologyComponents(topology)} };
+	outJson.dump(3);
+}

@@ -34,6 +34,7 @@ public:
 	virtual void setDefaultValue(double val);
 	virtual double getDefaultValue();
 	virtual void printComponentInfo() = 0;
+	virtual map<string, string> getNetlist();
 	virtual bool connectedTo(Component* component) = 0;
 };
 
