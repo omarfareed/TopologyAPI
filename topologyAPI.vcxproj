@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="API\API.cpp" />
     <ClCompile Include="Components\Component.cpp" />
     <ClCompile Include="Components\CurrentSource.cpp" />
     <ClCompile Include="Components\NMOS.cpp" />
@@ -152,6 +153,7 @@
     <ClCompile Include="Topology\Topology.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="API\API.h" />
     <ClInclude Include="Components\Component.h" />
     <ClInclude Include="Components\CurrentSource.h" />
     <ClInclude Include="Components\NMOS.h" />
