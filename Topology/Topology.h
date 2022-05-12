@@ -1,3 +1,4 @@
+#pragma once
 #include "../Components/TwoTerminal.h"
 #include "../Components/ThreeTerminal.h"
 class Topology

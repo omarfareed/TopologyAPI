@@ -9,7 +9,7 @@ Component* JSON::_createComponent(json componentParser)
 	string id = componentParser["id"];
 	if (type == "resistor")
 		return _createResistor(componentParser);
-	if (type == "nmos");
+	if (type == "nmos")
 		return _createNMOS(componentParser);
 	printf("unexpected component type\n");
 	return NULL;
@@ -50,8 +50,8 @@ Topology* JSON::readTopology(string fileName)
 	try{
 		if (fileName.find(".json") == string::npos)
 			throw "invalid file name";
-		FILE* file = fopen("./topology.json"  , "r");
-		 json jsonParser = json::parse(file);
+		std::ifstream file(fileName);
+		json jsonParser = json::parse(file);
 		if(jsonParser.empty()) return NULL;
 		Topology* topology = this->_createTopology(jsonParser);
 		topology->printComponents();
@@ -60,6 +60,7 @@ Topology* JSON::readTopology(string fileName)
 	catch(string ex)
 	{ 
 		printf("there exist exception\n");
+		return NULL;
 	}
 }
 

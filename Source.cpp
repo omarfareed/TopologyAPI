@@ -1,10 +1,13 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include "JSON/JSON.h"
-#include <iostream>
-using json = nlohmann::json;
+#include "API/API.h"
 int main()
 {
-	JSON js;
-	Topology* topology = js.readTopology("toplogy.json");
-	js.writeTopology(topology, "jsonTest.json");
+	API api;
+	api.readJSON("topology.json");
+	api.readJSON("topology2.json");
+	api.writeJSON("top1");
+	vector<Topology*> topologies = api.queueryTopologies();
+	api.printAllTopologies();
+	api.deleteTopology("top1");
+	api.printAllTopologies();
+	return 0;
 }
