@@ -1,5 +1,8 @@
 #pragma once
-template <typename T>
+#include <iostream>
+#include <Windows.h>
+using std::cout;
+using std::endl;
 class UnitTest {
 private:
 	int passedTests;
@@ -7,40 +10,26 @@ private:
 public:
 	UnitTest();
 	int getNumOfTests();
-	bool isEqual(const T& element1, const T& element2) = 0;
+	template<typename T>
 	void assertEqual(const T& element1, const T& element2);
 	~UnitTest();
 };
 
 template<typename T>
-inline UnitTest<T>::UnitTest()
+inline void UnitTest::assertEqual(const T& element1, const T& element2)
 {
-	this->testNum = 0;
-	this->compare = nullptr;
-}
 
-
-template<typename T>
-inline int UnitTest<T>::getNumOfTests()
-{
-	return this->passedTests + this->failedTests;
-}
-template<typename T>
-inline void UnitTest<T>::assertEqual(const T& element1, const T& element2)
-{
-	if (this->isEqual(element1, element2)) {
-		cout << "Test # " << this->getNumOfTests() << "Passed" << endl;
+	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	if (element1 == element2) {
+		SetConsoleTextAttribute(hConsole, 2);
 		this->passedTests++;
+		cout << "Test case # " << this->getNumOfTests() << " Passed" << endl;
+		SetConsoleTextAttribute(hConsole, 15);
 		return;
 	}
-	cout << "Test # " << this->getNumOfTests() << "Failed" << endl;
+	SetConsoleTextAttribute(hConsole, 12);
 	this->failedTests++;
+	cout << "Test case # " << this->getNumOfTests() << " Failed" <<  " assert " << element1 << " == " << element2 << endl;
+	SetConsoleTextAttribute(hConsole , 15);
 }
 
-template<typename T>
-inline UnitTest<T>::~UnitTest()
-{
-	cout << "Test ended " << 
-		this->passedTests << " PASSED , " <<
-		this->failedTests << " Failed." << endl;
-}

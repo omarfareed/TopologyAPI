@@ -3,9 +3,13 @@
 #include "UnitTest.h"
 
 
-class ComponentTest : public UnitTest<Component>{
+class ComponentTest {
+private:
+	Component* _createResistorTestCase(string id, string t1, string t2, double defaultVal, double minVal, double maxVal);
+	Component* _createNMOSTestCase(string id, string drain, string source, string gate, double defaultVal, double minVal, double maxVal);
+	map<string, double> _createInfo(double defaultVal, double minVal, double MaxVal);
+	UnitTest tester;
 public:
 	ComponentTest();
-	bool isEqual(const Component& comp1 , const Component& comp2);
 	void test();
 };
