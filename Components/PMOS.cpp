@@ -1,4 +1,12 @@
 #include "PMOS.h"
+PMOS::PMOS(const PMOS& other):ThreeTerminal(other)
+{
+}
+PMOS PMOS::operator=(const PMOS& other)
+{
+	this->_copyComponentValues(other);
+	return *this;
+}
 PMOS::PMOS(string id, map<string, double>& info, map<string, string>& netlist):ThreeTerminal(id , netlist,info)
 {
 }

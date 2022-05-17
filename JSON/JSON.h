@@ -18,6 +18,8 @@ private:
 	json _getTopologyInfo(Component*);
 public:
 	JSON();
+	JSON(const JSON& other);
+	JSON operator=(const JSON&other);
 	Topology* readTopology(string fileName);
 	void writeTopology( Topology* topology, string fileName);	
 };
