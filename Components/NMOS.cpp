@@ -1,4 +1,12 @@
 #include "NMOS.h"
+NMOS NMOS::operator=(const NMOS& other)
+{
+	this->_copyComponentValues(other);
+	return *this;
+}
+NMOS::NMOS(const NMOS& other):ThreeTerminal(other)
+{
+}
 NMOS::NMOS(string id, map<string, string>& netlist, map<string, double>& info):ThreeTerminal(id , netlist,info)
 {
 }

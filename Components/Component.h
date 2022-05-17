@@ -21,20 +21,23 @@ protected:
 	virtual void setNetlist(map<string, string>&) = 0;
 	virtual bool validComponentValues(map<string, double>& componentInfo);
 	virtual void setSingleNetlistTerminal(string terminal , string value);
+	virtual void _copyComponentValues(const Component& other);
 public:
+	Component(const Component& other);
 	Component( string id, map<string, double>& componentValues);
+	bool operator==(const Component& other) const;
 	virtual void setComponentValues(map<string, double>&);
-	virtual string getType() = 0;
-	virtual void setID(string id);
-	virtual string getID();
+	virtual string getType() const = 0;
+	virtual void setID(string id) ;
+	virtual string getID() const;
 	virtual void setMaxValue(double val);
-	virtual double getMaxValue();
+	virtual double getMaxValue() const;
 	virtual	void setMinValue(double val);
-	virtual double getMinValue();
+	virtual double getMinValue() const;
 	virtual void setDefaultValue(double val);
-	virtual double getDefaultValue();
-	virtual void printComponentInfo() = 0;
-	virtual map<string, string> getNetlist();
-	virtual bool connectedTo(Component* component) = 0;
+	virtual double getDefaultValue() const;
+	virtual void printComponentInfo() const= 0;
+	virtual map<string, string> getNetlist() const;
+	virtual bool connectedTo(Component* component) const = 0;
 };
 

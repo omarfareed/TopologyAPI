@@ -1,5 +1,15 @@
 #include "Resistor.h"
 
+Resistor::Resistor(const Resistor& other):TwoTerminal(other)
+{
+}
+
+Resistor Resistor::operator=(const Resistor& other)
+{
+	this->_copyComponentValues(other);
+	return *this;
+}
+
 Resistor::Resistor(string id, map<string, string>& ResistorNetlist, map<string, double>& ResistorValues):TwoTerminal(id , ResistorNetlist , ResistorValues)
 {
 

@@ -1,6 +1,39 @@
 #include "Topology.h"
 
 
+void Topology::_deleteAllComponents()
+{
+	for (auto component : this->components)
+		delete component;
+}
+
+Topology::Topology(const Topology& other)
+{
+	this->id = other.id;
+	this->components = other.components;
+}
+
+Topology Topology::operator=(const Topology& other)
+{
+	if (this->components.size() != 0)
+		this->_deleteAllComponents();
+	this->components = other.components;
+	this->id = other.id;
+	return *this;
+}
+
+bool Topology::operator==(const Topology& other)
+{
+	if (this->components.size() != other.components.size())
+		return false;
+	for (int i = 0; i < this->components.size(); i++)
+	{
+		if (!(*this->components[i] == *other.components[i]))
+			return false;
+	}
+	return true;
+}
+
 Topology::Topology(string id, vector<Component*> components)
 {
 	setID(id);
@@ -67,4 +100,9 @@ void Topology::printComponents()
 {
 	for (auto component : this->components)
 		component->printComponentInfo();
+}
+
+Topology::~Topology()
+{
+	this->_deleteAllComponents();
 }

@@ -14,6 +14,10 @@ void ThreeTerminal::setNetlist( map<string, string>& netlist)
 	this->netlist = netlist;
 }
 
+ThreeTerminal::ThreeTerminal(const ThreeTerminal& other):Component(other)
+{
+}
+
 ThreeTerminal::ThreeTerminal( string id, map<string, string>& netlist, map<string, double>& info)
 	:Component(id, info)
 {

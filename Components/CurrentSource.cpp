@@ -1,5 +1,15 @@
 #include "CurrentSource.h"
 
+CurrentSource::CurrentSource(const CurrentSource& other):CurrentSource(other)
+{
+}
+
+CurrentSource CurrentSource::operator=(const CurrentSource& other)
+{
+	this->_copyComponentValues(other);
+	return* this;
+}
+
 CurrentSource::CurrentSource(string id, map<string, string>& CurrentSourceNetlist, map<string, double>& CurrentSourceValues):TwoTerminal(id , CurrentSourceNetlist , CurrentSourceValues)
 {
 

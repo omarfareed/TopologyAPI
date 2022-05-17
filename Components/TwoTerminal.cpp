@@ -16,6 +16,10 @@ void TwoTerminal::setNetlist(map<string, string>& netlist)
 	this->netlist = netlist;
 }
 
+TwoTerminal::TwoTerminal(const TwoTerminal& other):Component(other)
+{
+}
+
 TwoTerminal::TwoTerminal( string id, map<string, string>& netlist, map<string, double>& info)
 	:Component(id, info)
 {

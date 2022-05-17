@@ -1,16 +1,25 @@
 #include "VoltageSource.h"
 
-VlotageSource::VlotageSource(string id, map<string, string>& VlotageSourceNetlist, map<string, double>& VlotageSourceValues):TwoTerminal(id , VlotageSourceNetlist , VlotageSourceValues)
+VoltageSource::VoltageSource(const VoltageSource& other):TwoTerminal(other)
 {
+}
+
+VoltageSource::VoltageSource(string id, map<string, string>& VoltageSourceNetlist, map<string, double>& VoltageSourceValues):TwoTerminal(id , VoltageSourceNetlist , VoltageSourceValues){
 
 }
 
-string VlotageSource::getType()
+VoltageSource VoltageSource::operator=(const VoltageSource& other)
 {
-	return "VlotageSource";
+	this->_copyComponentValues(other);
+	return *this;
 }
 
-void VlotageSource::printComponentInfo()
+string VoltageSource::getType()
 {
-	printf("VlotageSource with default value : %lf, t1 : %s, t2 : %s\n", this->defaultValue, this->getT1().c_str(), this->getT2().c_str());
+	return "VoltageSource";
+}
+
+void VoltageSource::printComponentInfo()
+{
+	printf("VoltageSource with default value : %lf, t1 : %s, t2 : %s\n", this->defaultValue, this->getT1().c_str(), this->getT2().c_str());
 }

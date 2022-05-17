@@ -45,6 +45,16 @@ JSON::JSON()
 {
 }
 
+JSON::JSON(const JSON& other)
+{
+
+}
+
+JSON JSON::operator=(const JSON& other)
+{
+	return JSON();
+}
+
 Topology* JSON::readTopology(string fileName)
 {
 	try{
