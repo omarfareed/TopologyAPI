@@ -31,7 +31,7 @@ inline void UnitTest::assertEqual(const T& element1, const T& element2)
 	}
 	SetConsoleTextAttribute(hConsole, 12);
 	this->failedTests++;
-	cout << "Test case # " << this->getNumOfTests() << " Failed" <<  " assert " << element1 << " == " << element2 << endl;
+	cout << "Test case # " << this->getNumOfTests() << " Failed" << endl;
 	SetConsoleTextAttribute(hConsole , 15);
 }
 
