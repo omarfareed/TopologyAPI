@@ -12,4 +12,5 @@ void topologyTest::test()
 		return;
 	tester.assertEqual<string>(t1->getID(), "top1");
 	tester.assertEqual<int>(t1->getComponents().size(), 2);
+
 }

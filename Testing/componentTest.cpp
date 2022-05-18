@@ -1,15 +1,15 @@
 #include "componentTest.h"
 
-Component* ComponentTest::_createResistorTestCase(string id, string t1, string t2, double defaultVal, double minVal, double maxVal)
+Component* Test::_createResistorTestCase(string id, string t1, string t2, double defaultVal, double minVal, double maxVal)
 {
 	map<string, string> netlist;
 	netlist["t1"] = t1;
 	netlist["t2"] = t2;
 	map<string, double> info = this->_createInfo(defaultVal, minVal, maxVal);
-	return new Resistor("R1", netlist, info);
+	return new Resistor(id, netlist, info);
 }
 
-Component* ComponentTest::_createNMOSTestCase(string id, string drain, string source, string gate, double defaultVal, double minVal, double maxVal)
+Component* Test::_createNMOSTestCase(string id, string drain, string source, string gate, double defaultVal, double minVal, double maxVal)
 {
 	map<string, string> netlist;
 	netlist["drain"] = drain;
@@ -19,7 +19,7 @@ Component* ComponentTest::_createNMOSTestCase(string id, string drain, string so
 	return new NMOS(id, netlist, info);
 }
 
-map<string, double> ComponentTest::_createInfo(double defaultVal, double minVal, double maxVal)
+map<string, double> Test::_createInfo(double defaultVal, double minVal, double maxVal)
 {
 	map<string, double> info;
 	info["default"] = defaultVal;
@@ -28,11 +28,11 @@ map<string, double> ComponentTest::_createInfo(double defaultVal, double minVal,
 	return info;
 }
 
-ComponentTest::ComponentTest()
+Test::Test()
 {
 }
 
-void ComponentTest::test()
+void Test::testComponent()
 {
 	Component* comp1 = this->_createResistorTestCase("R1", "R2", "N1", 100, 80, 150);
 	Resistor* R1 = (Resistor*)(comp1);
@@ -51,4 +51,31 @@ void ComponentTest::test()
 	tester.assertEqual<bool>(comp1->connectedTo(comp2), true);
 	tester.assertEqual<bool>(*comp1 == *N1, false);
 	tester.assertEqual<bool>(*comp1 == *R1, true);
+}
+
+void Test::testTopology()
+{
+	Topology *t1 = parser.readTopology("./Testing/topology_test_case_1.json");
+	if (t1 == NULL)
+		return;
+	tester.assertEqual<string>(t1->getID(), "top1");
+	tester.assertEqual<int>(t1->getComponents().size(), 2);
+	Component* comp1 = this->_createResistorTestCase("res1", "vdd", "n1", 100, 10, 1000);
+	Component* comp2 = this->_createNMOSTestCase( "m1", "n1", "vss", "vin", 1.5, 1, 2);;
+	tester.assertEqual<Component>(*comp1, *t1->getComponent("res1"));
+	tester.assertEqual<>(*t1->getComponents()[0], *comp1);
+	tester.assertEqual<>(*t1->getComponents()[1], *comp2);
+	Component* comp3 = this->_createResistorTestCase("n1", "res1", "m1", 12, 10.5, 15);
+	Component* comp4 = this->_createResistorTestCase("vdd", "res1", "vss", 10, 9, 20);
+	t1->addComponent(comp3);
+	Component* comp = t1->getComponent("n1");
+	cout << comp << endl;
+	tester.assertEqual<>(comp3, t1->getComponent("n1"));
+	tester.assertEqual<int>(t1->getComponents().size(), 3);
+	cout << t1->getComponentsWithNetlistNode("res1").size();
+	tester.assertEqual<int>(t1->getComponentsWithNetlistNode("res1").size(), 2);
+	t1->addComponent(comp4);
+	tester.assertEqual<int>(t1->getComponents().size(), 4);
+	tester.assertEqual<int>(t1->getComponentsWithNetlistNode("res1").size(), 3);
+
 }
