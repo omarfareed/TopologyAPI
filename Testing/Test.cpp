@@ -1,4 +1,4 @@
-#include "componentTest.h"
+#include "Test.h"
 
 Component* Test::_createResistorTestCase(string id, string t1, string t2, double defaultVal, double minVal, double maxVal)
 {
@@ -53,11 +53,15 @@ void Test::testComponent()
 	tester.assertEqual<bool>(*comp1 == *R1, true);
 }
 
+
 void Test::testTopology()
 {
 	Topology *t1 = parser.readTopology("./Testing/topology_test_case_1.json");
-	if (t1 == NULL)
+	tester.assertNotEqual<Topology*>(t1, NULL);
+	if (t1 == NULL) {
+		cout << "failed in reading topology" << endl;
 		return;
+	}
 	tester.assertEqual<string>(t1->getID(), "top1");
 	tester.assertEqual<int>(t1->getComponents().size(), 2);
 	Component* comp1 = this->_createResistorTestCase("res1", "vdd", "n1", 100, 10, 1000);
@@ -77,5 +81,17 @@ void Test::testTopology()
 	t1->addComponent(comp4);
 	tester.assertEqual<int>(t1->getComponents().size(), 4);
 	tester.assertEqual<int>(t1->getComponentsWithNetlistNode("res1").size(), 3);
-
+	Component* R = t1->getComponent("res1");
+	vector<Component*> elements;
+	elements.push_back(R);
+	elements.push_back(comp3);
+	elements.push_back(comp4);
+	tester.assertEqual<vector<Component*>>(elements, t1->getComponentsWithNetlistNode("res1"));
+	Topology *t2 = parser.readTopology("./Testing/topology_test_case_1.json");
+	Topology* t3 = parser.readTopology("./Testing/topology_test_case_1.json");
+	tester.assertEqual<Topology>(*t3, *t2);
+	tester.assertNotEqual<Topology*>(t3, t2);
+	Topology t4 = *t3;
+	tester.assertEqual<Topology>(t4, *t3);
 }
+
