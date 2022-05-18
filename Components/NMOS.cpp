@@ -11,12 +11,12 @@ NMOS::NMOS(string id, map<string, string>& netlist, map<string, double>& info):T
 {
 }
 
-string NMOS::getType()
+string NMOS::getType() const
 {
 	return string();
 }
 
-void NMOS::printComponentInfo()
+void NMOS::printComponentInfo() const
 {
 	printf("NMOS component with default value : %lf and Drain : %s, Gate : %s, Source : %s\n", this->defaultValue, this->getDrain().c_str(), this->getGate().c_str(), this->getSource().c_str());
 }

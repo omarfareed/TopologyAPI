@@ -22,7 +22,7 @@ Topology Topology::operator=(const Topology& other)
 	return *this;
 }
 
-bool Topology::operator==(const Topology& other)
+bool Topology::operator==(const Topology& other) const
 {
 	if (this->components.size() != other.components.size())
 		return false;
@@ -40,7 +40,7 @@ Topology::Topology(string id, vector<Component*> components)
 	setComponents(components);
 }
 
-Component* Topology::getComponent(string id)
+Component* Topology::getComponent(string id) const
 {
 	for (auto component : this->components)
 	{
@@ -73,17 +73,17 @@ void Topology::setID(string id)
 	this->id = id;
 }
 
-string Topology::getID()
+string Topology::getID() const
 {
 	return this->id;
 }
 
-vector<Component*> Topology::getComponents()
+vector<Component*> Topology::getComponents() const
 {
 	return this->components;
 }
 
-vector<Component*> Topology::getComponentsWithNetlistNode(string netlistNodeID)
+vector<Component*> Topology::getComponentsWithNetlistNode(string netlistNodeID) const
 {
 	Component* netlistNode = getComponent(netlistNodeID);
 	vector<Component*> netlist;
@@ -96,7 +96,7 @@ vector<Component*> Topology::getComponentsWithNetlistNode(string netlistNodeID)
 	return netlist;
 }
 
-void Topology::printComponents()
+void Topology::printComponents() const
 {
 	for (auto component : this->components)
 		component->printComponentInfo();

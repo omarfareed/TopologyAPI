@@ -1,6 +1,6 @@
 #include "CurrentSource.h"
 
-CurrentSource::CurrentSource(const CurrentSource& other):CurrentSource(other)
+CurrentSource::CurrentSource(const CurrentSource& other):TwoTerminal(other)
 {
 }
 
@@ -15,12 +15,12 @@ CurrentSource::CurrentSource(string id, map<string, string>& CurrentSourceNetlis
 
 }
 
-string CurrentSource::getType()
+string CurrentSource::getType() const
 {
 	return "CurrentSource";
 }
 
-void CurrentSource::printComponentInfo()
+void CurrentSource::printComponentInfo() const
 {
 	printf("CurrentSource with default value : %lf, t1 : %s, t2 : %s\n", this->defaultValue, this->getT1().c_str(), this->getT2().c_str());
 }

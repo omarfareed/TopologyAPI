@@ -14,12 +14,12 @@ VoltageSource VoltageSource::operator=(const VoltageSource& other)
 	return *this;
 }
 
-string VoltageSource::getType()
+string VoltageSource::getType() const
 {
 	return "VoltageSource";
 }
 
-void VoltageSource::printComponentInfo()
+void VoltageSource::printComponentInfo() const
 {
 	printf("VoltageSource with default value : %lf, t1 : %s, t2 : %s\n", this->defaultValue, this->getT1().c_str(), this->getT2().c_str());
 }

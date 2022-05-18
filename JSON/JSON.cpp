@@ -60,7 +60,10 @@ Topology* JSON::readTopology(string fileName)
 	try{
 		if (fileName.find(".json") == string::npos)
 			throw "invalid file name";
+		
 		std::ifstream file(fileName);
+		cout << "1\n";
+		cout << file.is_open() << endl;
 		json jsonParser = json::parse(file);
 		if(jsonParser.empty()) return NULL;
 		Topology* topology = this->_createTopology(jsonParser);
@@ -70,6 +73,11 @@ Topology* JSON::readTopology(string fileName)
 	catch(string ex)
 	{ 
 		printf("there exist exception\n");
+		return NULL;
+	}
+	catch (...)
+	{
+		cout << "Unknown Exception\n";
 		return NULL;
 	}
 }

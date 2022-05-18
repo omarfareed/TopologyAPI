@@ -37,20 +37,20 @@ void TwoTerminal::setT2(string terminal)
 	setSingleNetlistTerminal("t2", terminal);
 }
 
-bool TwoTerminal::connectedTo(Component* component)
+bool TwoTerminal::connectedTo(Component* component) const
 {
 	string componentID = component->getID();
 	return componentID == getT1() || componentID == getT2();
 }
 
-string TwoTerminal::getT1()
+string TwoTerminal::getT1() const
 {
-	return this->netlist["t1"];
+	return this->netlist.at("t1");
 }
 
-string TwoTerminal::getT2()
+string TwoTerminal::getT2() const
 {
-	return this->netlist["t2"];
+	return this->netlist.at("t2");
 }
 
 

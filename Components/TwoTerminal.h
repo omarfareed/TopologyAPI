@@ -9,8 +9,8 @@ public:
 	TwoTerminal( string id, map<string, string>& netlist, map<string, double>& info);
 	void setT1(string terminal);
 	void setT2(string terminal);
-	bool connectedTo(Component* component);
-	string getT1();
-	string getT2();
-	virtual void printComponentInfo() = 0;
+	bool connectedTo(Component* component) const;
+	string getT1() const;
+	string getT2() const;
+	virtual void printComponentInfo() const = 0;
 };
