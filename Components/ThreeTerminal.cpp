@@ -24,7 +24,7 @@ ThreeTerminal::ThreeTerminal( string id, map<string, string>& netlist, map<strin
 	setNetlist(netlist);
 }
 
-bool ThreeTerminal::connectedTo(Component* component)
+bool ThreeTerminal::connectedTo(Component* component) const
 {
 	string componentID = component->getID();
 	return componentID == getDrain() || componentID == getGate() || componentID == getSource();
@@ -45,18 +45,18 @@ void ThreeTerminal::setSource(string terminal)
 	setSingleNetlistTerminal("source", terminal);
 }
 
-string ThreeTerminal::getDrain()
+string ThreeTerminal::getDrain() const
 {
-	return this->netlist["drain"];
+	return this->netlist.at("drain");
 }
 
-string ThreeTerminal::getGate()
+string ThreeTerminal::getGate() const
 {
-	return this->netlist["gate"];
+	return this->netlist.at("gate");
 }
-string ThreeTerminal::getSource()
+string ThreeTerminal::getSource() const
 {
-	return this->netlist["source"];
+	return this->netlist.at("source");
 }
 
 

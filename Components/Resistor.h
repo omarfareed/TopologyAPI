@@ -7,6 +7,6 @@ public:
 	Resistor(const Resistor& other);
 	Resistor operator=(const Resistor& other);
 	Resistor(string id, map<string, string>& ResistorNetlist, map<string, double>& ResistorValues);
-	string getType();
-	void printComponentInfo();
+	string getType() const;
+	void printComponentInfo() const;
 };
