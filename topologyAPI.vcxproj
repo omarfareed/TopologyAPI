@@ -150,9 +150,8 @@
     <ClCompile Include="Components\VoltageSource.cpp" />
     <ClCompile Include="JSON\JSON.cpp" />
     <ClCompile Include="Source.cpp" />
-    <ClCompile Include="Testing\componentTest.cpp" />
+    <ClCompile Include="Testing\Test.cpp" />
     <ClCompile Include="Testing\topologTest.cpp" />
-    <ClCompile Include="Testing\topologyTest.cpp" />
     <ClCompile Include="Testing\UnitTest.cpp" />
     <ClCompile Include="Topology\Topology.cpp" />
   </ItemGroup>
@@ -168,8 +167,7 @@
     <ClInclude Include="Components\VoltageSource.h" />
     <ClInclude Include="JSON\JSON.h" />
     <ClInclude Include="JSON\json.hpp" />
-    <ClInclude Include="Testing\componentTest.h" />
-    <ClInclude Include="Testing\topologyTest.h" />
+    <ClInclude Include="Testing\Test.h" />
     <ClInclude Include="Testing\UnitTest.h" />
     <ClInclude Include="Topology\Topology.h" />
   </ItemGroup>
