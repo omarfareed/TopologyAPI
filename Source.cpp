@@ -1,4 +1,4 @@
-#include "Testing/componentTest.h"
+#include "Testing/Test.h"
 //#include "API/API.h"
 int main()
 {
