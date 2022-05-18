@@ -44,6 +44,7 @@ Component* Topology::getComponent(string id) const
 {
 	for (auto component : this->components)
 	{
+		cout << component->getID() << endl;
 		if (component->getID() == id)
 			return component;
 	}
@@ -56,6 +57,7 @@ Component* Topology::getComponent(string id) const
 void Topology::addComponent(Component* component)
 {
 	this->components.push_back(component);
+	cout << "Component added : " << component->getID() << endl;
 }
 
 void Topology::setComponents(vector<Component*> components)

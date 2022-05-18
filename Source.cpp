@@ -1,5 +1,4 @@
 #include "Testing/componentTest.h"
-#include "Testing/topologyTest.h"
 //#include "API/API.h"
 int main()
 {
@@ -13,9 +12,8 @@ int main()
 	api.deleteTopology("top1");
 	api.printAllTopologies();
 	*/
-	ComponentTest test1;
-	test1.test();
-	topologyTest test2;
-	test2.test();
+	Test test1;
+	test1.testComponent();
+	test1.testTopology();
 	return 0;
 }
