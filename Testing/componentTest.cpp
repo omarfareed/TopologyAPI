@@ -49,7 +49,6 @@ void ComponentTest::test()
 	tester.assertEqual<string>(N1->getSource(), "R2");
 	tester.assertEqual<bool>(N1->connectedTo(R1), true);
 	tester.assertEqual<bool>(comp1->connectedTo(comp2), true);
-	cout << comp1 << " " << R1 << endl;
-	tester.assertEqual<bool>(comp1 == N1, false);
-	tester.assertEqual<bool>(comp1 == R1, true);
+	tester.assertEqual<bool>(*comp1 == *N1, false);
+	tester.assertEqual<bool>(*comp1 == *R1, true);
 }
