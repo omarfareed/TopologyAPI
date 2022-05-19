@@ -98,6 +98,10 @@ void Test::testComponent()
 	tester.assertEqual<bool>(*comp1 == *R1, true);
 }
 
+void Test::testTopology(Topology *topology, string expectedID, vector<Component *> expectedComponents)
+{
+	tester.assertEqual<Topology>(*topology, *(new Topology(expectedID, expectedComponents)));
+}
 void Test::testTopology()
 {
 	Topology *t1 = parser.readTopology("./Testing/topology_test_case_1.json");
@@ -113,11 +117,67 @@ void Test::testTopology()
 	this->testTopologyGetComponent(t1, vector<Component *>{comp1, comp2});
 	this->testTopologyGetComponents(t1, vector<Component *>{comp1, comp2});
 	Component *comp3 = this->_createResistorTestCase("n1", "res1", "m1", 12, 10.5, 15);
-	 this->testTopologyAddComponent(t1, comp3);
+	this->testTopologyAddComponent(t1, comp3);
 	Component *comp4 = this->_createResistorTestCase("vdd", "res1", "vss", 10, 9, 20);
-	 this->testTopologyGetComponentsWithNetlistNode(t1, "res1", vector<Component *>{comp1});
+	this->testTopologyGetComponentsWithNetlistNode(t1, "res1", vector<Component *>{comp1});
 	t1->addComponent(comp3);
 	t1->addComponent(comp4);
 	this->testTopologyGetComponentsWithNetlistNode(t1, "res1", vector<Component *>{comp1, comp3, comp4});
 	this->testTopologySetComponents(t1, vector<Component *>{comp1, comp2});
+}
+
+void Test::testAPIReadTopology(API *api, string fileName, Topology *expectedTopology)
+{
+	Topology *topology = api->readTopology(fileName);
+	cout << topology->getID() << endl;
+	for (auto t : topology->getComponents())
+	{
+		cout << t->getID() << " ";
+	}
+	cout << endl;
+	tester.assertEqual<Topology>(*topology, *expectedTopology);
+}
+
+void Test::testAPIWriteTopology(API *api, string topologyID, bool expectedHasWritten)
+{
+	bool hasWritten = api->writeTopology(topologyID);
+	tester.assertEqual<bool>(hasWritten, expectedHasWritten);
+}
+
+void Test::testAPIQueryTopologies(API *api, vector<Topology *> expectedTopologies)
+{
+	tester.assertEqual<Topology>(api->queueryTopologies(), expectedTopologies);
+}
+
+void Test::testAPIDeleteTopology(API *api, string topologyID, vector<Topology *> expectedTopologies)
+{
+	api->deleteTopology(topologyID);
+	tester.assertEqual<Topology>(api->queueryTopologies(), expectedTopologies);
+}
+
+void Test::testAPIQueryDevices(API *api, string topologyID, vector<Component *> expectedComponents)
+{
+	tester.assertEqual<Component>(api->queryDevices(topologyID), expectedComponents);
+}
+
+void Test::testAPIQueryDevicesWithNetlistNode(API *api, string topologyID, string netlistId, vector<Component *> expectedComponents)
+{
+	tester.assertEqual<Component>(api->queryDevicesWithNetlistNodes(topologyID, netlistId), expectedComponents);
+}
+
+void Test::testAPI()
+{
+	API *api = new API();
+	Component *R1 = this->_createResistorTestCase("R1", "N1", "N2", 100, 50, 150);
+	Component *R2 = this->_createResistorTestCase("R2", "N1", "N2", 100, 50, 150);
+	Component *R3 = this->_createResistorTestCase("R3", "N1", "N2", 100, 50, 150);
+	Component *N1 = this->_createNMOSTestCase("N1", "R1", "R3", "R2", 20, 15, 30);
+	Component *N2 = this->_createNMOSTestCase("N2", "R1", "R3", "R2", 20, 15, 30);
+	vector<Component *> components = vector<Component *>{R1, N1, R2, R3, N2};
+	this->testAPIReadTopology(api, "./Testing/topology_test_1.json", new Topology("top_test1", components));
+	this->testAPIWriteTopology(api, "top_test1", true);
+	this->testAPIWriteTopology(api, "top_test2", false);
+	this->testAPIQueryDevices(api, "top_test1", components);
+	this->testAPIQueryDevicesWithNetlistNode(api, "top_test1", "R1", vector<Component*> {R1 , N1 , N2});
+	this->testAPIQueryTopologies(api, vector<Topology*>{new Topology("top_test1", components)});
 }

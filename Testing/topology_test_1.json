@@ -1,0 +1,72 @@
+{
+    "id": "top_test1",
+    "components": [
+        {
+            "type": "resistor",
+            "id": "R1",
+            "resistance": {
+                "default": 100,
+                "min": 50,
+                "max": 150
+            },
+            "netlist": {
+                "t1": "N1",
+                "t2": "N2"
+            }
+        },
+        {
+            "type": "nmos",
+            "id": "N1",
+            "m(l)": {
+                "default": 20,
+                "min": 15,
+                "max": 30
+            },
+            "netlist": {
+                "drain": "R1",
+                "gate": "R2",
+                "source": "R3"
+            }
+        },
+        {
+            "type": "resistor",
+            "id": "R2",
+            "resistance": {
+                "default": 100,
+                "min": 50,
+                "max": 150
+            },
+            "netlist": {
+                "t1": "N1",
+                "t2": "N2"
+            }
+        },
+        {
+            "type": "resistor",
+            "id": "R3",
+            "resistance": {
+                "default": 100,
+                "min": 50,
+                "max": 150
+            },
+            "netlist": {
+                "t1": "N1",
+                "t2": "N2"
+            }
+        },
+        {
+            "type": "nmos",
+            "id": "N2",
+            "m(l)": {
+                "default": 20,
+                "min": 15,
+                "max": 30
+            },
+            "netlist": {
+                "drain": "R1",
+                "gate": "R2",
+                "source": "R3"
+            }
+        }
+    ]
+}
