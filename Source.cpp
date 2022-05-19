@@ -13,7 +13,8 @@ int main()
 	api.printAllTopologies();
 	*/
 	Test test1;
-	test1.testComponent();
-	test1.testTopology();
+	//test1.testComponent();
+	//test1.testTopology();
+	test1.testAPI();
 	return 0;
 }

@@ -28,7 +28,7 @@ bool Topology::operator==(const Topology& other) const
 		return false;
 	for (int i = 0; i < this->components.size(); i++)
 	{
-		if (!(*this->components[i] == *other.components[i]))
+		if (!(*this->components[i] == *other.components[i])) 
 			return false;
 	}
 	return true;

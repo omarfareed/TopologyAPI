@@ -7,8 +7,8 @@ private:
 	JSON parser;
 	Topology* _getTopology(string id);
 public:
-	bool readJSON(string fileName);
-	bool writeJSON(string topologyID);
+	Topology* readTopology(string fileName);
+	bool writeTopology(string topologyID);
 	vector<Topology*> queueryTopologies();
 	bool deleteTopology(string topologyID);
 	vector<Component*> queryDevices(string TopologyID);

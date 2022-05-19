@@ -5,21 +5,21 @@ Topology* API::_getTopology(string id)
 		if (topology->getID() == id) return topology;
 	return NULL;
 }
-bool API::readJSON(string fileName)
+Topology* API::readTopology(string fileName)
 {
 	Topology* topology =  parser.readTopology(fileName);
 	if (topology == NULL)
-		return false;
+		return NULL;
 	topologyList.push_back(topology);
-	return true;
+	return topology;
 }
 
-bool API::writeJSON(string topologyID)
+bool API::writeTopology(string topologyID)
 {
-	Topology* topology = _getTopology(topologyID);
+	Topology* topology = this->_getTopology(topologyID);
 	if (topology == NULL)
 		return false;
-	parser.writeTopology(topology, "topologyWrite.json");
+	parser.writeTopology(topology, "./topologyWrite.json");
 	return true;
 }
 
