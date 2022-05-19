@@ -44,7 +44,6 @@ Component* Topology::getComponent(string id) const
 {
 	for (auto component : this->components)
 	{
-		cout << component->getID() << endl;
 		if (component->getID() == id)
 			return component;
 	}

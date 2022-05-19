@@ -62,14 +62,9 @@ Topology* JSON::readTopology(string fileName)
 			throw "invalid file name";
 		
 		std::ifstream file(fileName);
-		cout << "IS OPEN : " << file.is_open() << endl;
 		json jsonParser = json::parse(file);
-		cout << jsonParser << endl;
 		if(jsonParser.empty()) return NULL;
-		cout << "before\n";
 		Topology* topology = this->_createTopology(jsonParser);
-		cout << "after\n";
-		topology->printComponents();
 		return topology;
 	}
 	catch(string ex)

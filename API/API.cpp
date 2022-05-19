@@ -7,9 +7,10 @@ Topology* API::_getTopology(string id)
 }
 Topology* API::readTopology(string fileName)
 {
-	Topology* topology =  parser.readTopology(fileName);
+	Topology* topology = parser.readTopology(fileName);
 	if (topology == NULL)
 		return NULL;
+	cout << "added topology with ID : " << topology->getID() << endl;
 	topologyList.push_back(topology);
 	return topology;
 }
@@ -20,6 +21,7 @@ bool API::writeTopology(string topologyID)
 	if (topology == NULL)
 		return false;
 	parser.writeTopology(topology, "./topologyWrite.json");
+	cout << "topology has been written at file ./topologyWrite.json" << endl;
 	return true;
 }
 
@@ -35,6 +37,8 @@ bool API::deleteTopology(string topologyID)
 		return false;
 	auto it = remove(this->topologyList.begin(), this->topologyList.end(), topology);
 	topologyList.erase(it);
+	cout << "Deleted topology with id : " << topology->getID() << " ,Now the API contains " << this->topologyList.size() << " Topologies" << endl;;
+	delete topology;
 	return true;
 }
 
