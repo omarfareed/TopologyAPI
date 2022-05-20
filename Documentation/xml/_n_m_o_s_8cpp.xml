@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_n_m_o_s_8cpp" kind="file" language="C++">
+    <compoundname>NMOS.cpp</compoundname>
+    <includes refid="_n_m_o_s_8h" local="yes">NMOS.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>Component.h</label>
+        <link refid="_component_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>NMOS.cpp</label>
+        <link refid="_n_m_o_s_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NMOS.h</label>
+        <link refid="_n_m_o_s_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ThreeTerminal.h</label>
+        <link refid="_three_terminal_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="8">
+        <label>map</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_n_m_o_s_8h" kindref="compound">NMOS.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="class_n_m_o_s_1a9256579357bc706c95b7279bdf379cb6" refkind="member"><highlight class="normal"><ref refid="class_n_m_o_s" kindref="compound">NMOS</ref><sp/><ref refid="class_n_m_o_s_1a9256579357bc706c95b7279bdf379cb6" kindref="member">NMOS::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_n_m_o_s" kindref="compound">NMOS</ref>&amp;<sp/>other)</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_component_1a2e105083b89470639990cf744aa9cb13" kindref="member">_copyComponentValues</ref>(other);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="7" refid="class_n_m_o_s_1a95650d715eb2cc056cee0e38d60c1927" refkind="member"><highlight class="normal"><ref refid="class_n_m_o_s_1a95650d715eb2cc056cee0e38d60c1927" kindref="member">NMOS::NMOS</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_n_m_o_s" kindref="compound">NMOS</ref>&amp;<sp/>other):<ref refid="class_three_terminal" kindref="compound">ThreeTerminal</ref>(other)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10" refid="class_n_m_o_s_1adf795ea18c66a11e1025bf5752dc096d" refkind="member"><highlight class="normal"><ref refid="class_n_m_o_s_1a95650d715eb2cc056cee0e38d60c1927" kindref="member">NMOS::NMOS</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>map&lt;string,<sp/>string&gt;&amp;<sp/>netlist,<sp/>map&lt;string,<sp/>double&gt;&amp;<sp/>info):<ref refid="class_three_terminal" kindref="compound">ThreeTerminal</ref>(id<sp/>,<sp/>netlist,info)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_n_m_o_s_1a33ec37bd4d014dfdd97a89ef45cf3c76" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_n_m_o_s_1a33ec37bd4d014dfdd97a89ef45cf3c76" kindref="member">NMOS::getType</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="15"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>string();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_n_m_o_s_1a53004bcb6a8406e92c0fe628b132baf0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_n_m_o_s_1a53004bcb6a8406e92c0fe628b132baf0" kindref="member">NMOS::printComponentInfo</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="20"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;NMOS<sp/>component<sp/>with<sp/>default<sp/>value<sp/>:<sp/>%lf<sp/>and<sp/>Drain<sp/>:<sp/>%s,<sp/>Gate<sp/>:<sp/>%s,<sp/>Source<sp/>:<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>this-&gt;<ref refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" kindref="member">defaultValue</ref>,<sp/>this-&gt;<ref refid="class_three_terminal_1a47800c2de0297c7eddd7b987bd7842fd" kindref="member">getDrain</ref>().c_str(),<sp/>this-&gt;<ref refid="class_three_terminal_1a799f07bc7941e6e5a7e86fe1a086f4bd" kindref="member">getGate</ref>().c_str(),<sp/>this-&gt;<ref refid="class_three_terminal_1af8adb54a621847ddf6d30051ee76e8bc" kindref="member">getSource</ref>().c_str());</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="NMOS.cpp"/>
+  </compounddef>
+</doxygen>

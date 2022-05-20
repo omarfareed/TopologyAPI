@@ -1,0 +1,650 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_component" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Component</compoundname>
+    <derivedcompoundref refid="class_three_terminal" prot="public" virt="non-virtual">ThreeTerminal</derivedcompoundref>
+    <derivedcompoundref refid="class_two_terminal" prot="public" virt="non-virtual">TwoTerminal</derivedcompoundref>
+    <includes refid="_component_8h" local="no">Component.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_component_1aa66f3e6ea8d4309ae836e5b4ccdeee1c" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Component::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>Component::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="15" column="8" bodyfile="Component.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_component_1a2e105083b89470639990cf744aa9cb13" compoundref="_component_8cpp" startline="13" endline="20">_copyComponentValues</referencedby>
+        <referencedby refid="class_component_1a2c3dfb75ae1f05a13a451b455dfef01a" compoundref="_component_8cpp" startline="59" endline="62">getID</referencedby>
+        <referencedby refid="class_component_1a901f96875ec357b5e603e68c0f8f4095" compoundref="_component_8cpp" startline="49" endline="57">setID</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Component::defaultValue</definition>
+        <argsstring></argsstring>
+        <name>defaultValue</name>
+        <qualifiedname>Component::defaultValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="16" column="8" bodyfile="Component.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_component_1a2e105083b89470639990cf744aa9cb13" compoundref="_component_8cpp" startline="13" endline="20">_copyComponentValues</referencedby>
+        <referencedby refid="class_component_1a2a61b9a076222666f914efbb5d2a57d4" compoundref="_component_8cpp" startline="98" endline="101">getDefaultValue</referencedby>
+        <referencedby refid="class_component_1ab6639960bdfc791d3b6fc6c5e0bba0fe" compoundref="_component_8cpp" startline="32" endline="39">operator==</referencedby>
+        <referencedby refid="class_current_source_1acfc3c673e9da45f4f71fcf0893560c53" compoundref="_current_source_8cpp" startline="23" endline="26">CurrentSource::printComponentInfo</referencedby>
+        <referencedby refid="class_n_m_o_s_1a53004bcb6a8406e92c0fe628b132baf0" compoundref="_n_m_o_s_8cpp" startline="19" endline="22">NMOS::printComponentInfo</referencedby>
+        <referencedby refid="class_p_m_o_s_1a7eab3bb9648f3ed3cea608d621c675c3" compoundref="_p_m_o_s_8cpp" startline="19" endline="23">PMOS::printComponentInfo</referencedby>
+        <referencedby refid="class_resistor_1a69290e67ec09dacfa9439bcad8838949" compoundref="_resistor_8cpp" startline="23" endline="27">Resistor::printComponentInfo</referencedby>
+        <referencedby refid="class_voltage_source_1af6208091a06b15e0eba261ea558e8ffc" compoundref="_voltage_source_8cpp" startline="22" endline="25">VoltageSource::printComponentInfo</referencedby>
+        <referencedby refid="class_component_1a76c033320ee12d34be094ace64823d11" compoundref="_component_8cpp" startline="40" endline="47">setComponentValues</referencedby>
+        <referencedby refid="class_component_1a60f880911ea927dc32b9226525355062" compoundref="_component_8cpp" startline="91" endline="96">setDefaultValue</referencedby>
+        <referencedby refid="class_component_1a90ed6bf90df9b29af01b879bbcb5083f" compoundref="_component_8cpp" startline="79" endline="84">setMinValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_component_1a1d7cf78862de172eda96c0603c1b4903" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Component::minValue</definition>
+        <argsstring></argsstring>
+        <name>minValue</name>
+        <qualifiedname>Component::minValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="17" column="8" bodyfile="Component.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_component_1a2e105083b89470639990cf744aa9cb13" compoundref="_component_8cpp" startline="13" endline="20">_copyComponentValues</referencedby>
+        <referencedby refid="class_component_1a4f0d7c4c6f5e96c33c05feb39a2f8bb1" compoundref="_component_8cpp" startline="86" endline="89">getMinValue</referencedby>
+        <referencedby refid="class_component_1ab6639960bdfc791d3b6fc6c5e0bba0fe" compoundref="_component_8cpp" startline="32" endline="39">operator==</referencedby>
+        <referencedby refid="class_component_1a76c033320ee12d34be094ace64823d11" compoundref="_component_8cpp" startline="40" endline="47">setComponentValues</referencedby>
+        <referencedby refid="class_component_1a60f880911ea927dc32b9226525355062" compoundref="_component_8cpp" startline="91" endline="96">setDefaultValue</referencedby>
+        <referencedby refid="class_component_1ac2de6d2183cd7cf70b28f20e0c42a2b0" compoundref="_component_8cpp" startline="64" endline="72">setMaxValue</referencedby>
+        <referencedby refid="class_component_1a90ed6bf90df9b29af01b879bbcb5083f" compoundref="_component_8cpp" startline="79" endline="84">setMinValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_component_1a2d0f12bfc606aed817a667db8346b229" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Component::maxValue</definition>
+        <argsstring></argsstring>
+        <name>maxValue</name>
+        <qualifiedname>Component::maxValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="18" column="8" bodyfile="Component.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_component_1a2e105083b89470639990cf744aa9cb13" compoundref="_component_8cpp" startline="13" endline="20">_copyComponentValues</referencedby>
+        <referencedby refid="class_component_1a731f2fb15adcd16ddb6343dab21f5a39" compoundref="_component_8cpp" startline="74" endline="77">getMaxValue</referencedby>
+        <referencedby refid="class_component_1ab6639960bdfc791d3b6fc6c5e0bba0fe" compoundref="_component_8cpp" startline="32" endline="39">operator==</referencedby>
+        <referencedby refid="class_component_1a76c033320ee12d34be094ace64823d11" compoundref="_component_8cpp" startline="40" endline="47">setComponentValues</referencedby>
+        <referencedby refid="class_component_1a60f880911ea927dc32b9226525355062" compoundref="_component_8cpp" startline="91" endline="96">setDefaultValue</referencedby>
+        <referencedby refid="class_component_1ac2de6d2183cd7cf70b28f20e0c42a2b0" compoundref="_component_8cpp" startline="64" endline="72">setMaxValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" prot="protected" static="no" mutable="no">
+        <type>map&lt; string, string &gt;</type>
+        <definition>map&lt;string , string&gt; Component::netlist</definition>
+        <argsstring></argsstring>
+        <name>netlist</name>
+        <qualifiedname>Component::netlist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="19" column="5" bodyfile="Component.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_component_1a2e105083b89470639990cf744aa9cb13" compoundref="_component_8cpp" startline="13" endline="20">_copyComponentValues</referencedby>
+        <referencedby refid="class_three_terminal_1a47800c2de0297c7eddd7b987bd7842fd" compoundref="_three_terminal_8cpp" startline="48" endline="51">ThreeTerminal::getDrain</referencedby>
+        <referencedby refid="class_three_terminal_1a799f07bc7941e6e5a7e86fe1a086f4bd" compoundref="_three_terminal_8cpp" startline="53" endline="56">ThreeTerminal::getGate</referencedby>
+        <referencedby refid="class_component_1aeb1e21523f1347a95efa4caf596cacf0" compoundref="_component_8cpp" startline="103" endline="106">getNetlist</referencedby>
+        <referencedby refid="class_three_terminal_1af8adb54a621847ddf6d30051ee76e8bc" compoundref="_three_terminal_8cpp" startline="57" endline="60">ThreeTerminal::getSource</referencedby>
+        <referencedby refid="class_two_terminal_1ab0830960996a7ead2bcd0dd6f44130fe" compoundref="_two_terminal_8cpp" startline="45" endline="48">TwoTerminal::getT1</referencedby>
+        <referencedby refid="class_two_terminal_1a20afcb41e626f0d511cd8d2d19eecc3c" compoundref="_two_terminal_8cpp" startline="50" endline="53">TwoTerminal::getT2</referencedby>
+        <referencedby refid="class_component_1ab6639960bdfc791d3b6fc6c5e0bba0fe" compoundref="_component_8cpp" startline="32" endline="39">operator==</referencedby>
+        <referencedby refid="class_three_terminal_1ad6ceefefe2c662046be0a577e8afa6e0" compoundref="_three_terminal_8cpp" startline="8" endline="15">ThreeTerminal::setNetlist</referencedby>
+        <referencedby refid="class_two_terminal_1ab8ca14897020a7776b72522402d88763" compoundref="_two_terminal_8cpp" startline="8" endline="16">TwoTerminal::setNetlist</referencedby>
+        <referencedby refid="class_component_1a8e131626e01c8549d3837a94e27a4249" compoundref="_component_8cpp" startline="108" endline="113">setSingleNetlistTerminal</referencedby>
+        <referencedby refid="class_three_terminal_1ab24eede68f8c6fd5b91fa5b095dc15d5" compoundref="_three_terminal_8cpp" startline="21" endline="25">ThreeTerminal::ThreeTerminal</referencedby>
+        <referencedby refid="class_two_terminal_1a72eca286775a8c42e999759e75e8485f" compoundref="_two_terminal_8cpp" startline="22" endline="26">TwoTerminal::TwoTerminal</referencedby>
+        <referencedby refid="class_three_terminal_1ada3f5b6dc4b55f4cdc4d547d41d73cf1" compoundref="_three_terminal_8cpp" startline="3" endline="6">ThreeTerminal::validNetlist</referencedby>
+        <referencedby refid="class_two_terminal_1a8c728d34c9cfd5517ac2de7b73bd7be6" compoundref="_two_terminal_8cpp" startline="3" endline="6">TwoTerminal::validNetlist</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_component_1a693ad7b28df940f48978539ab18cca5e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Component::validNetlist</definition>
+        <argsstring>(map&lt; string, string &gt; &amp;)=0</argsstring>
+        <name>validNetlist</name>
+        <qualifiedname>Component::validNetlist</qualifiedname>
+        <reimplementedby refid="class_three_terminal_1ada3f5b6dc4b55f4cdc4d547d41d73cf1">validNetlist</reimplementedby>
+        <reimplementedby refid="class_two_terminal_1a8c728d34c9cfd5517ac2de7b73bd7be6">validNetlist</reimplementedby>
+        <param>
+          <type>map&lt; string, string &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="20" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_component_1a5243477401a46b5f7175a0b62807ae69" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Component::setNetlist</definition>
+        <argsstring>(map&lt; string, string &gt; &amp;)=0</argsstring>
+        <name>setNetlist</name>
+        <qualifiedname>Component::setNetlist</qualifiedname>
+        <reimplementedby refid="class_three_terminal_1ad6ceefefe2c662046be0a577e8afa6e0">setNetlist</reimplementedby>
+        <reimplementedby refid="class_two_terminal_1ab8ca14897020a7776b72522402d88763">setNetlist</reimplementedby>
+        <param>
+          <type>map&lt; string, string &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="21" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_component_1af5e90af141f6c98be944cc9d02a61e34" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Component::validComponentValues</definition>
+        <argsstring>(map&lt; string, double &gt; &amp;componentInfo)</argsstring>
+        <name>validComponentValues</name>
+        <qualifiedname>Component::validComponentValues</qualifiedname>
+        <param>
+          <type>map&lt; string, double &gt; &amp;</type>
+          <declname>componentInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="22" column="14" bodyfile="Component.cpp" bodystart="4" bodyend="11"/>
+        <referencedby refid="class_component_1a76c033320ee12d34be094ace64823d11" compoundref="_component_8cpp" startline="40" endline="47">setComponentValues</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_component_1a8e131626e01c8549d3837a94e27a4249" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Component::setSingleNetlistTerminal</definition>
+        <argsstring>(string terminal, string value)</argsstring>
+        <name>setSingleNetlistTerminal</name>
+        <qualifiedname>Component::setSingleNetlistTerminal</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>terminal</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="23" column="14" bodyfile="Component.cpp" bodystart="108" bodyend="113"/>
+        <references refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" compoundref="_component_8h" startline="19">netlist</references>
+        <referencedby refid="class_three_terminal_1a0580bc4f6223903c559f2eed1bd5752c" compoundref="_three_terminal_8cpp" startline="34" endline="37">ThreeTerminal::setDrain</referencedby>
+        <referencedby refid="class_three_terminal_1ae4cb7666247802601ec5ca5ede38be06" compoundref="_three_terminal_8cpp" startline="39" endline="42">ThreeTerminal::setGate</referencedby>
+        <referencedby refid="class_three_terminal_1ab032469f2094578d60e2551fbde39c42" compoundref="_three_terminal_8cpp" startline="43" endline="46">ThreeTerminal::setSource</referencedby>
+        <referencedby refid="class_two_terminal_1a7bf70d6e3f2ca091b3f917a29bb7694a" compoundref="_two_terminal_8cpp" startline="29" endline="32">TwoTerminal::setT1</referencedby>
+        <referencedby refid="class_two_terminal_1aaddd792566aaa30c7df3eacb30e4e1c7" compoundref="_two_terminal_8cpp" startline="34" endline="37">TwoTerminal::setT2</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_component_1a2e105083b89470639990cf744aa9cb13" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Component::_copyComponentValues</definition>
+        <argsstring>(const Component &amp;other)</argsstring>
+        <name>_copyComponentValues</name>
+        <qualifiedname>Component::_copyComponentValues</qualifiedname>
+        <param>
+          <type>const <ref refid="class_component" kindref="compound">Component</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="24" column="14" bodyfile="Component.cpp" bodystart="13" bodyend="20"/>
+        <references refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" compoundref="_component_8h" startline="16">defaultValue</references>
+        <references refid="class_component_1aa66f3e6ea8d4309ae836e5b4ccdeee1c" compoundref="_component_8h" startline="15">id</references>
+        <references refid="class_component_1a2d0f12bfc606aed817a667db8346b229" compoundref="_component_8h" startline="18">maxValue</references>
+        <references refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" compoundref="_component_8h" startline="17">minValue</references>
+        <references refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" compoundref="_component_8h" startline="19">netlist</references>
+        <referencedby refid="class_component_1a889cb5b99bab68856f9b5a650669369c" compoundref="_component_8cpp" startline="21" endline="24">Component</referencedby>
+        <referencedby refid="class_current_source_1a658360c7088ced958c7c03381855dd59" compoundref="_current_source_8cpp" startline="7" endline="11">CurrentSource::operator=</referencedby>
+        <referencedby refid="class_n_m_o_s_1a9256579357bc706c95b7279bdf379cb6" compoundref="_n_m_o_s_8cpp" startline="2" endline="6">NMOS::operator=</referencedby>
+        <referencedby refid="class_p_m_o_s_1a184d7774bc8046e3f1620cb0462eba94" compoundref="_p_m_o_s_8cpp" startline="5" endline="9">PMOS::operator=</referencedby>
+        <referencedby refid="class_resistor_1a5dae2de6b0ef2d7d597963e20feba419" compoundref="_resistor_8cpp" startline="7" endline="11">Resistor::operator=</referencedby>
+        <referencedby refid="class_voltage_source_1a7491d524ed737f714987845ba01328f9" compoundref="_voltage_source_8cpp" startline="11" endline="15">VoltageSource::operator=</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_component_1a889cb5b99bab68856f9b5a650669369c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Component::Component</definition>
+        <argsstring>(const Component &amp;other)</argsstring>
+        <name>Component</name>
+        <qualifiedname>Component::Component</qualifiedname>
+        <param>
+          <type>const <ref refid="class_component" kindref="compound">Component</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="26" column="1" bodyfile="Component.cpp" bodystart="21" bodyend="24"/>
+        <references refid="class_component_1a2e105083b89470639990cf744aa9cb13" compoundref="_component_8cpp" startline="13" endline="20">_copyComponentValues</references>
+      </memberdef>
+      <memberdef kind="function" id="class_component_1ab87dce9b8fe3d12810c857d6decf57b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Component::Component</definition>
+        <argsstring>(string id, map&lt; string, double &gt; &amp;componentValues)</argsstring>
+        <name>Component</name>
+        <qualifiedname>Component::Component</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>map&lt; string, double &gt; &amp;</type>
+          <declname>componentValues</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="27" column="1" bodyfile="Component.cpp" bodystart="27" bodyend="31"/>
+        <references refid="class_component_1a76c033320ee12d34be094ace64823d11" compoundref="_component_8cpp" startline="40" endline="47">setComponentValues</references>
+        <references refid="class_component_1a901f96875ec357b5e603e68c0f8f4095" compoundref="_component_8cpp" startline="49" endline="57">setID</references>
+      </memberdef>
+      <memberdef kind="function" id="class_component_1ab6639960bdfc791d3b6fc6c5e0bba0fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Component::operator==</definition>
+        <argsstring>(const Component &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>Component::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="class_component" kindref="compound">Component</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="28" column="6" bodyfile="Component.cpp" bodystart="32" bodyend="39"/>
+        <references refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" compoundref="_component_8h" startline="16">defaultValue</references>
+        <references refid="class_component_1a93d9044a39dfb0ccc0bca4cb5d3eb70e">getType</references>
+        <references refid="class_component_1a2d0f12bfc606aed817a667db8346b229" compoundref="_component_8h" startline="18">maxValue</references>
+        <references refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" compoundref="_component_8h" startline="17">minValue</references>
+        <references refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" compoundref="_component_8h" startline="19">netlist</references>
+      </memberdef>
+      <memberdef kind="function" id="class_component_1a76c033320ee12d34be094ace64823d11" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Component::setComponentValues</definition>
+        <argsstring>(map&lt; string, double &gt; &amp;)</argsstring>
+        <name>setComponentValues</name>
+        <qualifiedname>Component::setComponentValues</qualifiedname>
+        <param>
+          <type>map&lt; string, double &gt; &amp;</type>
+          <defname>componentValues</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="29" column="14" bodyfile="Component.cpp" bodystart="40" bodyend="47"/>
+        <references refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" compoundref="_component_8h" startline="16">defaultValue</references>
+        <references refid="class_component_1a2d0f12bfc606aed817a667db8346b229" compoundref="_component_8h" startline="18">maxValue</references>
+        <references refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" compoundref="_component_8h" startline="17">minValue</references>
+        <references refid="class_component_1af5e90af141f6c98be944cc9d02a61e34" compoundref="_component_8cpp" startline="4" endline="11">validComponentValues</references>
+        <referencedby refid="class_component_1ab87dce9b8fe3d12810c857d6decf57b5" compoundref="_component_8cpp" startline="27" endline="31">Component</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_component_1a93d9044a39dfb0ccc0bca4cb5d3eb70e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>string</type>
+        <definition>virtual string Component::getType</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getType</name>
+        <qualifiedname>Component::getType</qualifiedname>
+        <reimplementedby refid="class_current_source_1ac1cbf0845f2ee61b8360b4080a6cd836">getType</reimplementedby>
+        <reimplementedby refid="class_n_m_o_s_1a33ec37bd4d014dfdd97a89ef45cf3c76">getType</reimplementedby>
+        <reimplementedby refid="class_p_m_o_s_1a02b873bd092545c7441ad595c1ee8e48">getType</reimplementedby>
+        <reimplementedby refid="class_resistor_1a1dcd19344e02a990aba6d62aa4a2fff6">getType</reimplementedby>
+        <reimplementedby refid="class_voltage_source_1a2e809a9bbfeac910d90c02495270134e">getType</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="30" column="16"/>
+        <referencedby refid="class_component_1ab6639960bdfc791d3b6fc6c5e0bba0fe" compoundref="_component_8cpp" startline="32" endline="39">operator==</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_component_1a901f96875ec357b5e603e68c0f8f4095" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Component::setID</definition>
+        <argsstring>(string id)</argsstring>
+        <name>setID</name>
+        <qualifiedname>Component::setID</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="31" column="14" bodyfile="Component.cpp" bodystart="49" bodyend="57"/>
+        <references refid="class_component_1aa66f3e6ea8d4309ae836e5b4ccdeee1c" compoundref="_component_8h" startline="15">id</references>
+        <referencedby refid="class_component_1ab87dce9b8fe3d12810c857d6decf57b5" compoundref="_component_8cpp" startline="27" endline="31">Component</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_component_1a2c3dfb75ae1f05a13a451b455dfef01a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string Component::getID</definition>
+        <argsstring>() const</argsstring>
+        <name>getID</name>
+        <qualifiedname>Component::getID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="32" column="16" bodyfile="Component.cpp" bodystart="59" bodyend="62"/>
+        <references refid="class_component_1aa66f3e6ea8d4309ae836e5b4ccdeee1c" compoundref="_component_8h" startline="15">id</references>
+        <referencedby refid="class_topology_1ad4ba550251112a2f63b10a306692fc11" compoundref="_topology_8cpp" startline="56" endline="60">Topology::addComponent</referencedby>
+        <referencedby refid="class_three_terminal_1a87330e8f18e5af37972a8b9edfb6172e" compoundref="_three_terminal_8cpp" startline="27" endline="31">ThreeTerminal::connectedTo</referencedby>
+        <referencedby refid="class_two_terminal_1a8378a30d5b7caeae708431931da3118a" compoundref="_two_terminal_8cpp" startline="39" endline="43">TwoTerminal::connectedTo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_component_1ac2de6d2183cd7cf70b28f20e0c42a2b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Component::setMaxValue</definition>
+        <argsstring>(double val)</argsstring>
+        <name>setMaxValue</name>
+        <qualifiedname>Component::setMaxValue</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="33" column="14" bodyfile="Component.cpp" bodystart="64" bodyend="72"/>
+        <references refid="class_component_1a2d0f12bfc606aed817a667db8346b229" compoundref="_component_8h" startline="18">maxValue</references>
+        <references refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" compoundref="_component_8h" startline="17">minValue</references>
+      </memberdef>
+      <memberdef kind="function" id="class_component_1a731f2fb15adcd16ddb6343dab21f5a39" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double Component::getMaxValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaxValue</name>
+        <qualifiedname>Component::getMaxValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="34" column="16" bodyfile="Component.cpp" bodystart="74" bodyend="77"/>
+        <references refid="class_component_1a2d0f12bfc606aed817a667db8346b229" compoundref="_component_8h" startline="18">maxValue</references>
+      </memberdef>
+      <memberdef kind="function" id="class_component_1a90ed6bf90df9b29af01b879bbcb5083f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Component::setMinValue</definition>
+        <argsstring>(double val)</argsstring>
+        <name>setMinValue</name>
+        <qualifiedname>Component::setMinValue</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="35" column="13" bodyfile="Component.cpp" bodystart="79" bodyend="84"/>
+        <references refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" compoundref="_component_8h" startline="16">defaultValue</references>
+        <references refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" compoundref="_component_8h" startline="17">minValue</references>
+      </memberdef>
+      <memberdef kind="function" id="class_component_1a4f0d7c4c6f5e96c33c05feb39a2f8bb1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double Component::getMinValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getMinValue</name>
+        <qualifiedname>Component::getMinValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="36" column="16" bodyfile="Component.cpp" bodystart="86" bodyend="89"/>
+        <references refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" compoundref="_component_8h" startline="17">minValue</references>
+      </memberdef>
+      <memberdef kind="function" id="class_component_1a60f880911ea927dc32b9226525355062" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Component::setDefaultValue</definition>
+        <argsstring>(double val)</argsstring>
+        <name>setDefaultValue</name>
+        <qualifiedname>Component::setDefaultValue</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="37" column="14" bodyfile="Component.cpp" bodystart="91" bodyend="96"/>
+        <references refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" compoundref="_component_8h" startline="16">defaultValue</references>
+        <references refid="class_component_1a2d0f12bfc606aed817a667db8346b229" compoundref="_component_8h" startline="18">maxValue</references>
+        <references refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" compoundref="_component_8h" startline="17">minValue</references>
+      </memberdef>
+      <memberdef kind="function" id="class_component_1a2a61b9a076222666f914efbb5d2a57d4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double Component::getDefaultValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getDefaultValue</name>
+        <qualifiedname>Component::getDefaultValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="38" column="16" bodyfile="Component.cpp" bodystart="98" bodyend="101"/>
+        <references refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" compoundref="_component_8h" startline="16">defaultValue</references>
+      </memberdef>
+      <memberdef kind="function" id="class_component_1ab852f7cd16fa85f201b72483b8b6e1b0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Component::printComponentInfo</definition>
+        <argsstring>() const =0</argsstring>
+        <name>printComponentInfo</name>
+        <qualifiedname>Component::printComponentInfo</qualifiedname>
+        <reimplementedby refid="class_current_source_1acfc3c673e9da45f4f71fcf0893560c53">printComponentInfo</reimplementedby>
+        <reimplementedby refid="class_n_m_o_s_1a53004bcb6a8406e92c0fe628b132baf0">printComponentInfo</reimplementedby>
+        <reimplementedby refid="class_p_m_o_s_1a7eab3bb9648f3ed3cea608d621c675c3">printComponentInfo</reimplementedby>
+        <reimplementedby refid="class_resistor_1a69290e67ec09dacfa9439bcad8838949">printComponentInfo</reimplementedby>
+        <reimplementedby refid="class_voltage_source_1af6208091a06b15e0eba261ea558e8ffc">printComponentInfo</reimplementedby>
+        <reimplementedby refid="class_three_terminal_1ab8f2b105686079f3afbb56bba106db95">printComponentInfo</reimplementedby>
+        <reimplementedby refid="class_two_terminal_1a1ead3d83626a7a2bae5a90a29430b927">printComponentInfo</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="39" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_component_1aeb1e21523f1347a95efa4caf596cacf0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>map&lt; string, string &gt;</type>
+        <definition>map&lt; string, string &gt; Component::getNetlist</definition>
+        <argsstring>() const</argsstring>
+        <name>getNetlist</name>
+        <qualifiedname>Component::getNetlist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="40" column="13" bodyfile="Component.cpp" bodystart="103" bodyend="106"/>
+        <references refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" compoundref="_component_8h" startline="19">netlist</references>
+      </memberdef>
+      <memberdef kind="function" id="class_component_1ace23df4932822a6e64f2a9edf3004f53" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Component::connectedTo</definition>
+        <argsstring>(Component *component) const =0</argsstring>
+        <name>connectedTo</name>
+        <qualifiedname>Component::connectedTo</qualifiedname>
+        <reimplementedby refid="class_three_terminal_1a87330e8f18e5af37972a8b9edfb6172e">connectedTo</reimplementedby>
+        <reimplementedby refid="class_two_terminal_1a8378a30d5b7caeae708431931da3118a">connectedTo</reimplementedby>
+        <param>
+          <type><ref refid="class_component" kindref="compound">Component</ref> *</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Component.h" line="41" column="14"/>
+        <referencedby refid="class_topology_1a1fa99284d7854654f6834bd4796b67d0" compoundref="_topology_8cpp" startline="87" endline="98">Topology::getComponentsWithNetlistNode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Component</label>
+        <link refid="class_component"/>
+      </node>
+      <node id="6">
+        <label>CurrentSource</label>
+        <link refid="class_current_source"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>NMOS</label>
+        <link refid="class_n_m_o_s"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>PMOS</label>
+        <link refid="class_p_m_o_s"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Resistor</label>
+        <link refid="class_resistor"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ThreeTerminal</label>
+        <link refid="class_three_terminal"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>TwoTerminal</label>
+        <link refid="class_two_terminal"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>VoltageSource</label>
+        <link refid="class_voltage_source"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Component</label>
+        <link refid="class_component"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>#id</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>#netlist</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>map&lt; string, string &gt;</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="Component.h" line="12" column="1" bodyfile="Component.h" bodystart="13" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_component_1a2e105083b89470639990cf744aa9cb13" prot="protected" virt="virtual"><scope>Component</scope><name>_copyComponentValues</name></member>
+      <member refid="class_component_1a889cb5b99bab68856f9b5a650669369c" prot="public" virt="non-virtual"><scope>Component</scope><name>Component</name></member>
+      <member refid="class_component_1ab87dce9b8fe3d12810c857d6decf57b5" prot="public" virt="non-virtual"><scope>Component</scope><name>Component</name></member>
+      <member refid="class_component_1ace23df4932822a6e64f2a9edf3004f53" prot="public" virt="pure-virtual"><scope>Component</scope><name>connectedTo</name></member>
+      <member refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" prot="protected" virt="non-virtual"><scope>Component</scope><name>defaultValue</name></member>
+      <member refid="class_component_1a2a61b9a076222666f914efbb5d2a57d4" prot="public" virt="virtual"><scope>Component</scope><name>getDefaultValue</name></member>
+      <member refid="class_component_1a2c3dfb75ae1f05a13a451b455dfef01a" prot="public" virt="virtual"><scope>Component</scope><name>getID</name></member>
+      <member refid="class_component_1a731f2fb15adcd16ddb6343dab21f5a39" prot="public" virt="virtual"><scope>Component</scope><name>getMaxValue</name></member>
+      <member refid="class_component_1a4f0d7c4c6f5e96c33c05feb39a2f8bb1" prot="public" virt="virtual"><scope>Component</scope><name>getMinValue</name></member>
+      <member refid="class_component_1aeb1e21523f1347a95efa4caf596cacf0" prot="public" virt="virtual"><scope>Component</scope><name>getNetlist</name></member>
+      <member refid="class_component_1a93d9044a39dfb0ccc0bca4cb5d3eb70e" prot="public" virt="pure-virtual"><scope>Component</scope><name>getType</name></member>
+      <member refid="class_component_1aa66f3e6ea8d4309ae836e5b4ccdeee1c" prot="protected" virt="non-virtual"><scope>Component</scope><name>id</name></member>
+      <member refid="class_component_1a2d0f12bfc606aed817a667db8346b229" prot="protected" virt="non-virtual"><scope>Component</scope><name>maxValue</name></member>
+      <member refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" prot="protected" virt="non-virtual"><scope>Component</scope><name>minValue</name></member>
+      <member refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" prot="protected" virt="non-virtual"><scope>Component</scope><name>netlist</name></member>
+      <member refid="class_component_1ab6639960bdfc791d3b6fc6c5e0bba0fe" prot="public" virt="non-virtual"><scope>Component</scope><name>operator==</name></member>
+      <member refid="class_component_1ab852f7cd16fa85f201b72483b8b6e1b0" prot="public" virt="pure-virtual"><scope>Component</scope><name>printComponentInfo</name></member>
+      <member refid="class_component_1a76c033320ee12d34be094ace64823d11" prot="public" virt="virtual"><scope>Component</scope><name>setComponentValues</name></member>
+      <member refid="class_component_1a60f880911ea927dc32b9226525355062" prot="public" virt="virtual"><scope>Component</scope><name>setDefaultValue</name></member>
+      <member refid="class_component_1a901f96875ec357b5e603e68c0f8f4095" prot="public" virt="virtual"><scope>Component</scope><name>setID</name></member>
+      <member refid="class_component_1ac2de6d2183cd7cf70b28f20e0c42a2b0" prot="public" virt="virtual"><scope>Component</scope><name>setMaxValue</name></member>
+      <member refid="class_component_1a90ed6bf90df9b29af01b879bbcb5083f" prot="public" virt="virtual"><scope>Component</scope><name>setMinValue</name></member>
+      <member refid="class_component_1a5243477401a46b5f7175a0b62807ae69" prot="protected" virt="pure-virtual"><scope>Component</scope><name>setNetlist</name></member>
+      <member refid="class_component_1a8e131626e01c8549d3837a94e27a4249" prot="protected" virt="virtual"><scope>Component</scope><name>setSingleNetlistTerminal</name></member>
+      <member refid="class_component_1af5e90af141f6c98be944cc9d02a61e34" prot="protected" virt="virtual"><scope>Component</scope><name>validComponentValues</name></member>
+      <member refid="class_component_1a693ad7b28df940f48978539ab18cca5e" prot="protected" virt="pure-virtual"><scope>Component</scope><name>validNetlist</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

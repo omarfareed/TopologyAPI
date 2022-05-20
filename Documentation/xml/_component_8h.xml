@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_component_8h" kind="file" language="C++">
+    <compoundname>Component.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">map</includes>
+    <includedby refid="_component_8cpp" local="yes">Component.cpp</includedby>
+    <includedby refid="_three_terminal_8h" local="yes">ThreeTerminal.h</includedby>
+    <includedby refid="_two_terminal_8h" local="yes">TwoTerminal.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>Component.h</label>
+        <link refid="_component_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>map</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Component.cpp</label>
+        <link refid="_component_8cpp"/>
+      </node>
+      <node id="1">
+        <label>Component.h</label>
+        <link refid="_component_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>CurrentSource.cpp</label>
+        <link refid="_current_source_8cpp"/>
+      </node>
+      <node id="10">
+        <label>CurrentSource.h</label>
+        <link refid="_current_source_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>NMOS.cpp</label>
+        <link refid="_n_m_o_s_8cpp"/>
+      </node>
+      <node id="4">
+        <label>NMOS.h</label>
+        <link refid="_n_m_o_s_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>PMOS.cpp</label>
+        <link refid="_p_m_o_s_8cpp"/>
+      </node>
+      <node id="6">
+        <label>PMOS.h</label>
+        <link refid="_p_m_o_s_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Resistor.cpp</label>
+        <link refid="_resistor_8cpp"/>
+      </node>
+      <node id="12">
+        <label>Resistor.h</label>
+        <link refid="_resistor_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ThreeTerminal.cpp</label>
+        <link refid="_three_terminal_8cpp"/>
+      </node>
+      <node id="3">
+        <label>ThreeTerminal.h</label>
+        <link refid="_three_terminal_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>TwoTerminal.cpp</label>
+        <link refid="_two_terminal_8cpp"/>
+      </node>
+      <node id="9">
+        <label>TwoTerminal.h</label>
+        <link refid="_two_terminal_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>VoltageSource.cpp</label>
+        <link refid="_voltage_source_8cpp"/>
+      </node>
+      <node id="15">
+        <label>VoltageSource.h</label>
+        <link refid="_voltage_source_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_component" prot="public">Component</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::string;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::endl;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::cin;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::cout;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::vector;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::map;</highlight></codeline>
+<codeline lineno="12" refid="class_component" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_component" kindref="compound">Component</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15" refid="class_component_1aa66f3e6ea8d4309ae836e5b4ccdeee1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_component_1aa66f3e6ea8d4309ae836e5b4ccdeee1c" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="16" refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" kindref="member">defaultValue</ref>;</highlight></codeline>
+<codeline lineno="17" refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" kindref="member">minValue</ref>;</highlight></codeline>
+<codeline lineno="18" refid="class_component_1a2d0f12bfc606aed817a667db8346b229" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_component_1a2d0f12bfc606aed817a667db8346b229" kindref="member">maxValue</ref>;</highlight></codeline>
+<codeline lineno="19" refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>map&lt;string<sp/>,<sp/>string&gt;<sp/><ref refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" kindref="member">netlist</ref>;</highlight></codeline>
+<codeline lineno="20" refid="class_component_1a693ad7b28df940f48978539ab18cca5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_component_1a693ad7b28df940f48978539ab18cca5e" kindref="member">validNetlist</ref>(map&lt;string,string&gt;&amp;)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="21" refid="class_component_1a5243477401a46b5f7175a0b62807ae69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_component_1a5243477401a46b5f7175a0b62807ae69" kindref="member">setNetlist</ref>(map&lt;string,<sp/>string&gt;&amp;)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_component_1af5e90af141f6c98be944cc9d02a61e34" kindref="member">validComponentValues</ref>(map&lt;string,<sp/>double&gt;&amp;<sp/>componentInfo);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_component_1a8e131626e01c8549d3837a94e27a4249" kindref="member">setSingleNetlistTerminal</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>terminal<sp/>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_component_1a2e105083b89470639990cf744aa9cb13" kindref="member">_copyComponentValues</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_component" kindref="compound">Component</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_component_1a889cb5b99bab68856f9b5a650669369c" kindref="member">Component</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_component" kindref="compound">Component</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_component_1a889cb5b99bab68856f9b5a650669369c" kindref="member">Component</ref>(<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>map&lt;string,<sp/>double&gt;&amp;<sp/>componentValues);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_component_1ab6639960bdfc791d3b6fc6c5e0bba0fe" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_component" kindref="compound">Component</ref>&amp;<sp/>other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_component_1a76c033320ee12d34be094ace64823d11" kindref="member">setComponentValues</ref>(map&lt;string,<sp/>double&gt;&amp;);</highlight></codeline>
+<codeline lineno="30" refid="class_component_1a93d9044a39dfb0ccc0bca4cb5d3eb70e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_component_1a93d9044a39dfb0ccc0bca4cb5d3eb70e" kindref="member">getType</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_component_1a901f96875ec357b5e603e68c0f8f4095" kindref="member">setID</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_component_1a2c3dfb75ae1f05a13a451b455dfef01a" kindref="member">getID</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_component_1ac2de6d2183cd7cf70b28f20e0c42a2b0" kindref="member">setMaxValue</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_component_1a731f2fb15adcd16ddb6343dab21f5a39" kindref="member">getMaxValue</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_component_1a90ed6bf90df9b29af01b879bbcb5083f" kindref="member">setMinValue</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_component_1a4f0d7c4c6f5e96c33c05feb39a2f8bb1" kindref="member">getMinValue</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_component_1a60f880911ea927dc32b9226525355062" kindref="member">setDefaultValue</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_component_1a2a61b9a076222666f914efbb5d2a57d4" kindref="member">getDefaultValue</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39" refid="class_component_1ab852f7cd16fa85f201b72483b8b6e1b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_component_1ab852f7cd16fa85f201b72483b8b6e1b0" kindref="member">printComponentInfo</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">=<sp/>0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>map&lt;string,<sp/>string&gt;<sp/><ref refid="class_component_1aeb1e21523f1347a95efa4caf596cacf0" kindref="member">getNetlist</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41" refid="class_component_1ace23df4932822a6e64f2a9edf3004f53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_component_1ace23df4932822a6e64f2a9edf3004f53" kindref="member">connectedTo</ref>(<ref refid="class_component" kindref="compound">Component</ref>*<sp/>component)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Component.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_two_terminal_8cpp" kind="file" language="C++">
+    <compoundname>TwoTerminal.cpp</compoundname>
+    <includes refid="_two_terminal_8h" local="yes">TwoTerminal.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>Component.h</label>
+        <link refid="_component_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>TwoTerminal.cpp</label>
+        <link refid="_two_terminal_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TwoTerminal.h</label>
+        <link refid="_two_terminal_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="7">
+        <label>map</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_two_terminal_8h" kindref="compound">TwoTerminal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_two_terminal_1a8c728d34c9cfd5517ac2de7b73bd7be6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_two_terminal_1a8c728d34c9cfd5517ac2de7b73bd7be6" kindref="member">TwoTerminal::validNetlist</ref>(map&lt;string,<sp/>string&gt;&amp;<sp/>netlist)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" kindref="member">netlist</ref>.size()<sp/>==<sp/>2<sp/>&amp;&amp;<sp/><ref refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" kindref="member">netlist</ref>[</highlight><highlight class="stringliteral">&quot;t1&quot;</highlight><highlight class="normal">]<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/><ref refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" kindref="member">netlist</ref>[</highlight><highlight class="stringliteral">&quot;t2&quot;</highlight><highlight class="normal">]<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_two_terminal_1ab8ca14897020a7776b72522402d88763" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_two_terminal_1ab8ca14897020a7776b72522402d88763" kindref="member">TwoTerminal::setNetlist</ref>(map&lt;string,<sp/>string&gt;&amp;<sp/>netlist)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="class_two_terminal_1a8c728d34c9cfd5517ac2de7b73bd7be6" kindref="member">validNetlist</ref>(<ref refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" kindref="member">netlist</ref>))<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;invalid<sp/>netlist<sp/>in<sp/>two<sp/>terminal<sp/>component&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;netlist<sp/>=<sp/><ref refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" kindref="member">netlist</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_two_terminal_1a73f7440b07d890d06713b210d9bfad13" refkind="member"><highlight class="normal"><ref refid="class_two_terminal_1a73f7440b07d890d06713b210d9bfad13" kindref="member">TwoTerminal::TwoTerminal</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_two_terminal" kindref="compound">TwoTerminal</ref>&amp;<sp/>other):<ref refid="class_component" kindref="compound">Component</ref>(other)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_two_terminal_1a72eca286775a8c42e999759e75e8485f" refkind="member"><highlight class="normal"><ref refid="class_two_terminal_1a73f7440b07d890d06713b210d9bfad13" kindref="member">TwoTerminal::TwoTerminal</ref>(<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>map&lt;string,<sp/>string&gt;&amp;<sp/>netlist,<sp/>map&lt;string,<sp/>double&gt;&amp;<sp/>info)<sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>:<ref refid="class_component" kindref="compound">Component</ref>(id,<sp/>info)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_terminal_1ab8ca14897020a7776b72522402d88763" kindref="member">setNetlist</ref>(<ref refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" kindref="member">netlist</ref>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_two_terminal_1a7bf70d6e3f2ca091b3f917a29bb7694a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_two_terminal_1a7bf70d6e3f2ca091b3f917a29bb7694a" kindref="member">TwoTerminal::setT1</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>terminal)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_component_1a8e131626e01c8549d3837a94e27a4249" kindref="member">setSingleNetlistTerminal</ref>(</highlight><highlight class="stringliteral">&quot;t1&quot;</highlight><highlight class="normal">,<sp/>terminal);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="class_two_terminal_1aaddd792566aaa30c7df3eacb30e4e1c7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_two_terminal_1aaddd792566aaa30c7df3eacb30e4e1c7" kindref="member">TwoTerminal::setT2</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>terminal)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_component_1a8e131626e01c8549d3837a94e27a4249" kindref="member">setSingleNetlistTerminal</ref>(</highlight><highlight class="stringliteral">&quot;t2&quot;</highlight><highlight class="normal">,<sp/>terminal);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="class_two_terminal_1a8378a30d5b7caeae708431931da3118a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_two_terminal_1a8378a30d5b7caeae708431931da3118a" kindref="member">TwoTerminal::connectedTo</ref>(<ref refid="class_component" kindref="compound">Component</ref>*<sp/>component)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="40"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>componentID<sp/>=<sp/>component-&gt;<ref refid="class_component_1a2c3dfb75ae1f05a13a451b455dfef01a" kindref="member">getID</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>componentID<sp/>==<sp/><ref refid="class_two_terminal_1ab0830960996a7ead2bcd0dd6f44130fe" kindref="member">getT1</ref>()<sp/>||<sp/>componentID<sp/>==<sp/><ref refid="class_two_terminal_1a20afcb41e626f0d511cd8d2d19eecc3c" kindref="member">getT2</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="class_two_terminal_1ab0830960996a7ead2bcd0dd6f44130fe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_two_terminal_1ab0830960996a7ead2bcd0dd6f44130fe" kindref="member">TwoTerminal::getT1</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="46"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" kindref="member">netlist</ref>.at(</highlight><highlight class="stringliteral">&quot;t1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="class_two_terminal_1a20afcb41e626f0d511cd8d2d19eecc3c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_two_terminal_1a20afcb41e626f0d511cd8d2d19eecc3c" kindref="member">TwoTerminal::getT2</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="51"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" kindref="member">netlist</ref>.at(</highlight><highlight class="stringliteral">&quot;t2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="TwoTerminal.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,374 @@
+\hypertarget{class_component}{}\doxysection{Component Class Reference}
+\label{class_component}\index{Component@{Component}}
+
+
+{\ttfamily \#include $<$Component.\+h$>$}
+
+
+
+Inheritance diagram for Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_component__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{class_component__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_component_a889cb5b99bab68856f9b5a650669369c}{Component}} (const \mbox{\hyperlink{class_component}{Component}} \&other)
+\item 
+\mbox{\hyperlink{class_component_ab87dce9b8fe3d12810c857d6decf57b5}{Component}} (string \mbox{\hyperlink{class_component_aa66f3e6ea8d4309ae836e5b4ccdeee1c}{id}}, map$<$ string, double $>$ \&component\+Values)
+\item 
+bool \mbox{\hyperlink{class_component_ab6639960bdfc791d3b6fc6c5e0bba0fe}{operator==}} (const \mbox{\hyperlink{class_component}{Component}} \&other) const
+\item 
+virtual void \mbox{\hyperlink{class_component_a76c033320ee12d34be094ace64823d11}{set\+Component\+Values}} (map$<$ string, double $>$ \&)
+\item 
+virtual string \mbox{\hyperlink{class_component_a93d9044a39dfb0ccc0bca4cb5d3eb70e}{get\+Type}} () const =0
+\item 
+virtual void \mbox{\hyperlink{class_component_a901f96875ec357b5e603e68c0f8f4095}{set\+ID}} (string \mbox{\hyperlink{class_component_aa66f3e6ea8d4309ae836e5b4ccdeee1c}{id}})
+\item 
+virtual string \mbox{\hyperlink{class_component_a2c3dfb75ae1f05a13a451b455dfef01a}{get\+ID}} () const
+\item 
+virtual void \mbox{\hyperlink{class_component_ac2de6d2183cd7cf70b28f20e0c42a2b0}{set\+Max\+Value}} (double val)
+\item 
+virtual double \mbox{\hyperlink{class_component_a731f2fb15adcd16ddb6343dab21f5a39}{get\+Max\+Value}} () const
+\item 
+virtual void \mbox{\hyperlink{class_component_a90ed6bf90df9b29af01b879bbcb5083f}{set\+Min\+Value}} (double val)
+\item 
+virtual double \mbox{\hyperlink{class_component_a4f0d7c4c6f5e96c33c05feb39a2f8bb1}{get\+Min\+Value}} () const
+\item 
+virtual void \mbox{\hyperlink{class_component_a60f880911ea927dc32b9226525355062}{set\+Default\+Value}} (double val)
+\item 
+virtual double \mbox{\hyperlink{class_component_a2a61b9a076222666f914efbb5d2a57d4}{get\+Default\+Value}} () const
+\item 
+virtual void \mbox{\hyperlink{class_component_ab852f7cd16fa85f201b72483b8b6e1b0}{print\+Component\+Info}} () const =0
+\item 
+virtual map$<$ string, string $>$ \mbox{\hyperlink{class_component_aeb1e21523f1347a95efa4caf596cacf0}{get\+Netlist}} () const
+\item 
+virtual bool \mbox{\hyperlink{class_component_ace23df4932822a6e64f2a9edf3004f53}{connected\+To}} (\mbox{\hyperlink{class_component}{Component}} $\ast$component) const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_component_a693ad7b28df940f48978539ab18cca5e}{valid\+Netlist}} (map$<$ string, string $>$ \&)=0
+\item 
+virtual void \mbox{\hyperlink{class_component_a5243477401a46b5f7175a0b62807ae69}{set\+Netlist}} (map$<$ string, string $>$ \&)=0
+\item 
+virtual bool \mbox{\hyperlink{class_component_af5e90af141f6c98be944cc9d02a61e34}{valid\+Component\+Values}} (map$<$ string, double $>$ \&component\+Info)
+\item 
+virtual void \mbox{\hyperlink{class_component_a8e131626e01c8549d3837a94e27a4249}{set\+Single\+Netlist\+Terminal}} (string terminal, string value)
+\item 
+virtual void \mbox{\hyperlink{class_component_a2e105083b89470639990cf744aa9cb13}{\+\_\+copy\+Component\+Values}} (const \mbox{\hyperlink{class_component}{Component}} \&other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_component_aa66f3e6ea8d4309ae836e5b4ccdeee1c}{id}}
+\item 
+double \mbox{\hyperlink{class_component_ae87427a00fdf5426b7169a66d7ca6f30}{default\+Value}}
+\item 
+double \mbox{\hyperlink{class_component_a1d7cf78862de172eda96c0603c1b4903}{min\+Value}}
+\item 
+double \mbox{\hyperlink{class_component_a2d0f12bfc606aed817a667db8346b229}{max\+Value}}
+\item 
+map$<$ string, string $>$ \mbox{\hyperlink{class_component_ad4b4dcb01b0509ad5739ae2fa2209ff9}{netlist}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_component_a889cb5b99bab68856f9b5a650669369c}\label{class_component_a889cb5b99bab68856f9b5a650669369c}} 
+\index{Component@{Component}!Component@{Component}}
+\index{Component@{Component}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{Component()}{Component()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Component\+::\+Component (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_component}{Component}} \&}]{other }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_component_a889cb5b99bab68856f9b5a650669369c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_component_ab87dce9b8fe3d12810c857d6decf57b5}\label{class_component_ab87dce9b8fe3d12810c857d6decf57b5}} 
+\index{Component@{Component}!Component@{Component}}
+\index{Component@{Component}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{Component()}{Component()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Component\+::\+Component (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{map$<$ string, double $>$ \&}]{component\+Values }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_component_ab87dce9b8fe3d12810c857d6decf57b5_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_component_a2e105083b89470639990cf744aa9cb13}\label{class_component_a2e105083b89470639990cf744aa9cb13}} 
+\index{Component@{Component}!\_copyComponentValues@{\_copyComponentValues}}
+\index{\_copyComponentValues@{\_copyComponentValues}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{\_copyComponentValues()}{\_copyComponentValues()}}
+{\footnotesize\ttfamily void Component\+::\+\_\+copy\+Component\+Values (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_component}{Component}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_component_a2e105083b89470639990cf744aa9cb13_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_component_ace23df4932822a6e64f2a9edf3004f53}\label{class_component_ace23df4932822a6e64f2a9edf3004f53}} 
+\index{Component@{Component}!connectedTo@{connectedTo}}
+\index{connectedTo@{connectedTo}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{connectedTo()}{connectedTo()}}
+{\footnotesize\ttfamily virtual bool Component\+::connected\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_component}{Component}} $\ast$}]{component }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_three_terminal_a87330e8f18e5af37972a8b9edfb6172e}{Three\+Terminal}}, and \mbox{\hyperlink{class_two_terminal_a8378a30d5b7caeae708431931da3118a}{Two\+Terminal}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_component_ace23df4932822a6e64f2a9edf3004f53_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_component_a2a61b9a076222666f914efbb5d2a57d4}\label{class_component_a2a61b9a076222666f914efbb5d2a57d4}} 
+\index{Component@{Component}!getDefaultValue@{getDefaultValue}}
+\index{getDefaultValue@{getDefaultValue}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{getDefaultValue()}{getDefaultValue()}}
+{\footnotesize\ttfamily double Component\+::get\+Default\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_component_a2c3dfb75ae1f05a13a451b455dfef01a}\label{class_component_a2c3dfb75ae1f05a13a451b455dfef01a}} 
+\index{Component@{Component}!getID@{getID}}
+\index{getID@{getID}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily string Component\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_component_a2c3dfb75ae1f05a13a451b455dfef01a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_component_a731f2fb15adcd16ddb6343dab21f5a39}\label{class_component_a731f2fb15adcd16ddb6343dab21f5a39}} 
+\index{Component@{Component}!getMaxValue@{getMaxValue}}
+\index{getMaxValue@{getMaxValue}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{getMaxValue()}{getMaxValue()}}
+{\footnotesize\ttfamily double Component\+::get\+Max\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_component_a4f0d7c4c6f5e96c33c05feb39a2f8bb1}\label{class_component_a4f0d7c4c6f5e96c33c05feb39a2f8bb1}} 
+\index{Component@{Component}!getMinValue@{getMinValue}}
+\index{getMinValue@{getMinValue}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{getMinValue()}{getMinValue()}}
+{\footnotesize\ttfamily double Component\+::get\+Min\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_component_aeb1e21523f1347a95efa4caf596cacf0}\label{class_component_aeb1e21523f1347a95efa4caf596cacf0}} 
+\index{Component@{Component}!getNetlist@{getNetlist}}
+\index{getNetlist@{getNetlist}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{getNetlist()}{getNetlist()}}
+{\footnotesize\ttfamily map$<$ string, string $>$ Component\+::get\+Netlist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_component_a93d9044a39dfb0ccc0bca4cb5d3eb70e}\label{class_component_a93d9044a39dfb0ccc0bca4cb5d3eb70e}} 
+\index{Component@{Component}!getType@{getType}}
+\index{getType@{getType}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily virtual string Component\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_current_source_ac1cbf0845f2ee61b8360b4080a6cd836}{Current\+Source}}, \mbox{\hyperlink{class_n_m_o_s_a33ec37bd4d014dfdd97a89ef45cf3c76}{NMOS}}, \mbox{\hyperlink{class_p_m_o_s_a02b873bd092545c7441ad595c1ee8e48}{PMOS}}, \mbox{\hyperlink{class_resistor_a1dcd19344e02a990aba6d62aa4a2fff6}{Resistor}}, and \mbox{\hyperlink{class_voltage_source_a2e809a9bbfeac910d90c02495270134e}{Voltage\+Source}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_component_a93d9044a39dfb0ccc0bca4cb5d3eb70e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_component_ab6639960bdfc791d3b6fc6c5e0bba0fe}\label{class_component_ab6639960bdfc791d3b6fc6c5e0bba0fe}} 
+\index{Component@{Component}!operator==@{operator==}}
+\index{operator==@{operator==}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Component\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_component}{Component}} \&}]{other }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_component_ab6639960bdfc791d3b6fc6c5e0bba0fe_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_component_ab852f7cd16fa85f201b72483b8b6e1b0}\label{class_component_ab852f7cd16fa85f201b72483b8b6e1b0}} 
+\index{Component@{Component}!printComponentInfo@{printComponentInfo}}
+\index{printComponentInfo@{printComponentInfo}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{printComponentInfo()}{printComponentInfo()}}
+{\footnotesize\ttfamily virtual void Component\+::print\+Component\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_current_source_acfc3c673e9da45f4f71fcf0893560c53}{Current\+Source}}, \mbox{\hyperlink{class_n_m_o_s_a53004bcb6a8406e92c0fe628b132baf0}{NMOS}}, \mbox{\hyperlink{class_p_m_o_s_a7eab3bb9648f3ed3cea608d621c675c3}{PMOS}}, \mbox{\hyperlink{class_resistor_a69290e67ec09dacfa9439bcad8838949}{Resistor}}, \mbox{\hyperlink{class_voltage_source_af6208091a06b15e0eba261ea558e8ffc}{Voltage\+Source}}, \mbox{\hyperlink{class_three_terminal_ab8f2b105686079f3afbb56bba106db95}{Three\+Terminal}}, and \mbox{\hyperlink{class_two_terminal_a1ead3d83626a7a2bae5a90a29430b927}{Two\+Terminal}}.
+
+\mbox{\Hypertarget{class_component_a76c033320ee12d34be094ace64823d11}\label{class_component_a76c033320ee12d34be094ace64823d11}} 
+\index{Component@{Component}!setComponentValues@{setComponentValues}}
+\index{setComponentValues@{setComponentValues}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{setComponentValues()}{setComponentValues()}}
+{\footnotesize\ttfamily void Component\+::set\+Component\+Values (\begin{DoxyParamCaption}\item[{map$<$ string, double $>$ \&}]{component\+Values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_component_a76c033320ee12d34be094ace64823d11_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_component_a76c033320ee12d34be094ace64823d11_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_component_a60f880911ea927dc32b9226525355062}\label{class_component_a60f880911ea927dc32b9226525355062}} 
+\index{Component@{Component}!setDefaultValue@{setDefaultValue}}
+\index{setDefaultValue@{setDefaultValue}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{setDefaultValue()}{setDefaultValue()}}
+{\footnotesize\ttfamily void Component\+::set\+Default\+Value (\begin{DoxyParamCaption}\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_component_a901f96875ec357b5e603e68c0f8f4095}\label{class_component_a901f96875ec357b5e603e68c0f8f4095}} 
+\index{Component@{Component}!setID@{setID}}
+\index{setID@{setID}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{setID()}{setID()}}
+{\footnotesize\ttfamily void Component\+::set\+ID (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_component_a901f96875ec357b5e603e68c0f8f4095_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_component_ac2de6d2183cd7cf70b28f20e0c42a2b0}\label{class_component_ac2de6d2183cd7cf70b28f20e0c42a2b0}} 
+\index{Component@{Component}!setMaxValue@{setMaxValue}}
+\index{setMaxValue@{setMaxValue}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{setMaxValue()}{setMaxValue()}}
+{\footnotesize\ttfamily void Component\+::set\+Max\+Value (\begin{DoxyParamCaption}\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_component_a90ed6bf90df9b29af01b879bbcb5083f}\label{class_component_a90ed6bf90df9b29af01b879bbcb5083f}} 
+\index{Component@{Component}!setMinValue@{setMinValue}}
+\index{setMinValue@{setMinValue}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{setMinValue()}{setMinValue()}}
+{\footnotesize\ttfamily void Component\+::set\+Min\+Value (\begin{DoxyParamCaption}\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_component_a5243477401a46b5f7175a0b62807ae69}\label{class_component_a5243477401a46b5f7175a0b62807ae69}} 
+\index{Component@{Component}!setNetlist@{setNetlist}}
+\index{setNetlist@{setNetlist}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{setNetlist()}{setNetlist()}}
+{\footnotesize\ttfamily virtual void Component\+::set\+Netlist (\begin{DoxyParamCaption}\item[{map$<$ string, string $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_three_terminal_ad6ceefefe2c662046be0a577e8afa6e0}{Three\+Terminal}}, and \mbox{\hyperlink{class_two_terminal_ab8ca14897020a7776b72522402d88763}{Two\+Terminal}}.
+
+\mbox{\Hypertarget{class_component_a8e131626e01c8549d3837a94e27a4249}\label{class_component_a8e131626e01c8549d3837a94e27a4249}} 
+\index{Component@{Component}!setSingleNetlistTerminal@{setSingleNetlistTerminal}}
+\index{setSingleNetlistTerminal@{setSingleNetlistTerminal}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{setSingleNetlistTerminal()}{setSingleNetlistTerminal()}}
+{\footnotesize\ttfamily void Component\+::set\+Single\+Netlist\+Terminal (\begin{DoxyParamCaption}\item[{string}]{terminal,  }\item[{string}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_component_a8e131626e01c8549d3837a94e27a4249_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_component_af5e90af141f6c98be944cc9d02a61e34}\label{class_component_af5e90af141f6c98be944cc9d02a61e34}} 
+\index{Component@{Component}!validComponentValues@{validComponentValues}}
+\index{validComponentValues@{validComponentValues}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{validComponentValues()}{validComponentValues()}}
+{\footnotesize\ttfamily bool Component\+::valid\+Component\+Values (\begin{DoxyParamCaption}\item[{map$<$ string, double $>$ \&}]{component\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_component_af5e90af141f6c98be944cc9d02a61e34_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_component_a693ad7b28df940f48978539ab18cca5e}\label{class_component_a693ad7b28df940f48978539ab18cca5e}} 
+\index{Component@{Component}!validNetlist@{validNetlist}}
+\index{validNetlist@{validNetlist}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{validNetlist()}{validNetlist()}}
+{\footnotesize\ttfamily virtual bool Component\+::valid\+Netlist (\begin{DoxyParamCaption}\item[{map$<$ string, string $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_three_terminal_ada3f5b6dc4b55f4cdc4d547d41d73cf1}{Three\+Terminal}}, and \mbox{\hyperlink{class_two_terminal_a8c728d34c9cfd5517ac2de7b73bd7be6}{Two\+Terminal}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_component_ae87427a00fdf5426b7169a66d7ca6f30}\label{class_component_ae87427a00fdf5426b7169a66d7ca6f30}} 
+\index{Component@{Component}!defaultValue@{defaultValue}}
+\index{defaultValue@{defaultValue}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{defaultValue}{defaultValue}}
+{\footnotesize\ttfamily double Component\+::default\+Value\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_component_aa66f3e6ea8d4309ae836e5b4ccdeee1c}\label{class_component_aa66f3e6ea8d4309ae836e5b4ccdeee1c}} 
+\index{Component@{Component}!id@{id}}
+\index{id@{id}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily string Component\+::id\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_component_a2d0f12bfc606aed817a667db8346b229}\label{class_component_a2d0f12bfc606aed817a667db8346b229}} 
+\index{Component@{Component}!maxValue@{maxValue}}
+\index{maxValue@{maxValue}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{maxValue}{maxValue}}
+{\footnotesize\ttfamily double Component\+::max\+Value\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_component_a1d7cf78862de172eda96c0603c1b4903}\label{class_component_a1d7cf78862de172eda96c0603c1b4903}} 
+\index{Component@{Component}!minValue@{minValue}}
+\index{minValue@{minValue}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{minValue}{minValue}}
+{\footnotesize\ttfamily double Component\+::min\+Value\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_component_ad4b4dcb01b0509ad5739ae2fa2209ff9}\label{class_component_ad4b4dcb01b0509ad5739ae2fa2209ff9}} 
+\index{Component@{Component}!netlist@{netlist}}
+\index{netlist@{netlist}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{netlist}{netlist}}
+{\footnotesize\ttfamily map$<$string , string$>$ Component\+::netlist\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_component_8h}{Component.\+h}}\item 
+\mbox{\hyperlink{_component_8cpp}{Component.\+cpp}}\end{DoxyCompactItemize}

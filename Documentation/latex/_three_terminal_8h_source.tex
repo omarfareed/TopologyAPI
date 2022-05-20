@@ -1,0 +1,23 @@
+\hypertarget{_three_terminal_8h_source}{}\doxysection{Three\+Terminal.\+h}
+\mbox{\hyperlink{_three_terminal_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_component_8h}{Component.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{keyword}{class }\mbox{\hyperlink{class_three_terminal}{ThreeTerminal}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_component}{Component}} \{}
+\DoxyCodeLine{4 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{5     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_three_terminal_ada3f5b6dc4b55f4cdc4d547d41d73cf1}{validNetlist}}( map<string, string>\& \mbox{\hyperlink{class_component_ad4b4dcb01b0509ad5739ae2fa2209ff9}{netlist}});}
+\DoxyCodeLine{6     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_three_terminal_ad6ceefefe2c662046be0a577e8afa6e0}{setNetlist}}( map<string, string>\& \mbox{\hyperlink{class_component_ad4b4dcb01b0509ad5739ae2fa2209ff9}{netlist}});}
+\DoxyCodeLine{7 \textcolor{keyword}{public}:}
+\DoxyCodeLine{8     \mbox{\hyperlink{class_three_terminal_a71c3a689f65d400ebeaa9eae96b84b11}{ThreeTerminal}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_three_terminal}{ThreeTerminal}}\& other) ;}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_three_terminal_a71c3a689f65d400ebeaa9eae96b84b11}{ThreeTerminal}}( \textcolor{keywordtype}{string} \textcolor{keywordtype}{id}, map<string, string>\& \mbox{\hyperlink{class_component_ad4b4dcb01b0509ad5739ae2fa2209ff9}{netlist}}, map<string, double>\& info); }
+\DoxyCodeLine{10     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_three_terminal_a87330e8f18e5af37972a8b9edfb6172e}{connectedTo}}(\mbox{\hyperlink{class_component}{Component}}* component) \textcolor{keyword}{const};}
+\DoxyCodeLine{11     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_three_terminal_a0580bc4f6223903c559f2eed1bd5752c}{setDrain}}(\textcolor{keywordtype}{string} terminal);}
+\DoxyCodeLine{12     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_three_terminal_ae4cb7666247802601ec5ca5ede38be06}{setGate}}(\textcolor{keywordtype}{string} terminal);}
+\DoxyCodeLine{13     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_three_terminal_ab032469f2094578d60e2551fbde39c42}{setSource}}(\textcolor{keywordtype}{string} terminal);}
+\DoxyCodeLine{14     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_three_terminal_a47800c2de0297c7eddd7b987bd7842fd}{getDrain}}() \textcolor{keyword}{const} ;}
+\DoxyCodeLine{15     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_three_terminal_a799f07bc7941e6e5a7e86fe1a086f4bd}{getGate}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{16     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_three_terminal_af8adb54a621847ddf6d30051ee76e8bc}{getSource}}() \textcolor{keyword}{const} ;}
+\DoxyCodeLine{17     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_three_terminal_ab8f2b105686079f3afbb56bba106db95}{printComponentInfo}}() \textcolor{keyword}{const} = 0  ;}
+\DoxyCodeLine{18 \};}
+
+\end{DoxyCode}

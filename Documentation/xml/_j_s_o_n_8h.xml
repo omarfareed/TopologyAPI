@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_j_s_o_n_8h" kind="file" language="C++">
+    <compoundname>JSON.h</compoundname>
+    <includes local="yes">json.hpp</includes>
+    <includes local="no">fstream</includes>
+    <includes local="yes">../Topology/Topology.h</includes>
+    <includes local="yes">../Components/Resistor.h</includes>
+    <includes local="yes">../Components/nmos.h</includes>
+    <includedby refid="_j_s_o_n_8cpp" local="yes">JSON.cpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>../Components/Resistor.h</label>
+      </node>
+      <node id="6">
+        <label>../Components/nmos.h</label>
+      </node>
+      <node id="4">
+        <label>../Topology/Topology.h</label>
+      </node>
+      <node id="1">
+        <label>JSON.h</label>
+        <link refid="_j_s_o_n_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>fstream</label>
+      </node>
+      <node id="2">
+        <label>json.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>JSON.cpp</label>
+        <link refid="_j_s_o_n_8cpp"/>
+      </node>
+      <node id="1">
+        <label>JSON.h</label>
+        <link refid="_j_s_o_n_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_j_s_o_n" prot="public">JSON</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_j_s_o_n_8h_1af08ec37a8c99d747fb60fa15bc28678b" prot="public" static="no">
+        <name>_CRT_SECURE_NO_WARNINGS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="JSON.h" line="2" column="10" bodyfile="JSON.h" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" prot="public" static="no">
+        <type>nlohmann::json</type>
+        <definition>using json =  nlohmann::json</definition>
+        <argsstring></argsstring>
+        <name>json</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="JSON.h" line="8" column="1" bodyfile="JSON.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="_j_s_o_n_8h_1af08ec37a8c99d747fb60fa15bc28678b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CRT_SECURE_NO_WARNINGS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;json.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Topology/Topology.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Components/Resistor.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Components/nmos.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>=<sp/><ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">nlohmann::json</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::ifstream;</highlight></codeline>
+<codeline lineno="10" refid="class_j_s_o_n" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_j_s_o_n" kindref="compound">JSON</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_topology" kindref="compound">Topology</ref>*<sp/>_createTopology(<ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>parser);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Component*&gt;<sp/>_createComponents(<ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>componentsParser);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_component" kindref="compound">Component</ref>*<sp/>_createComponent(<ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>componentParser);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_component" kindref="compound">Component</ref>*<sp/>_createResistor(<ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>componentParser);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_component" kindref="compound">Component</ref>*<sp/>_createNMOS(<ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>componentParser);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>_writeTopologyComponents(<ref refid="class_topology" kindref="compound">Topology</ref>*);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>_writeTopologyComponent(<ref refid="class_component" kindref="compound">Component</ref>*);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>_getTopologyInfo(<ref refid="class_component" kindref="compound">Component</ref>*);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_j_s_o_n_1acf359a0f5efc57e6e844ad58abbd6480" kindref="member">JSON</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_j_s_o_n_1acf359a0f5efc57e6e844ad58abbd6480" kindref="member">JSON</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_j_s_o_n" kindref="compound">JSON</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_j_s_o_n" kindref="compound">JSON</ref><sp/><ref refid="class_j_s_o_n_1ad61eec9c5fac292be6e6d6bc4566b0a7" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_j_s_o_n" kindref="compound">JSON</ref>&amp;other);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_topology" kindref="compound">Topology</ref>*<sp/><ref refid="class_j_s_o_n_1a24f221b9202d745dc42a694697813eda" kindref="member">readTopology</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>fileName);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_j_s_o_n_1a8e9a88433e4ca77f3fb9bf18b04619cc" kindref="member">writeTopology</ref>(<sp/><ref refid="class_topology" kindref="compound">Topology</ref>*<sp/>topology,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>fileName);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="JSON.h"/>
+  </compounddef>
+</doxygen>

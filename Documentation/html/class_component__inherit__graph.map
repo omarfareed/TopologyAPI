@@ -1,0 +1,10 @@
+<map id="Component" name="Component">
+<area shape="rect" id="node1" title=" " alt="" coords="256,5,439,361"/>
+<area shape="rect" id="node2" href="$class_three_terminal.html" title=" " alt="" coords="183,409,336,648"/>
+<area shape="rect" id="node5" href="$class_two_terminal.html" title=" " alt="" coords="448,424,601,633"/>
+<area shape="rect" id="node3" href="$class_n_m_o_s.html" title=" " alt="" coords="5,696,159,832"/>
+<area shape="rect" id="node4" href="$class_p_m_o_s.html" title=" " alt="" coords="183,696,336,832"/>
+<area shape="rect" id="node6" href="$class_current_source.html" title=" " alt="" coords="360,696,513,832"/>
+<area shape="rect" id="node7" href="$class_resistor.html" title=" " alt="" coords="537,696,691,832"/>
+<area shape="rect" id="node8" href="$class_voltage_source.html" title=" " alt="" coords="715,696,868,832"/>
+</map>

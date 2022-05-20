@@ -1,0 +1,207 @@
+\hypertarget{class_topology}{}\doxysection{Topology Class Reference}
+\label{class_topology}\index{Topology@{Topology}}
+
+
+{\ttfamily \#include $<$Topology.\+h$>$}
+
+
+
+Collaboration diagram for Topology\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{class_topology__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_topology_af4a9e293931bb78166825532c12dc478}{Topology}} (const \mbox{\hyperlink{class_topology}{Topology}} \&other)
+\item 
+\mbox{\hyperlink{class_topology_a4dfd067373ce08fa08f8bd4e72b3e1d1}{Topology}} (string id, vector$<$ \mbox{\hyperlink{class_component}{Component}} $\ast$ $>$ components)
+\item 
+\mbox{\hyperlink{class_topology}{Topology}} \mbox{\hyperlink{class_topology_ac7b36123304ae578155bd47c3714bda4}{operator=}} (const \mbox{\hyperlink{class_topology}{Topology}} \&other)
+\item 
+bool \mbox{\hyperlink{class_topology_ae42fa0cf1b8a0f31a1d4849fcbf3017f}{operator==}} (const \mbox{\hyperlink{class_topology}{Topology}} \&other) const
+\item 
+\mbox{\hyperlink{class_component}{Component}} $\ast$ \mbox{\hyperlink{class_topology_a10722b274f427a7b8ca3ccdb67d89ebe}{get\+Component}} (string id) const
+\item 
+void \mbox{\hyperlink{class_topology_ad4ba550251112a2f63b10a306692fc11}{add\+Component}} (\mbox{\hyperlink{class_component}{Component}} $\ast$component)
+\item 
+void \mbox{\hyperlink{class_topology_a7b9261604f37f43420d57435f7ac07ab}{set\+Components}} (vector$<$ \mbox{\hyperlink{class_component}{Component}} $\ast$ $>$ components)
+\item 
+void \mbox{\hyperlink{class_topology_a333ff1352e863bd9118879f1c07be78d}{set\+ID}} (string id)
+\item 
+string \mbox{\hyperlink{class_topology_af2f26bfb53b21b672fd2e6759752b12b}{get\+ID}} () const
+\item 
+vector$<$ \mbox{\hyperlink{class_component}{Component}} $\ast$ $>$ \mbox{\hyperlink{class_topology_a22eb41600ab4c15be29732cff616cca5}{get\+Components}} () const
+\item 
+vector$<$ \mbox{\hyperlink{class_component}{Component}} $\ast$ $>$ \mbox{\hyperlink{class_topology_a1fa99284d7854654f6834bd4796b67d0}{get\+Components\+With\+Netlist\+Node}} (string netlist\+Node\+ID) const
+\item 
+void \mbox{\hyperlink{class_topology_a5f30401b0afdd299445ede9a3b0ca6ec}{print\+Components}} () const
+\item 
+\mbox{\hyperlink{class_topology_a3e447669757c8311c7f6f8edc705abf2}{$\sim$\+Topology}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_topology_af4a9e293931bb78166825532c12dc478}\label{class_topology_af4a9e293931bb78166825532c12dc478}} 
+\index{Topology@{Topology}!Topology@{Topology}}
+\index{Topology@{Topology}!Topology@{Topology}}
+\doxysubsubsection{\texorpdfstring{Topology()}{Topology()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Topology\+::\+Topology (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_topology}{Topology}} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_topology_a4dfd067373ce08fa08f8bd4e72b3e1d1}\label{class_topology_a4dfd067373ce08fa08f8bd4e72b3e1d1}} 
+\index{Topology@{Topology}!Topology@{Topology}}
+\index{Topology@{Topology}!Topology@{Topology}}
+\doxysubsubsection{\texorpdfstring{Topology()}{Topology()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Topology\+::\+Topology (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{vector$<$ \mbox{\hyperlink{class_component}{Component}} $\ast$ $>$}]{components }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_topology_a4dfd067373ce08fa08f8bd4e72b3e1d1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_topology_a3e447669757c8311c7f6f8edc705abf2}\label{class_topology_a3e447669757c8311c7f6f8edc705abf2}} 
+\index{Topology@{Topology}!````~Topology@{$\sim$Topology}}
+\index{````~Topology@{$\sim$Topology}!Topology@{Topology}}
+\doxysubsubsection{\texorpdfstring{$\sim$Topology()}{~Topology()}}
+{\footnotesize\ttfamily Topology\+::$\sim$\+Topology (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_topology_ad4ba550251112a2f63b10a306692fc11}\label{class_topology_ad4ba550251112a2f63b10a306692fc11}} 
+\index{Topology@{Topology}!addComponent@{addComponent}}
+\index{addComponent@{addComponent}!Topology@{Topology}}
+\doxysubsubsection{\texorpdfstring{addComponent()}{addComponent()}}
+{\footnotesize\ttfamily void Topology\+::add\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_component}{Component}} $\ast$}]{component }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_topology_ad4ba550251112a2f63b10a306692fc11_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_topology_a10722b274f427a7b8ca3ccdb67d89ebe}\label{class_topology_a10722b274f427a7b8ca3ccdb67d89ebe}} 
+\index{Topology@{Topology}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!Topology@{Topology}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_component}{Component}} $\ast$ Topology\+::get\+Component (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_topology_a10722b274f427a7b8ca3ccdb67d89ebe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_topology_a22eb41600ab4c15be29732cff616cca5}\label{class_topology_a22eb41600ab4c15be29732cff616cca5}} 
+\index{Topology@{Topology}!getComponents@{getComponents}}
+\index{getComponents@{getComponents}!Topology@{Topology}}
+\doxysubsubsection{\texorpdfstring{getComponents()}{getComponents()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_component}{Component}} $\ast$ $>$ Topology\+::get\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_topology_a22eb41600ab4c15be29732cff616cca5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_topology_a1fa99284d7854654f6834bd4796b67d0}\label{class_topology_a1fa99284d7854654f6834bd4796b67d0}} 
+\index{Topology@{Topology}!getComponentsWithNetlistNode@{getComponentsWithNetlistNode}}
+\index{getComponentsWithNetlistNode@{getComponentsWithNetlistNode}!Topology@{Topology}}
+\doxysubsubsection{\texorpdfstring{getComponentsWithNetlistNode()}{getComponentsWithNetlistNode()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_component}{Component}} $\ast$ $>$ Topology\+::get\+Components\+With\+Netlist\+Node (\begin{DoxyParamCaption}\item[{string}]{netlist\+Node\+ID }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_topology_a1fa99284d7854654f6834bd4796b67d0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_topology_a1fa99284d7854654f6834bd4796b67d0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_topology_af2f26bfb53b21b672fd2e6759752b12b}\label{class_topology_af2f26bfb53b21b672fd2e6759752b12b}} 
+\index{Topology@{Topology}!getID@{getID}}
+\index{getID@{getID}!Topology@{Topology}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily string Topology\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_topology_af2f26bfb53b21b672fd2e6759752b12b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_topology_ac7b36123304ae578155bd47c3714bda4}\label{class_topology_ac7b36123304ae578155bd47c3714bda4}} 
+\index{Topology@{Topology}!operator=@{operator=}}
+\index{operator=@{operator=}!Topology@{Topology}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_topology}{Topology}} Topology\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_topology}{Topology}} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_topology_ae42fa0cf1b8a0f31a1d4849fcbf3017f}\label{class_topology_ae42fa0cf1b8a0f31a1d4849fcbf3017f}} 
+\index{Topology@{Topology}!operator==@{operator==}}
+\index{operator==@{operator==}!Topology@{Topology}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Topology\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_topology}{Topology}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_topology_a5f30401b0afdd299445ede9a3b0ca6ec}\label{class_topology_a5f30401b0afdd299445ede9a3b0ca6ec}} 
+\index{Topology@{Topology}!printComponents@{printComponents}}
+\index{printComponents@{printComponents}!Topology@{Topology}}
+\doxysubsubsection{\texorpdfstring{printComponents()}{printComponents()}}
+{\footnotesize\ttfamily void Topology\+::print\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_topology_a7b9261604f37f43420d57435f7ac07ab}\label{class_topology_a7b9261604f37f43420d57435f7ac07ab}} 
+\index{Topology@{Topology}!setComponents@{setComponents}}
+\index{setComponents@{setComponents}!Topology@{Topology}}
+\doxysubsubsection{\texorpdfstring{setComponents()}{setComponents()}}
+{\footnotesize\ttfamily void Topology\+::set\+Components (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_component}{Component}} $\ast$ $>$}]{components }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_topology_a7b9261604f37f43420d57435f7ac07ab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_topology_a333ff1352e863bd9118879f1c07be78d}\label{class_topology_a333ff1352e863bd9118879f1c07be78d}} 
+\index{Topology@{Topology}!setID@{setID}}
+\index{setID@{setID}!Topology@{Topology}}
+\doxysubsubsection{\texorpdfstring{setID()}{setID()}}
+{\footnotesize\ttfamily void Topology\+::set\+ID (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{class_topology_a333ff1352e863bd9118879f1c07be78d_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_topology_8h}{Topology.\+h}}\item 
+\mbox{\hyperlink{_topology_8cpp}{Topology.\+cpp}}\end{DoxyCompactItemize}

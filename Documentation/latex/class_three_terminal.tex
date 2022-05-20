@@ -1,0 +1,249 @@
+\hypertarget{class_three_terminal}{}\doxysection{Three\+Terminal Class Reference}
+\label{class_three_terminal}\index{ThreeTerminal@{ThreeTerminal}}
+
+
+{\ttfamily \#include $<$Three\+Terminal.\+h$>$}
+
+
+
+Inheritance diagram for Three\+Terminal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_three_terminal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Three\+Terminal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_three_terminal__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_three_terminal_a71c3a689f65d400ebeaa9eae96b84b11}{Three\+Terminal}} (const \mbox{\hyperlink{class_three_terminal}{Three\+Terminal}} \&other)
+\item 
+\mbox{\hyperlink{class_three_terminal_ab24eede68f8c6fd5b91fa5b095dc15d5}{Three\+Terminal}} (string \mbox{\hyperlink{class_component_aa66f3e6ea8d4309ae836e5b4ccdeee1c}{id}}, map$<$ string, string $>$ \&\mbox{\hyperlink{class_component_ad4b4dcb01b0509ad5739ae2fa2209ff9}{netlist}}, map$<$ string, double $>$ \&info)
+\item 
+bool \mbox{\hyperlink{class_three_terminal_a87330e8f18e5af37972a8b9edfb6172e}{connected\+To}} (\mbox{\hyperlink{class_component}{Component}} $\ast$component) const
+\item 
+void \mbox{\hyperlink{class_three_terminal_a0580bc4f6223903c559f2eed1bd5752c}{set\+Drain}} (string terminal)
+\item 
+void \mbox{\hyperlink{class_three_terminal_ae4cb7666247802601ec5ca5ede38be06}{set\+Gate}} (string terminal)
+\item 
+void \mbox{\hyperlink{class_three_terminal_ab032469f2094578d60e2551fbde39c42}{set\+Source}} (string terminal)
+\item 
+string \mbox{\hyperlink{class_three_terminal_a47800c2de0297c7eddd7b987bd7842fd}{get\+Drain}} () const
+\item 
+string \mbox{\hyperlink{class_three_terminal_a799f07bc7941e6e5a7e86fe1a086f4bd}{get\+Gate}} () const
+\item 
+string \mbox{\hyperlink{class_three_terminal_af8adb54a621847ddf6d30051ee76e8bc}{get\+Source}} () const
+\item 
+virtual void \mbox{\hyperlink{class_three_terminal_ab8f2b105686079f3afbb56bba106db95}{print\+Component\+Info}} () const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_three_terminal_ada3f5b6dc4b55f4cdc4d547d41d73cf1}{valid\+Netlist}} (map$<$ string, string $>$ \&\mbox{\hyperlink{class_component_ad4b4dcb01b0509ad5739ae2fa2209ff9}{netlist}})
+\item 
+void \mbox{\hyperlink{class_three_terminal_ad6ceefefe2c662046be0a577e8afa6e0}{set\+Netlist}} (map$<$ string, string $>$ \&\mbox{\hyperlink{class_component_ad4b4dcb01b0509ad5739ae2fa2209ff9}{netlist}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_three_terminal_a71c3a689f65d400ebeaa9eae96b84b11}\label{class_three_terminal_a71c3a689f65d400ebeaa9eae96b84b11}} 
+\index{ThreeTerminal@{ThreeTerminal}!ThreeTerminal@{ThreeTerminal}}
+\index{ThreeTerminal@{ThreeTerminal}!ThreeTerminal@{ThreeTerminal}}
+\doxysubsubsection{\texorpdfstring{ThreeTerminal()}{ThreeTerminal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Three\+Terminal\+::\+Three\+Terminal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_three_terminal}{Three\+Terminal}} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_three_terminal_ab24eede68f8c6fd5b91fa5b095dc15d5}\label{class_three_terminal_ab24eede68f8c6fd5b91fa5b095dc15d5}} 
+\index{ThreeTerminal@{ThreeTerminal}!ThreeTerminal@{ThreeTerminal}}
+\index{ThreeTerminal@{ThreeTerminal}!ThreeTerminal@{ThreeTerminal}}
+\doxysubsubsection{\texorpdfstring{ThreeTerminal()}{ThreeTerminal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Three\+Terminal\+::\+Three\+Terminal (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{map$<$ string, string $>$ \&}]{netlist,  }\item[{map$<$ string, double $>$ \&}]{info }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_three_terminal_ab24eede68f8c6fd5b91fa5b095dc15d5_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_three_terminal_a87330e8f18e5af37972a8b9edfb6172e}\label{class_three_terminal_a87330e8f18e5af37972a8b9edfb6172e}} 
+\index{ThreeTerminal@{ThreeTerminal}!connectedTo@{connectedTo}}
+\index{connectedTo@{connectedTo}!ThreeTerminal@{ThreeTerminal}}
+\doxysubsubsection{\texorpdfstring{connectedTo()}{connectedTo()}}
+{\footnotesize\ttfamily bool Three\+Terminal\+::connected\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_component}{Component}} $\ast$}]{component }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_component_ace23df4932822a6e64f2a9edf3004f53}{Component}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_three_terminal_a87330e8f18e5af37972a8b9edfb6172e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_three_terminal_a47800c2de0297c7eddd7b987bd7842fd}\label{class_three_terminal_a47800c2de0297c7eddd7b987bd7842fd}} 
+\index{ThreeTerminal@{ThreeTerminal}!getDrain@{getDrain}}
+\index{getDrain@{getDrain}!ThreeTerminal@{ThreeTerminal}}
+\doxysubsubsection{\texorpdfstring{getDrain()}{getDrain()}}
+{\footnotesize\ttfamily string Three\+Terminal\+::get\+Drain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_three_terminal_a47800c2de0297c7eddd7b987bd7842fd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_three_terminal_a799f07bc7941e6e5a7e86fe1a086f4bd}\label{class_three_terminal_a799f07bc7941e6e5a7e86fe1a086f4bd}} 
+\index{ThreeTerminal@{ThreeTerminal}!getGate@{getGate}}
+\index{getGate@{getGate}!ThreeTerminal@{ThreeTerminal}}
+\doxysubsubsection{\texorpdfstring{getGate()}{getGate()}}
+{\footnotesize\ttfamily string Three\+Terminal\+::get\+Gate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_three_terminal_a799f07bc7941e6e5a7e86fe1a086f4bd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_three_terminal_af8adb54a621847ddf6d30051ee76e8bc}\label{class_three_terminal_af8adb54a621847ddf6d30051ee76e8bc}} 
+\index{ThreeTerminal@{ThreeTerminal}!getSource@{getSource}}
+\index{getSource@{getSource}!ThreeTerminal@{ThreeTerminal}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
+{\footnotesize\ttfamily string Three\+Terminal\+::get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_three_terminal_af8adb54a621847ddf6d30051ee76e8bc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_three_terminal_ab8f2b105686079f3afbb56bba106db95}\label{class_three_terminal_ab8f2b105686079f3afbb56bba106db95}} 
+\index{ThreeTerminal@{ThreeTerminal}!printComponentInfo@{printComponentInfo}}
+\index{printComponentInfo@{printComponentInfo}!ThreeTerminal@{ThreeTerminal}}
+\doxysubsubsection{\texorpdfstring{printComponentInfo()}{printComponentInfo()}}
+{\footnotesize\ttfamily virtual void Three\+Terminal\+::print\+Component\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_component_ab852f7cd16fa85f201b72483b8b6e1b0}{Component}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_n_m_o_s_a53004bcb6a8406e92c0fe628b132baf0}{NMOS}}, and \mbox{\hyperlink{class_p_m_o_s_a7eab3bb9648f3ed3cea608d621c675c3}{PMOS}}.
+
+\mbox{\Hypertarget{class_three_terminal_a0580bc4f6223903c559f2eed1bd5752c}\label{class_three_terminal_a0580bc4f6223903c559f2eed1bd5752c}} 
+\index{ThreeTerminal@{ThreeTerminal}!setDrain@{setDrain}}
+\index{setDrain@{setDrain}!ThreeTerminal@{ThreeTerminal}}
+\doxysubsubsection{\texorpdfstring{setDrain()}{setDrain()}}
+{\footnotesize\ttfamily void Three\+Terminal\+::set\+Drain (\begin{DoxyParamCaption}\item[{string}]{terminal }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_three_terminal_a0580bc4f6223903c559f2eed1bd5752c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_three_terminal_ae4cb7666247802601ec5ca5ede38be06}\label{class_three_terminal_ae4cb7666247802601ec5ca5ede38be06}} 
+\index{ThreeTerminal@{ThreeTerminal}!setGate@{setGate}}
+\index{setGate@{setGate}!ThreeTerminal@{ThreeTerminal}}
+\doxysubsubsection{\texorpdfstring{setGate()}{setGate()}}
+{\footnotesize\ttfamily void Three\+Terminal\+::set\+Gate (\begin{DoxyParamCaption}\item[{string}]{terminal }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_three_terminal_ae4cb7666247802601ec5ca5ede38be06_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_three_terminal_ad6ceefefe2c662046be0a577e8afa6e0}\label{class_three_terminal_ad6ceefefe2c662046be0a577e8afa6e0}} 
+\index{ThreeTerminal@{ThreeTerminal}!setNetlist@{setNetlist}}
+\index{setNetlist@{setNetlist}!ThreeTerminal@{ThreeTerminal}}
+\doxysubsubsection{\texorpdfstring{setNetlist()}{setNetlist()}}
+{\footnotesize\ttfamily void Three\+Terminal\+::set\+Netlist (\begin{DoxyParamCaption}\item[{map$<$ string, string $>$ \&}]{netlist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_component_a5243477401a46b5f7175a0b62807ae69}{Component}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_three_terminal_ad6ceefefe2c662046be0a577e8afa6e0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_three_terminal_ad6ceefefe2c662046be0a577e8afa6e0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_three_terminal_ab032469f2094578d60e2551fbde39c42}\label{class_three_terminal_ab032469f2094578d60e2551fbde39c42}} 
+\index{ThreeTerminal@{ThreeTerminal}!setSource@{setSource}}
+\index{setSource@{setSource}!ThreeTerminal@{ThreeTerminal}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily void Three\+Terminal\+::set\+Source (\begin{DoxyParamCaption}\item[{string}]{terminal }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_three_terminal_ab032469f2094578d60e2551fbde39c42_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_three_terminal_ada3f5b6dc4b55f4cdc4d547d41d73cf1}\label{class_three_terminal_ada3f5b6dc4b55f4cdc4d547d41d73cf1}} 
+\index{ThreeTerminal@{ThreeTerminal}!validNetlist@{validNetlist}}
+\index{validNetlist@{validNetlist}!ThreeTerminal@{ThreeTerminal}}
+\doxysubsubsection{\texorpdfstring{validNetlist()}{validNetlist()}}
+{\footnotesize\ttfamily bool Three\+Terminal\+::valid\+Netlist (\begin{DoxyParamCaption}\item[{map$<$ string, string $>$ \&}]{netlist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_component_a693ad7b28df940f48978539ab18cca5e}{Component}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_three_terminal_ada3f5b6dc4b55f4cdc4d547d41d73cf1_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_three_terminal_8h}{Three\+Terminal.\+h}}\item 
+\mbox{\hyperlink{_three_terminal_8cpp}{Three\+Terminal.\+cpp}}\end{DoxyCompactItemize}
