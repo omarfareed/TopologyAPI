@@ -2,7 +2,6 @@
 
 bool TwoTerminal::validNetlist(map<string, string>& netlist)
 {
-	cout << netlist.size() << " " << netlist["t1"] << " " << netlist["t2"] << endl;
 	return netlist.size() == 2 && netlist["t1"] != "" && netlist["t2"] != "";
 }
 
@@ -20,7 +19,7 @@ TwoTerminal::TwoTerminal(const TwoTerminal& other):Component(other)
 {
 }
 
-TwoTerminal::TwoTerminal( string id, map<string, string>& netlist, map<string, double>& info)
+TwoTerminal::TwoTerminal( string id, map<string, string>& netlist, map<string, double>& info) 
 	:Component(id, info)
 {
 	setNetlist(netlist);
