@@ -1,0 +1,29 @@
+\hypertarget{_topology_8h_source}{}\doxysection{Topology.\+h}
+\mbox{\hyperlink{_topology_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}../Components/TwoTerminal.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}../Components/ThreeTerminal.h"{}}}
+\DoxyCodeLine{4 \textcolor{keyword}{class }\mbox{\hyperlink{class_topology}{Topology}}}
+\DoxyCodeLine{5 \{}
+\DoxyCodeLine{6 \textcolor{keyword}{private}:}
+\DoxyCodeLine{7     \textcolor{keywordtype}{string} id;}
+\DoxyCodeLine{8     vector<Component* > components;}
+\DoxyCodeLine{9     \textcolor{keywordtype}{void} \_deleteAllComponents();}
+\DoxyCodeLine{10 \textcolor{keyword}{public}:}
+\DoxyCodeLine{11     \mbox{\hyperlink{class_topology_af4a9e293931bb78166825532c12dc478}{Topology}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_topology}{Topology}}\& other);}
+\DoxyCodeLine{12     \mbox{\hyperlink{class_topology_af4a9e293931bb78166825532c12dc478}{Topology}}(\textcolor{keywordtype}{string} \textcolor{keywordtype}{id} , vector<Component*> components);}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_topology}{Topology}} \mbox{\hyperlink{class_topology_ac7b36123304ae578155bd47c3714bda4}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_topology}{Topology}}\& other);}
+\DoxyCodeLine{14     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_topology_ae42fa0cf1b8a0f31a1d4849fcbf3017f}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_topology}{Topology}}\& other) \textcolor{keyword}{const};}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_component}{Component}}* \mbox{\hyperlink{class_topology_a10722b274f427a7b8ca3ccdb67d89ebe}{getComponent}}(\textcolor{keywordtype}{string} \textcolor{keywordtype}{id}) \textcolor{keyword}{const};}
+\DoxyCodeLine{16     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_topology_ad4ba550251112a2f63b10a306692fc11}{addComponent}}(\mbox{\hyperlink{class_component}{Component}}* component);}
+\DoxyCodeLine{17     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_topology_a7b9261604f37f43420d57435f7ac07ab}{setComponents}}(vector<Component*> components);}
+\DoxyCodeLine{18     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_topology_a333ff1352e863bd9118879f1c07be78d}{setID}}(\textcolor{keywordtype}{string} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{19     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_topology_af2f26bfb53b21b672fd2e6759752b12b}{getID}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{20     vector<Component*> \mbox{\hyperlink{class_topology_a22eb41600ab4c15be29732cff616cca5}{getComponents}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{21     vector<Component*> \mbox{\hyperlink{class_topology_a1fa99284d7854654f6834bd4796b67d0}{getComponentsWithNetlistNode}}(\textcolor{keywordtype}{string} netlistNodeID) \textcolor{keyword}{const};}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_topology_a5f30401b0afdd299445ede9a3b0ca6ec}{printComponents}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{23     \mbox{\hyperlink{class_topology_a3e447669757c8311c7f6f8edc705abf2}{\string~Topology}}();}
+\DoxyCodeLine{24 \};}
+
+\end{DoxyCode}

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_topology_8h" kind="file" language="C++">
+    <compoundname>Topology.h</compoundname>
+    <includes local="yes">../Components/TwoTerminal.h</includes>
+    <includes local="yes">../Components/ThreeTerminal.h</includes>
+    <includedby refid="_topology_8cpp" local="yes">Topology.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>../Components/ThreeTerminal.h</label>
+      </node>
+      <node id="2">
+        <label>../Components/TwoTerminal.h</label>
+      </node>
+      <node id="1">
+        <label>Topology.h</label>
+        <link refid="_topology_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Topology.cpp</label>
+        <link refid="_topology_8cpp"/>
+      </node>
+      <node id="1">
+        <label>Topology.h</label>
+        <link refid="_topology_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_topology" prot="public">Topology</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Components/TwoTerminal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Components/ThreeTerminal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_topology" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_topology" kindref="compound">Topology</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Component*<sp/>&gt;<sp/>components;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_deleteAllComponents();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_topology_1af4a9e293931bb78166825532c12dc478" kindref="member">Topology</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_topology" kindref="compound">Topology</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_topology_1af4a9e293931bb78166825532c12dc478" kindref="member">Topology</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>,<sp/>vector&lt;Component*&gt;<sp/>components);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_topology" kindref="compound">Topology</ref><sp/><ref refid="class_topology_1ac7b36123304ae578155bd47c3714bda4" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_topology" kindref="compound">Topology</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_topology_1ae42fa0cf1b8a0f31a1d4849fcbf3017f" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_topology" kindref="compound">Topology</ref>&amp;<sp/>other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_component" kindref="compound">Component</ref>*<sp/><ref refid="class_topology_1a10722b274f427a7b8ca3ccdb67d89ebe" kindref="member">getComponent</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_topology_1ad4ba550251112a2f63b10a306692fc11" kindref="member">addComponent</ref>(<ref refid="class_component" kindref="compound">Component</ref>*<sp/>component);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_topology_1a7b9261604f37f43420d57435f7ac07ab" kindref="member">setComponents</ref>(vector&lt;Component*&gt;<sp/>components);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_topology_1a333ff1352e863bd9118879f1c07be78d" kindref="member">setID</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_topology_1af2f26bfb53b21b672fd2e6759752b12b" kindref="member">getID</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Component*&gt;<sp/><ref refid="class_topology_1a22eb41600ab4c15be29732cff616cca5" kindref="member">getComponents</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Component*&gt;<sp/><ref refid="class_topology_1a1fa99284d7854654f6834bd4796b67d0" kindref="member">getComponentsWithNetlistNode</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>netlistNodeID)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_topology_1a5f30401b0afdd299445ede9a3b0ca6ec" kindref="member">printComponents</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_topology_1a3e447669757c8311c7f6f8edc705abf2" kindref="member">~Topology</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="Topology.h"/>
+  </compounddef>
+</doxygen>

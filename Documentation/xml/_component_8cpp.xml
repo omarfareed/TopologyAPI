@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_component_8cpp" kind="file" language="C++">
+    <compoundname>Component.cpp</compoundname>
+    <includes refid="_component_8h" local="yes">Component.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>Component.cpp</label>
+        <link refid="_component_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Component.h</label>
+        <link refid="_component_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="6">
+        <label>map</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_component_8h" kindref="compound">Component.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_component_1af5e90af141f6c98be944cc9d02a61e34" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_component_1af5e90af141f6c98be944cc9d02a61e34" kindref="member">Component::validComponentValues</ref>(map&lt;string,<sp/>double&gt;&amp;<sp/>info)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>count<sp/>returns<sp/>1<sp/>if<sp/>the<sp/>key<sp/>exist<sp/>else<sp/>it<sp/>returns<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!info.count(</highlight><highlight class="stringliteral">&quot;min&quot;</highlight><highlight class="normal">)<sp/>||<sp/>!info.count(</highlight><highlight class="stringliteral">&quot;max&quot;</highlight><highlight class="normal">)<sp/>||<sp/>!info.count(</highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>min<sp/>&lt;<sp/>default<sp/>&lt;<sp/>max<sp/>&amp;&amp;<sp/>min<sp/>&gt;=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>info[</highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">]<sp/>&gt;=<sp/>info[</highlight><highlight class="stringliteral">&quot;min&quot;</highlight><highlight class="normal">]<sp/>&amp;&amp;<sp/>info[</highlight><highlight class="stringliteral">&quot;defualt&quot;</highlight><highlight class="normal">]<sp/>&lt;=<sp/>info[</highlight><highlight class="stringliteral">&quot;max&quot;</highlight><highlight class="normal">]<sp/>&amp;&amp;<sp/>info[</highlight><highlight class="stringliteral">&quot;min&quot;</highlight><highlight class="normal">]<sp/>&gt;=<sp/>0;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_component_1a2e105083b89470639990cf744aa9cb13" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_component_1a2e105083b89470639990cf744aa9cb13" kindref="member">Component::_copyComponentValues</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_component" kindref="compound">Component</ref>&amp;<sp/>other)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>other.<ref refid="class_component_1aa66f3e6ea8d4309ae836e5b4ccdeee1c" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" kindref="member">defaultValue</ref><sp/>=<sp/>other.<ref refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" kindref="member">defaultValue</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" kindref="member">minValue</ref><sp/>=<sp/>other.<ref refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" kindref="member">minValue</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_component_1a2d0f12bfc606aed817a667db8346b229" kindref="member">maxValue</ref><sp/>=<sp/>other.<ref refid="class_component_1a2d0f12bfc606aed817a667db8346b229" kindref="member">maxValue</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" kindref="member">netlist</ref><sp/>=<sp/>other.<ref refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" kindref="member">netlist</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21" refid="class_component_1a889cb5b99bab68856f9b5a650669369c" refkind="member"><highlight class="normal"><ref refid="class_component_1a889cb5b99bab68856f9b5a650669369c" kindref="member">Component::Component</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_component" kindref="compound">Component</ref>&amp;<sp/>other)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_component_1a2e105083b89470639990cf744aa9cb13" kindref="member">_copyComponentValues</ref>(other);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_component_1ab87dce9b8fe3d12810c857d6decf57b5" refkind="member"><highlight class="normal"><ref refid="class_component_1a889cb5b99bab68856f9b5a650669369c" kindref="member">Component::Component</ref>(<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>map&lt;string,double&gt;<sp/>&amp;componentValues)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_component_1a901f96875ec357b5e603e68c0f8f4095" kindref="member">setID</ref>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_component_1a76c033320ee12d34be094ace64823d11" kindref="member">setComponentValues</ref>(componentValues);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32" refid="class_component_1ab6639960bdfc791d3b6fc6c5e0bba0fe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_component_1ab6639960bdfc791d3b6fc6c5e0bba0fe" kindref="member">Component::operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_component" kindref="compound">Component</ref>&amp;<sp/>other)</highlight><highlight class="keyword">const</highlight></codeline>
+<codeline lineno="33"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_component_1a93d9044a39dfb0ccc0bca4cb5d3eb70e" kindref="member">getType</ref>()<sp/>==<sp/>other.<ref refid="class_component_1a93d9044a39dfb0ccc0bca4cb5d3eb70e" kindref="member">getType</ref>()<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" kindref="member">netlist</ref><sp/>==<sp/>other.<ref refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" kindref="member">netlist</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" kindref="member">defaultValue</ref><sp/>==<sp/>other.<ref refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" kindref="member">defaultValue</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" kindref="member">minValue</ref><sp/>==<sp/>other.<ref refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" kindref="member">minValue</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_component_1a2d0f12bfc606aed817a667db8346b229" kindref="member">maxValue</ref><sp/>==<sp/>other.<ref refid="class_component_1a2d0f12bfc606aed817a667db8346b229" kindref="member">maxValue</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40" refid="class_component_1a76c033320ee12d34be094ace64823d11" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_component_1a76c033320ee12d34be094ace64823d11" kindref="member">Component::setComponentValues</ref>(map&lt;string,<sp/>double&gt;&amp;<sp/>componentValues)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="class_component_1af5e90af141f6c98be944cc9d02a61e34" kindref="member">validComponentValues</ref>(componentValues))</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;invalid<sp/>component<sp/>values\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" kindref="member">defaultValue</ref><sp/>=<sp/>componentValues[</highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" kindref="member">minValue</ref><sp/>=<sp/>componentValues[</highlight><highlight class="stringliteral">&quot;min&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_component_1a2d0f12bfc606aed817a667db8346b229" kindref="member">maxValue</ref><sp/>=<sp/>componentValues[</highlight><highlight class="stringliteral">&quot;max&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_component_1a901f96875ec357b5e603e68c0f8f4095" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_component_1a901f96875ec357b5e603e68c0f8f4095" kindref="member">Component::setID</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;invalid<sp/>component<sp/>ID\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/><ref refid="class_component_1aa66f3e6ea8d4309ae836e5b4ccdeee1c" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_component_1a2c3dfb75ae1f05a13a451b455dfef01a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_component_1a2c3dfb75ae1f05a13a451b455dfef01a" kindref="member">Component::getID</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="60"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_component_1aa66f3e6ea8d4309ae836e5b4ccdeee1c" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="class_component_1ac2de6d2183cd7cf70b28f20e0c42a2b0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_component_1ac2de6d2183cd7cf70b28f20e0c42a2b0" kindref="member">Component::setMaxValue</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(val<sp/>&lt;<sp/>this-&gt;<ref refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" kindref="member">minValue</ref>)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Wrong<sp/>Max<sp/>value<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>val<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_component_1a2d0f12bfc606aed817a667db8346b229" kindref="member">maxValue</ref><sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="class_component_1a731f2fb15adcd16ddb6343dab21f5a39" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_component_1a731f2fb15adcd16ddb6343dab21f5a39" kindref="member">Component::getMaxValue</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="75"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_component_1a2d0f12bfc606aed817a667db8346b229" kindref="member">maxValue</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="class_component_1a90ed6bf90df9b29af01b879bbcb5083f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_component_1a90ed6bf90df9b29af01b879bbcb5083f" kindref="member">Component::setMinValue</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(val<sp/>&gt;<sp/>0<sp/>&amp;&amp;<sp/>this-&gt;<ref refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" kindref="member">defaultValue</ref><sp/>&lt;<sp/>val)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Wrong<sp/>Min<sp/>value<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>val<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" kindref="member">minValue</ref><sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="class_component_1a4f0d7c4c6f5e96c33c05feb39a2f8bb1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_component_1a4f0d7c4c6f5e96c33c05feb39a2f8bb1" kindref="member">Component::getMinValue</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="87"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" kindref="member">minValue</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="class_component_1a60f880911ea927dc32b9226525355062" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_component_1a60f880911ea927dc32b9226525355062" kindref="member">Component::setDefaultValue</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(val<sp/>&gt;<sp/>this-&gt;<ref refid="class_component_1a2d0f12bfc606aed817a667db8346b229" kindref="member">maxValue</ref><sp/>||<sp/>val<sp/>&lt;<sp/>this-&gt;<ref refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" kindref="member">minValue</ref>)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Wrong<sp/>default<sp/>Value&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" kindref="member">defaultValue</ref><sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="class_component_1a2a61b9a076222666f914efbb5d2a57d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_component_1a2a61b9a076222666f914efbb5d2a57d4" kindref="member">Component::getDefaultValue</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="99"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" kindref="member">defaultValue</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="class_component_1aeb1e21523f1347a95efa4caf596cacf0" refkind="member"><highlight class="normal">map&lt;string,<sp/>string&gt;<sp/><ref refid="class_component_1aeb1e21523f1347a95efa4caf596cacf0" kindref="member">Component::getNetlist</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="104"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" kindref="member">netlist</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="class_component_1a8e131626e01c8549d3837a94e27a4249" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_component_1a8e131626e01c8549d3837a94e27a4249" kindref="member">Component::setSingleNetlistTerminal</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>terminal,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(value<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>||<sp/>terminal<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Wrong<sp/>Terminal<sp/>Value&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" kindref="member">netlist</ref>[terminal]<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Component.cpp"/>
+  </compounddef>
+</doxygen>

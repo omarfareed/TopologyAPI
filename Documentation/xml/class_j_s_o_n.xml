@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_j_s_o_n" kind="class" language="C++" prot="public">
+    <compoundname>JSON</compoundname>
+    <includes refid="_j_s_o_n_8h" local="no">JSON.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_j_s_o_n_1a418c1a82fea896a4fd4a64c77542d65a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_topology" kindref="compound">Topology</ref> *</type>
+        <definition>Topology * JSON::_createTopology</definition>
+        <argsstring>(json parser)</argsstring>
+        <name>_createTopology</name>
+        <qualifiedname>JSON::_createTopology</qualifiedname>
+        <param>
+          <type><ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref></type>
+          <declname>parser</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="JSON.h" line="12" column="10" bodyfile="JSON.cpp" bodystart="38" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_s_o_n_1a3e827bcf65e4c942142217eda2e6e433" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="class_component" kindref="compound">Component</ref> * &gt;</type>
+        <definition>vector&lt; Component * &gt; JSON::_createComponents</definition>
+        <argsstring>(json componentsParser)</argsstring>
+        <name>_createComponents</name>
+        <qualifiedname>JSON::_createComponents</qualifiedname>
+        <param>
+          <type><ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref></type>
+          <declname>componentsParser</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="JSON.h" line="13" column="8" bodyfile="JSON.cpp" bodystart="31" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_s_o_n_1ad4ee5acc9d1b29c5a89db11e34781c0c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_component" kindref="compound">Component</ref> *</type>
+        <definition>Component * JSON::_createComponent</definition>
+        <argsstring>(json componentParser)</argsstring>
+        <name>_createComponent</name>
+        <qualifiedname>JSON::_createComponent</qualifiedname>
+        <param>
+          <type><ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref></type>
+          <declname>componentParser</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="JSON.h" line="14" column="11" bodyfile="JSON.cpp" bodystart="6" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_s_o_n_1ad2def689abbb980909790a10d16a2053" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_component" kindref="compound">Component</ref> *</type>
+        <definition>Component * JSON::_createResistor</definition>
+        <argsstring>(json componentParser)</argsstring>
+        <name>_createResistor</name>
+        <qualifiedname>JSON::_createResistor</qualifiedname>
+        <param>
+          <type><ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref></type>
+          <declname>componentParser</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="JSON.h" line="15" column="11" bodyfile="JSON.cpp" bodystart="17" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_s_o_n_1aef6c115e94324653fc0b5085e2f62c99" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_component" kindref="compound">Component</ref> *</type>
+        <definition>Component * JSON::_createNMOS</definition>
+        <argsstring>(json componentParser)</argsstring>
+        <name>_createNMOS</name>
+        <qualifiedname>JSON::_createNMOS</qualifiedname>
+        <param>
+          <type><ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref></type>
+          <declname>componentParser</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="JSON.h" line="16" column="11" bodyfile="JSON.cpp" bodystart="24" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_s_o_n_1ae84aaec9d82ae6fc0f922e1c45ed5f83" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref></type>
+        <definition>json JSON::_writeTopologyComponents</definition>
+        <argsstring>(Topology *)</argsstring>
+        <name>_writeTopologyComponents</name>
+        <qualifiedname>JSON::_writeTopologyComponents</qualifiedname>
+        <param>
+          <type><ref refid="class_topology" kindref="compound">Topology</ref> *</type>
+          <defname>topology</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="JSON.h" line="17" column="6" bodyfile="JSON.cpp" bodystart="94" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_s_o_n_1a07f5ab56ea3a6bcf79919ee1e7a9208f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref></type>
+        <definition>json JSON::_writeTopologyComponent</definition>
+        <argsstring>(Component *)</argsstring>
+        <name>_writeTopologyComponent</name>
+        <qualifiedname>JSON::_writeTopologyComponent</qualifiedname>
+        <param>
+          <type><ref refid="class_component" kindref="compound">Component</ref> *</type>
+          <defname>component</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="JSON.h" line="18" column="6" bodyfile="JSON.cpp" bodystart="86" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_s_o_n_1afb9a1a45bf03703999c0e5aec2aa132d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref></type>
+        <definition>json JSON::_getTopologyInfo</definition>
+        <argsstring>(Component *)</argsstring>
+        <name>_getTopologyInfo</name>
+        <qualifiedname>JSON::_getTopologyInfo</qualifiedname>
+        <param>
+          <type><ref refid="class_component" kindref="compound">Component</ref> *</type>
+          <defname>component</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="JSON.h" line="19" column="6" bodyfile="JSON.cpp" bodystart="82" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_j_s_o_n_1acf359a0f5efc57e6e844ad58abbd6480" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JSON::JSON</definition>
+        <argsstring>()</argsstring>
+        <name>JSON</name>
+        <qualifiedname>JSON::JSON</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="JSON.h" line="21" column="1" bodyfile="JSON.cpp" bodystart="44" bodyend="46"/>
+        <referencedby refid="class_j_s_o_n_1ad61eec9c5fac292be6e6d6bc4566b0a7" compoundref="_j_s_o_n_8cpp" startline="53" endline="56">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_j_s_o_n_1a05c031a8a70c3cc1c65509430c08cef3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JSON::JSON</definition>
+        <argsstring>(const JSON &amp;other)</argsstring>
+        <name>JSON</name>
+        <qualifiedname>JSON::JSON</qualifiedname>
+        <param>
+          <type>const <ref refid="class_j_s_o_n" kindref="compound">JSON</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="JSON.h" line="22" column="1" bodyfile="JSON.cpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_s_o_n_1ad61eec9c5fac292be6e6d6bc4566b0a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_j_s_o_n" kindref="compound">JSON</ref></type>
+        <definition>JSON JSON::operator=</definition>
+        <argsstring>(const JSON &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>JSON::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="class_j_s_o_n" kindref="compound">JSON</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="JSON.h" line="23" column="6" bodyfile="JSON.cpp" bodystart="53" bodyend="56"/>
+        <references refid="class_j_s_o_n_1acf359a0f5efc57e6e844ad58abbd6480" compoundref="_j_s_o_n_8cpp" startline="44" endline="46">JSON</references>
+      </memberdef>
+      <memberdef kind="function" id="class_j_s_o_n_1a24f221b9202d745dc42a694697813eda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_topology" kindref="compound">Topology</ref> *</type>
+        <definition>Topology * JSON::readTopology</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>readTopology</name>
+        <qualifiedname>JSON::readTopology</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="JSON.h" line="24" column="10" bodyfile="JSON.cpp" bodystart="58" bodyend="80"/>
+        <referencedby refid="class_a_p_i_1a56489f419f0fb6517d003c47f9c7d4e7" compoundref="_a_p_i_8cpp" startline="8" endline="15">API::readTopology</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_j_s_o_n_1a8e9a88433e4ca77f3fb9bf18b04619cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JSON::writeTopology</definition>
+        <argsstring>(Topology *topology, string fileName)</argsstring>
+        <name>writeTopology</name>
+        <qualifiedname>JSON::writeTopology</qualifiedname>
+        <param>
+          <type><ref refid="class_topology" kindref="compound">Topology</ref> *</type>
+          <declname>topology</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="JSON.h" line="25" column="6" bodyfile="JSON.cpp" bodystart="101" bodyend="108"/>
+        <references refid="class_topology_1af2f26bfb53b21b672fd2e6759752b12b" compoundref="_topology_8cpp" startline="77" endline="80">Topology::getID</references>
+        <referencedby refid="class_a_p_i_1a03cbecbd8bdee695b19fc6cd4a5d9a93" compoundref="_a_p_i_8cpp" startline="17" endline="25">API::writeTopology</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>JSON</label>
+        <link refid="class_j_s_o_n"/>
+      </node>
+    </collaborationgraph>
+    <location file="JSON.h" line="10" column="1" bodyfile="JSON.h" bodystart="10" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_j_s_o_n_1ad4ee5acc9d1b29c5a89db11e34781c0c" prot="private" virt="non-virtual"><scope>JSON</scope><name>_createComponent</name></member>
+      <member refid="class_j_s_o_n_1a3e827bcf65e4c942142217eda2e6e433" prot="private" virt="non-virtual"><scope>JSON</scope><name>_createComponents</name></member>
+      <member refid="class_j_s_o_n_1aef6c115e94324653fc0b5085e2f62c99" prot="private" virt="non-virtual"><scope>JSON</scope><name>_createNMOS</name></member>
+      <member refid="class_j_s_o_n_1ad2def689abbb980909790a10d16a2053" prot="private" virt="non-virtual"><scope>JSON</scope><name>_createResistor</name></member>
+      <member refid="class_j_s_o_n_1a418c1a82fea896a4fd4a64c77542d65a" prot="private" virt="non-virtual"><scope>JSON</scope><name>_createTopology</name></member>
+      <member refid="class_j_s_o_n_1afb9a1a45bf03703999c0e5aec2aa132d" prot="private" virt="non-virtual"><scope>JSON</scope><name>_getTopologyInfo</name></member>
+      <member refid="class_j_s_o_n_1a07f5ab56ea3a6bcf79919ee1e7a9208f" prot="private" virt="non-virtual"><scope>JSON</scope><name>_writeTopologyComponent</name></member>
+      <member refid="class_j_s_o_n_1ae84aaec9d82ae6fc0f922e1c45ed5f83" prot="private" virt="non-virtual"><scope>JSON</scope><name>_writeTopologyComponents</name></member>
+      <member refid="class_j_s_o_n_1acf359a0f5efc57e6e844ad58abbd6480" prot="public" virt="non-virtual"><scope>JSON</scope><name>JSON</name></member>
+      <member refid="class_j_s_o_n_1a05c031a8a70c3cc1c65509430c08cef3" prot="public" virt="non-virtual"><scope>JSON</scope><name>JSON</name></member>
+      <member refid="class_j_s_o_n_1ad61eec9c5fac292be6e6d6bc4566b0a7" prot="public" virt="non-virtual"><scope>JSON</scope><name>operator=</name></member>
+      <member refid="class_j_s_o_n_1a24f221b9202d745dc42a694697813eda" prot="public" virt="non-virtual"><scope>JSON</scope><name>readTopology</name></member>
+      <member refid="class_j_s_o_n_1a8e9a88433e4ca77f3fb9bf18b04619cc" prot="public" virt="non-virtual"><scope>JSON</scope><name>writeTopology</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_voltage_source_8h" kind="file" language="C++">
+    <compoundname>VoltageSource.h</compoundname>
+    <includes refid="_two_terminal_8h" local="yes">TwoTerminal.h</includes>
+    <includedby refid="_voltage_source_8cpp" local="yes">VoltageSource.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>Component.h</label>
+        <link refid="_component_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TwoTerminal.h</label>
+        <link refid="_two_terminal_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>VoltageSource.h</label>
+        <link refid="_voltage_source_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="7">
+        <label>map</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>VoltageSource.cpp</label>
+        <link refid="_voltage_source_8cpp"/>
+      </node>
+      <node id="1">
+        <label>VoltageSource.h</label>
+        <link refid="_voltage_source_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_voltage_source" prot="public">VoltageSource</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_two_terminal_8h" kindref="compound">TwoTerminal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_voltage_source" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_voltage_source" kindref="compound">VoltageSource</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_two_terminal" kindref="compound">TwoTerminal</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_voltage_source_1a80d6a4b297b6f75d44a09ba68b9fddd3" kindref="member">VoltageSource</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_voltage_source" kindref="compound">VoltageSource</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_voltage_source" kindref="compound">VoltageSource</ref><sp/><ref refid="class_voltage_source_1a7491d524ed737f714987845ba01328f9" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_voltage_source" kindref="compound">VoltageSource</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_voltage_source_1a80d6a4b297b6f75d44a09ba68b9fddd3" kindref="member">VoltageSource</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>map&lt;string,<sp/>string&gt;&amp;<sp/>VoltageSourceNetlist,<sp/>map&lt;string,<sp/>double&gt;&amp;<sp/>VoltageSourceValues);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_voltage_source_1a2e809a9bbfeac910d90c02495270134e" kindref="member">getType</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_voltage_source_1af6208091a06b15e0eba261ea558e8ffc" kindref="member">printComponentInfo</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="VoltageSource.h"/>
+  </compounddef>
+</doxygen>

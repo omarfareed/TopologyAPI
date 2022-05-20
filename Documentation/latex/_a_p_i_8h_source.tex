@@ -1,0 +1,22 @@
+\hypertarget{_a_p_i_8h_source}{}\doxysection{API.\+h}
+\mbox{\hyperlink{_a_p_i_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include "{}../Topology/Topology.h"{}}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}../JSON/JSON.h"{}}}
+\DoxyCodeLine{3 \textcolor{keyword}{class }\mbox{\hyperlink{class_a_p_i}{API}}}
+\DoxyCodeLine{4 \{}
+\DoxyCodeLine{5 \textcolor{keyword}{private}:}
+\DoxyCodeLine{6     vector<Topology*> topologyList;}
+\DoxyCodeLine{7     \mbox{\hyperlink{class_j_s_o_n}{JSON}} parser;}
+\DoxyCodeLine{8     \mbox{\hyperlink{class_topology}{Topology}}* \_getTopology(\textcolor{keywordtype}{string} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{9 \textcolor{keyword}{public}:}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_topology}{Topology}}* \mbox{\hyperlink{class_a_p_i_a56489f419f0fb6517d003c47f9c7d4e7}{readTopology}}(\textcolor{keywordtype}{string} fileName);}
+\DoxyCodeLine{11     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_a_p_i_a03cbecbd8bdee695b19fc6cd4a5d9a93}{writeTopology}}(\textcolor{keywordtype}{string} topologyID);}
+\DoxyCodeLine{12     vector<Topology*> \mbox{\hyperlink{class_a_p_i_aeb782ac76fb0779d97f2d7784688dc57}{queueryTopologies}}();}
+\DoxyCodeLine{13     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_a_p_i_ae61cf33d3771ccbe778f39446bd72525}{deleteTopology}}(\textcolor{keywordtype}{string} topologyID);}
+\DoxyCodeLine{14     vector<Component*> \mbox{\hyperlink{class_a_p_i_a46f09b5c63cc0e7ee9fb759e3947671c}{queryDevices}}(\textcolor{keywordtype}{string} TopologyID);}
+\DoxyCodeLine{15     vector<Component*> \mbox{\hyperlink{class_a_p_i_a380efa1662170ab32c19c52ea8f47841}{queryDevicesWithNetlistNodes}}(\textcolor{keywordtype}{string} TopologyID, \textcolor{keywordtype}{string} netlistNodeID);}
+\DoxyCodeLine{16     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_p_i_a2c416d5e7142fcf5950ef305ce3bf8d9}{printAllTopologies}}();}
+\DoxyCodeLine{17 \};}
+
+\end{DoxyCode}

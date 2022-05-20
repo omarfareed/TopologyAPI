@@ -1,0 +1,217 @@
+\hypertarget{class_two_terminal}{}\doxysection{Two\+Terminal Class Reference}
+\label{class_two_terminal}\index{TwoTerminal@{TwoTerminal}}
+
+
+{\ttfamily \#include $<$Two\+Terminal.\+h$>$}
+
+
+
+Inheritance diagram for Two\+Terminal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_two_terminal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Two\+Terminal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_two_terminal__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_two_terminal_a73f7440b07d890d06713b210d9bfad13}{Two\+Terminal}} (const \mbox{\hyperlink{class_two_terminal}{Two\+Terminal}} \&other)
+\item 
+\mbox{\hyperlink{class_two_terminal_a72eca286775a8c42e999759e75e8485f}{Two\+Terminal}} (string \mbox{\hyperlink{class_component_aa66f3e6ea8d4309ae836e5b4ccdeee1c}{id}}, map$<$ string, string $>$ \&\mbox{\hyperlink{class_component_ad4b4dcb01b0509ad5739ae2fa2209ff9}{netlist}}, map$<$ string, double $>$ \&info)
+\item 
+void \mbox{\hyperlink{class_two_terminal_a7bf70d6e3f2ca091b3f917a29bb7694a}{set\+T1}} (string terminal)
+\item 
+void \mbox{\hyperlink{class_two_terminal_aaddd792566aaa30c7df3eacb30e4e1c7}{set\+T2}} (string terminal)
+\item 
+bool \mbox{\hyperlink{class_two_terminal_a8378a30d5b7caeae708431931da3118a}{connected\+To}} (\mbox{\hyperlink{class_component}{Component}} $\ast$component) const
+\item 
+string \mbox{\hyperlink{class_two_terminal_ab0830960996a7ead2bcd0dd6f44130fe}{get\+T1}} () const
+\item 
+string \mbox{\hyperlink{class_two_terminal_a20afcb41e626f0d511cd8d2d19eecc3c}{get\+T2}} () const
+\item 
+virtual void \mbox{\hyperlink{class_two_terminal_a1ead3d83626a7a2bae5a90a29430b927}{print\+Component\+Info}} () const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_two_terminal_a8c728d34c9cfd5517ac2de7b73bd7be6}{valid\+Netlist}} (map$<$ string, string $>$ \&\mbox{\hyperlink{class_component_ad4b4dcb01b0509ad5739ae2fa2209ff9}{netlist}})
+\item 
+void \mbox{\hyperlink{class_two_terminal_ab8ca14897020a7776b72522402d88763}{set\+Netlist}} (map$<$ string, string $>$ \&\mbox{\hyperlink{class_component_ad4b4dcb01b0509ad5739ae2fa2209ff9}{netlist}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_two_terminal_a73f7440b07d890d06713b210d9bfad13}\label{class_two_terminal_a73f7440b07d890d06713b210d9bfad13}} 
+\index{TwoTerminal@{TwoTerminal}!TwoTerminal@{TwoTerminal}}
+\index{TwoTerminal@{TwoTerminal}!TwoTerminal@{TwoTerminal}}
+\doxysubsubsection{\texorpdfstring{TwoTerminal()}{TwoTerminal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Two\+Terminal\+::\+Two\+Terminal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_two_terminal}{Two\+Terminal}} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_two_terminal_a72eca286775a8c42e999759e75e8485f}\label{class_two_terminal_a72eca286775a8c42e999759e75e8485f}} 
+\index{TwoTerminal@{TwoTerminal}!TwoTerminal@{TwoTerminal}}
+\index{TwoTerminal@{TwoTerminal}!TwoTerminal@{TwoTerminal}}
+\doxysubsubsection{\texorpdfstring{TwoTerminal()}{TwoTerminal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Two\+Terminal\+::\+Two\+Terminal (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{map$<$ string, string $>$ \&}]{netlist,  }\item[{map$<$ string, double $>$ \&}]{info }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_two_terminal_a72eca286775a8c42e999759e75e8485f_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_two_terminal_a8378a30d5b7caeae708431931da3118a}\label{class_two_terminal_a8378a30d5b7caeae708431931da3118a}} 
+\index{TwoTerminal@{TwoTerminal}!connectedTo@{connectedTo}}
+\index{connectedTo@{connectedTo}!TwoTerminal@{TwoTerminal}}
+\doxysubsubsection{\texorpdfstring{connectedTo()}{connectedTo()}}
+{\footnotesize\ttfamily bool Two\+Terminal\+::connected\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_component}{Component}} $\ast$}]{component }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_component_ace23df4932822a6e64f2a9edf3004f53}{Component}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{class_two_terminal_a8378a30d5b7caeae708431931da3118a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_two_terminal_ab0830960996a7ead2bcd0dd6f44130fe}\label{class_two_terminal_ab0830960996a7ead2bcd0dd6f44130fe}} 
+\index{TwoTerminal@{TwoTerminal}!getT1@{getT1}}
+\index{getT1@{getT1}!TwoTerminal@{TwoTerminal}}
+\doxysubsubsection{\texorpdfstring{getT1()}{getT1()}}
+{\footnotesize\ttfamily string Two\+Terminal\+::get\+T1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_two_terminal_ab0830960996a7ead2bcd0dd6f44130fe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_two_terminal_a20afcb41e626f0d511cd8d2d19eecc3c}\label{class_two_terminal_a20afcb41e626f0d511cd8d2d19eecc3c}} 
+\index{TwoTerminal@{TwoTerminal}!getT2@{getT2}}
+\index{getT2@{getT2}!TwoTerminal@{TwoTerminal}}
+\doxysubsubsection{\texorpdfstring{getT2()}{getT2()}}
+{\footnotesize\ttfamily string Two\+Terminal\+::get\+T2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_two_terminal_a20afcb41e626f0d511cd8d2d19eecc3c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_two_terminal_a1ead3d83626a7a2bae5a90a29430b927}\label{class_two_terminal_a1ead3d83626a7a2bae5a90a29430b927}} 
+\index{TwoTerminal@{TwoTerminal}!printComponentInfo@{printComponentInfo}}
+\index{printComponentInfo@{printComponentInfo}!TwoTerminal@{TwoTerminal}}
+\doxysubsubsection{\texorpdfstring{printComponentInfo()}{printComponentInfo()}}
+{\footnotesize\ttfamily virtual void Two\+Terminal\+::print\+Component\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_component_ab852f7cd16fa85f201b72483b8b6e1b0}{Component}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_current_source_acfc3c673e9da45f4f71fcf0893560c53}{Current\+Source}}, \mbox{\hyperlink{class_resistor_a69290e67ec09dacfa9439bcad8838949}{Resistor}}, and \mbox{\hyperlink{class_voltage_source_af6208091a06b15e0eba261ea558e8ffc}{Voltage\+Source}}.
+
+\mbox{\Hypertarget{class_two_terminal_ab8ca14897020a7776b72522402d88763}\label{class_two_terminal_ab8ca14897020a7776b72522402d88763}} 
+\index{TwoTerminal@{TwoTerminal}!setNetlist@{setNetlist}}
+\index{setNetlist@{setNetlist}!TwoTerminal@{TwoTerminal}}
+\doxysubsubsection{\texorpdfstring{setNetlist()}{setNetlist()}}
+{\footnotesize\ttfamily void Two\+Terminal\+::set\+Netlist (\begin{DoxyParamCaption}\item[{map$<$ string, string $>$ \&}]{netlist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_component_a5243477401a46b5f7175a0b62807ae69}{Component}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_two_terminal_ab8ca14897020a7776b72522402d88763_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_two_terminal_ab8ca14897020a7776b72522402d88763_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_two_terminal_a7bf70d6e3f2ca091b3f917a29bb7694a}\label{class_two_terminal_a7bf70d6e3f2ca091b3f917a29bb7694a}} 
+\index{TwoTerminal@{TwoTerminal}!setT1@{setT1}}
+\index{setT1@{setT1}!TwoTerminal@{TwoTerminal}}
+\doxysubsubsection{\texorpdfstring{setT1()}{setT1()}}
+{\footnotesize\ttfamily void Two\+Terminal\+::set\+T1 (\begin{DoxyParamCaption}\item[{string}]{terminal }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_two_terminal_a7bf70d6e3f2ca091b3f917a29bb7694a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_two_terminal_aaddd792566aaa30c7df3eacb30e4e1c7}\label{class_two_terminal_aaddd792566aaa30c7df3eacb30e4e1c7}} 
+\index{TwoTerminal@{TwoTerminal}!setT2@{setT2}}
+\index{setT2@{setT2}!TwoTerminal@{TwoTerminal}}
+\doxysubsubsection{\texorpdfstring{setT2()}{setT2()}}
+{\footnotesize\ttfamily void Two\+Terminal\+::set\+T2 (\begin{DoxyParamCaption}\item[{string}]{terminal }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_two_terminal_aaddd792566aaa30c7df3eacb30e4e1c7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_two_terminal_a8c728d34c9cfd5517ac2de7b73bd7be6}\label{class_two_terminal_a8c728d34c9cfd5517ac2de7b73bd7be6}} 
+\index{TwoTerminal@{TwoTerminal}!validNetlist@{validNetlist}}
+\index{validNetlist@{validNetlist}!TwoTerminal@{TwoTerminal}}
+\doxysubsubsection{\texorpdfstring{validNetlist()}{validNetlist()}}
+{\footnotesize\ttfamily bool Two\+Terminal\+::valid\+Netlist (\begin{DoxyParamCaption}\item[{map$<$ string, string $>$ \&}]{netlist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_component_a693ad7b28df940f48978539ab18cca5e}{Component}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_two_terminal_a8c728d34c9cfd5517ac2de7b73bd7be6_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_two_terminal_8h}{Two\+Terminal.\+h}}\item 
+\mbox{\hyperlink{_two_terminal_8cpp}{Two\+Terminal.\+cpp}}\end{DoxyCompactItemize}

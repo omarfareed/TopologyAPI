@@ -1,0 +1,116 @@
+\hypertarget{class_a_p_i}{}\doxysection{API Class Reference}
+\label{class_a_p_i}\index{API@{API}}
+
+
+{\ttfamily \#include $<$API.\+h$>$}
+
+
+
+Collaboration diagram for API\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{class_a_p_i__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_topology}{Topology}} $\ast$ \mbox{\hyperlink{class_a_p_i_a56489f419f0fb6517d003c47f9c7d4e7}{read\+Topology}} (string file\+Name)
+\item 
+bool \mbox{\hyperlink{class_a_p_i_a03cbecbd8bdee695b19fc6cd4a5d9a93}{write\+Topology}} (string topology\+ID)
+\item 
+vector$<$ \mbox{\hyperlink{class_topology}{Topology}} $\ast$ $>$ \mbox{\hyperlink{class_a_p_i_aeb782ac76fb0779d97f2d7784688dc57}{queuery\+Topologies}} ()
+\item 
+bool \mbox{\hyperlink{class_a_p_i_ae61cf33d3771ccbe778f39446bd72525}{delete\+Topology}} (string topology\+ID)
+\item 
+vector$<$ \mbox{\hyperlink{class_component}{Component}} $\ast$ $>$ \mbox{\hyperlink{class_a_p_i_a46f09b5c63cc0e7ee9fb759e3947671c}{query\+Devices}} (string Topology\+ID)
+\item 
+vector$<$ \mbox{\hyperlink{class_component}{Component}} $\ast$ $>$ \mbox{\hyperlink{class_a_p_i_a380efa1662170ab32c19c52ea8f47841}{query\+Devices\+With\+Netlist\+Nodes}} (string Topology\+ID, string netlist\+Node\+ID)
+\item 
+void \mbox{\hyperlink{class_a_p_i_a2c416d5e7142fcf5950ef305ce3bf8d9}{print\+All\+Topologies}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_p_i_ae61cf33d3771ccbe778f39446bd72525}\label{class_a_p_i_ae61cf33d3771ccbe778f39446bd72525}} 
+\index{API@{API}!deleteTopology@{deleteTopology}}
+\index{deleteTopology@{deleteTopology}!API@{API}}
+\doxysubsubsection{\texorpdfstring{deleteTopology()}{deleteTopology()}}
+{\footnotesize\ttfamily bool API\+::delete\+Topology (\begin{DoxyParamCaption}\item[{string}]{topology\+ID }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_p_i_a2c416d5e7142fcf5950ef305ce3bf8d9}\label{class_a_p_i_a2c416d5e7142fcf5950ef305ce3bf8d9}} 
+\index{API@{API}!printAllTopologies@{printAllTopologies}}
+\index{printAllTopologies@{printAllTopologies}!API@{API}}
+\doxysubsubsection{\texorpdfstring{printAllTopologies()}{printAllTopologies()}}
+{\footnotesize\ttfamily void API\+::print\+All\+Topologies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_p_i_a46f09b5c63cc0e7ee9fb759e3947671c}\label{class_a_p_i_a46f09b5c63cc0e7ee9fb759e3947671c}} 
+\index{API@{API}!queryDevices@{queryDevices}}
+\index{queryDevices@{queryDevices}!API@{API}}
+\doxysubsubsection{\texorpdfstring{queryDevices()}{queryDevices()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_component}{Component}} $\ast$ $>$ API\+::query\+Devices (\begin{DoxyParamCaption}\item[{string}]{Topology\+ID }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_a_p_i_a46f09b5c63cc0e7ee9fb759e3947671c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_p_i_a380efa1662170ab32c19c52ea8f47841}\label{class_a_p_i_a380efa1662170ab32c19c52ea8f47841}} 
+\index{API@{API}!queryDevicesWithNetlistNodes@{queryDevicesWithNetlistNodes}}
+\index{queryDevicesWithNetlistNodes@{queryDevicesWithNetlistNodes}!API@{API}}
+\doxysubsubsection{\texorpdfstring{queryDevicesWithNetlistNodes()}{queryDevicesWithNetlistNodes()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_component}{Component}} $\ast$ $>$ API\+::query\+Devices\+With\+Netlist\+Nodes (\begin{DoxyParamCaption}\item[{string}]{Topology\+ID,  }\item[{string}]{netlist\+Node\+ID }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_i_a380efa1662170ab32c19c52ea8f47841_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_p_i_aeb782ac76fb0779d97f2d7784688dc57}\label{class_a_p_i_aeb782ac76fb0779d97f2d7784688dc57}} 
+\index{API@{API}!queueryTopologies@{queueryTopologies}}
+\index{queueryTopologies@{queueryTopologies}!API@{API}}
+\doxysubsubsection{\texorpdfstring{queueryTopologies()}{queueryTopologies()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_topology}{Topology}} $\ast$ $>$ API\+::queuery\+Topologies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_p_i_a56489f419f0fb6517d003c47f9c7d4e7}\label{class_a_p_i_a56489f419f0fb6517d003c47f9c7d4e7}} 
+\index{API@{API}!readTopology@{readTopology}}
+\index{readTopology@{readTopology}!API@{API}}
+\doxysubsubsection{\texorpdfstring{readTopology()}{readTopology()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_topology}{Topology}} $\ast$ API\+::read\+Topology (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_a_p_i_a56489f419f0fb6517d003c47f9c7d4e7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_p_i_a03cbecbd8bdee695b19fc6cd4a5d9a93}\label{class_a_p_i_a03cbecbd8bdee695b19fc6cd4a5d9a93}} 
+\index{API@{API}!writeTopology@{writeTopology}}
+\index{writeTopology@{writeTopology}!API@{API}}
+\doxysubsubsection{\texorpdfstring{writeTopology()}{writeTopology()}}
+{\footnotesize\ttfamily bool API\+::write\+Topology (\begin{DoxyParamCaption}\item[{string}]{topology\+ID }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_i_a03cbecbd8bdee695b19fc6cd4a5d9a93_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_a_p_i_8h}{API.\+h}}\item 
+\mbox{\hyperlink{_a_p_i_8cpp}{API.\+cpp}}\end{DoxyCompactItemize}

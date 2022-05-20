@@ -1,0 +1,31 @@
+\hypertarget{_j_s_o_n_8h_source}{}\doxysection{JSON.\+h}
+\mbox{\hyperlink{_j_s_o_n_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_CRT\_SECURE\_NO\_WARNINGS}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}json.hpp"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}../Topology/Topology.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}../Components/Resistor.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}../Components/nmos.h"{}}}
+\DoxyCodeLine{8 \textcolor{keyword}{using }\mbox{\hyperlink{_j_s_o_n_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} = \mbox{\hyperlink{_j_s_o_n_8h_ab701e3ac61a85b337ec5c1abaad6742d}{nlohmann::json}};}
+\DoxyCodeLine{9 \textcolor{keyword}{using }std::ifstream;}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_j_s_o_n}{JSON}} \{}
+\DoxyCodeLine{11 \textcolor{keyword}{private}:}
+\DoxyCodeLine{12     \mbox{\hyperlink{class_topology}{Topology}}* \_createTopology(\mbox{\hyperlink{_j_s_o_n_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} parser);}
+\DoxyCodeLine{13     vector<Component*> \_createComponents(\mbox{\hyperlink{_j_s_o_n_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} componentsParser);}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_component}{Component}}* \_createComponent(\mbox{\hyperlink{_j_s_o_n_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} componentParser);}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_component}{Component}}* \_createResistor(\mbox{\hyperlink{_j_s_o_n_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} componentParser);}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_component}{Component}}* \_createNMOS(\mbox{\hyperlink{_j_s_o_n_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} componentParser);}
+\DoxyCodeLine{17     \mbox{\hyperlink{_j_s_o_n_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \_writeTopologyComponents(\mbox{\hyperlink{class_topology}{Topology}}*);}
+\DoxyCodeLine{18     \mbox{\hyperlink{_j_s_o_n_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \_writeTopologyComponent(\mbox{\hyperlink{class_component}{Component}}*);}
+\DoxyCodeLine{19     \mbox{\hyperlink{_j_s_o_n_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \_getTopologyInfo(\mbox{\hyperlink{class_component}{Component}}*);}
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_j_s_o_n_acf359a0f5efc57e6e844ad58abbd6480}{JSON}}();}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_j_s_o_n_acf359a0f5efc57e6e844ad58abbd6480}{JSON}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_j_s_o_n}{JSON}}\& other);}
+\DoxyCodeLine{23     \mbox{\hyperlink{class_j_s_o_n}{JSON}} \mbox{\hyperlink{class_j_s_o_n_ad61eec9c5fac292be6e6d6bc4566b0a7}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_j_s_o_n}{JSON}}\&other);}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_topology}{Topology}}* \mbox{\hyperlink{class_j_s_o_n_a24f221b9202d745dc42a694697813eda}{readTopology}}(\textcolor{keywordtype}{string} fileName);}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_j_s_o_n_a8e9a88433e4ca77f3fb9bf18b04619cc}{writeTopology}}( \mbox{\hyperlink{class_topology}{Topology}}* topology, \textcolor{keywordtype}{string} fileName);  }
+\DoxyCodeLine{26 \};}
+
+\end{DoxyCode}

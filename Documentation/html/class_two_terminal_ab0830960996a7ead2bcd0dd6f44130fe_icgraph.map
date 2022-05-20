@@ -1,0 +1,7 @@
+<map id="TwoTerminal::getT1" name="TwoTerminal::getT1">
+<area shape="rect" id="node1" title=" " alt="" coords="280,81,415,108"/>
+<area shape="rect" id="node2" href="$class_two_terminal.html#a8378a30d5b7caeae708431931da3118a" title=" " alt="" coords="31,5,207,32"/>
+<area shape="rect" id="node3" href="$class_current_source.html#acfc3c673e9da45f4f71fcf0893560c53" title=" " alt="" coords="7,56,231,83"/>
+<area shape="rect" id="node4" href="$class_resistor.html#a69290e67ec09dacfa9439bcad8838949" title=" " alt="" coords="24,107,213,133"/>
+<area shape="rect" id="node5" href="$class_voltage_source.html#af6208091a06b15e0eba261ea558e8ffc" title=" " alt="" coords="5,157,232,184"/>
+</map>

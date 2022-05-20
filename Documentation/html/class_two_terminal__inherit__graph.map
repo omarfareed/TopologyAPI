@@ -1,0 +1,7 @@
+<map id="TwoTerminal" name="TwoTerminal">
+<area shape="rect" id="node1" title=" " alt="" coords="183,409,336,619"/>
+<area shape="rect" id="node3" href="$class_current_source.html" title=" " alt="" coords="5,667,159,803"/>
+<area shape="rect" id="node4" href="$class_resistor.html" title=" " alt="" coords="183,667,336,803"/>
+<area shape="rect" id="node5" href="$class_voltage_source.html" title=" " alt="" coords="360,667,513,803"/>
+<area shape="rect" id="node2" href="$class_component.html" title=" " alt="" coords="168,5,351,361"/>
+</map>

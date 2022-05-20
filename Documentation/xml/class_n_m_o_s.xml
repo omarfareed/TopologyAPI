@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_n_m_o_s" kind="class" language="C++" prot="public">
+    <compoundname>NMOS</compoundname>
+    <basecompoundref refid="class_three_terminal" prot="public" virt="non-virtual">ThreeTerminal</basecompoundref>
+    <includes refid="_n_m_o_s_8h" local="no">NMOS.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_n_m_o_s_1a9256579357bc706c95b7279bdf379cb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_n_m_o_s" kindref="compound">NMOS</ref></type>
+        <definition>NMOS NMOS::operator=</definition>
+        <argsstring>(const NMOS &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>NMOS::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="class_n_m_o_s" kindref="compound">NMOS</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NMOS.h" line="7" column="6" bodyfile="NMOS.cpp" bodystart="2" bodyend="6"/>
+        <references refid="class_component_1a2e105083b89470639990cf744aa9cb13" compoundref="_component_8cpp" startline="13" endline="20">Component::_copyComponentValues</references>
+      </memberdef>
+      <memberdef kind="function" id="class_n_m_o_s_1a95650d715eb2cc056cee0e38d60c1927" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NMOS::NMOS</definition>
+        <argsstring>(const NMOS &amp;other)</argsstring>
+        <name>NMOS</name>
+        <qualifiedname>NMOS::NMOS</qualifiedname>
+        <param>
+          <type>const <ref refid="class_n_m_o_s" kindref="compound">NMOS</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NMOS.h" line="8" column="1" bodyfile="NMOS.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_n_m_o_s_1adf795ea18c66a11e1025bf5752dc096d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NMOS::NMOS</definition>
+        <argsstring>(string id, map&lt; string, string &gt; &amp;netlist, map&lt; string, double &gt; &amp;info)</argsstring>
+        <name>NMOS</name>
+        <qualifiedname>NMOS::NMOS</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>map&lt; string, string &gt; &amp;</type>
+          <declname>netlist</declname>
+        </param>
+        <param>
+          <type>map&lt; string, double &gt; &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NMOS.h" line="9" column="1" bodyfile="NMOS.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_n_m_o_s_1a33ec37bd4d014dfdd97a89ef45cf3c76" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string NMOS::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <qualifiedname>NMOS::getType</qualifiedname>
+        <reimplements refid="class_component_1a93d9044a39dfb0ccc0bca4cb5d3eb70e">getType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NMOS.h" line="10" column="8" bodyfile="NMOS.cpp" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_n_m_o_s_1a53004bcb6a8406e92c0fe628b132baf0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void NMOS::printComponentInfo</definition>
+        <argsstring>() const</argsstring>
+        <name>printComponentInfo</name>
+        <qualifiedname>NMOS::printComponentInfo</qualifiedname>
+        <reimplements refid="class_three_terminal_1ab8f2b105686079f3afbb56bba106db95">printComponentInfo</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NMOS.h" line="11" column="6" bodyfile="NMOS.cpp" bodystart="19" bodyend="22"/>
+        <references refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" compoundref="_component_8h" startline="16">Component::defaultValue</references>
+        <references refid="class_three_terminal_1a47800c2de0297c7eddd7b987bd7842fd" compoundref="_three_terminal_8cpp" startline="48" endline="51">ThreeTerminal::getDrain</references>
+        <references refid="class_three_terminal_1a799f07bc7941e6e5a7e86fe1a086f4bd" compoundref="_three_terminal_8cpp" startline="53" endline="56">ThreeTerminal::getGate</references>
+        <references refid="class_three_terminal_1af8adb54a621847ddf6d30051ee76e8bc" compoundref="_three_terminal_8cpp" startline="57" endline="60">ThreeTerminal::getSource</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Component</label>
+        <link refid="class_component"/>
+      </node>
+      <node id="1">
+        <label>NMOS</label>
+        <link refid="class_n_m_o_s"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ThreeTerminal</label>
+        <link refid="class_three_terminal"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Component</label>
+        <link refid="class_component"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>#id</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>#netlist</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>NMOS</label>
+        <link refid="class_n_m_o_s"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ThreeTerminal</label>
+        <link refid="class_three_terminal"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>map&lt; string, string &gt;</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="NMOS.h" line="3" column="1" bodyfile="NMOS.h" bodystart="4" bodyend="12"/>
+    <listofallmembers>
+      <member refid="class_component_1a2e105083b89470639990cf744aa9cb13" prot="protected" virt="virtual"><scope>NMOS</scope><name>_copyComponentValues</name></member>
+      <member refid="class_component_1a889cb5b99bab68856f9b5a650669369c" prot="public" virt="non-virtual"><scope>NMOS</scope><name>Component</name></member>
+      <member refid="class_component_1ab87dce9b8fe3d12810c857d6decf57b5" prot="public" virt="non-virtual"><scope>NMOS</scope><name>Component</name></member>
+      <member refid="class_three_terminal_1a87330e8f18e5af37972a8b9edfb6172e" prot="public" virt="virtual"><scope>NMOS</scope><name>connectedTo</name></member>
+      <member refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" prot="protected" virt="non-virtual"><scope>NMOS</scope><name>defaultValue</name></member>
+      <member refid="class_component_1a2a61b9a076222666f914efbb5d2a57d4" prot="public" virt="virtual"><scope>NMOS</scope><name>getDefaultValue</name></member>
+      <member refid="class_three_terminal_1a47800c2de0297c7eddd7b987bd7842fd" prot="public" virt="non-virtual"><scope>NMOS</scope><name>getDrain</name></member>
+      <member refid="class_three_terminal_1a799f07bc7941e6e5a7e86fe1a086f4bd" prot="public" virt="non-virtual"><scope>NMOS</scope><name>getGate</name></member>
+      <member refid="class_component_1a2c3dfb75ae1f05a13a451b455dfef01a" prot="public" virt="virtual"><scope>NMOS</scope><name>getID</name></member>
+      <member refid="class_component_1a731f2fb15adcd16ddb6343dab21f5a39" prot="public" virt="virtual"><scope>NMOS</scope><name>getMaxValue</name></member>
+      <member refid="class_component_1a4f0d7c4c6f5e96c33c05feb39a2f8bb1" prot="public" virt="virtual"><scope>NMOS</scope><name>getMinValue</name></member>
+      <member refid="class_component_1aeb1e21523f1347a95efa4caf596cacf0" prot="public" virt="virtual"><scope>NMOS</scope><name>getNetlist</name></member>
+      <member refid="class_three_terminal_1af8adb54a621847ddf6d30051ee76e8bc" prot="public" virt="non-virtual"><scope>NMOS</scope><name>getSource</name></member>
+      <member refid="class_n_m_o_s_1a33ec37bd4d014dfdd97a89ef45cf3c76" prot="public" virt="virtual"><scope>NMOS</scope><name>getType</name></member>
+      <member refid="class_component_1aa66f3e6ea8d4309ae836e5b4ccdeee1c" prot="protected" virt="non-virtual"><scope>NMOS</scope><name>id</name></member>
+      <member refid="class_component_1a2d0f12bfc606aed817a667db8346b229" prot="protected" virt="non-virtual"><scope>NMOS</scope><name>maxValue</name></member>
+      <member refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" prot="protected" virt="non-virtual"><scope>NMOS</scope><name>minValue</name></member>
+      <member refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" prot="protected" virt="non-virtual"><scope>NMOS</scope><name>netlist</name></member>
+      <member refid="class_n_m_o_s_1a95650d715eb2cc056cee0e38d60c1927" prot="public" virt="non-virtual"><scope>NMOS</scope><name>NMOS</name></member>
+      <member refid="class_n_m_o_s_1adf795ea18c66a11e1025bf5752dc096d" prot="public" virt="non-virtual"><scope>NMOS</scope><name>NMOS</name></member>
+      <member refid="class_n_m_o_s_1a9256579357bc706c95b7279bdf379cb6" prot="public" virt="non-virtual"><scope>NMOS</scope><name>operator=</name></member>
+      <member refid="class_component_1ab6639960bdfc791d3b6fc6c5e0bba0fe" prot="public" virt="non-virtual"><scope>NMOS</scope><name>operator==</name></member>
+      <member refid="class_n_m_o_s_1a53004bcb6a8406e92c0fe628b132baf0" prot="public" virt="virtual"><scope>NMOS</scope><name>printComponentInfo</name></member>
+      <member refid="class_component_1a76c033320ee12d34be094ace64823d11" prot="public" virt="virtual"><scope>NMOS</scope><name>setComponentValues</name></member>
+      <member refid="class_component_1a60f880911ea927dc32b9226525355062" prot="public" virt="virtual"><scope>NMOS</scope><name>setDefaultValue</name></member>
+      <member refid="class_three_terminal_1a0580bc4f6223903c559f2eed1bd5752c" prot="public" virt="non-virtual"><scope>NMOS</scope><name>setDrain</name></member>
+      <member refid="class_three_terminal_1ae4cb7666247802601ec5ca5ede38be06" prot="public" virt="non-virtual"><scope>NMOS</scope><name>setGate</name></member>
+      <member refid="class_component_1a901f96875ec357b5e603e68c0f8f4095" prot="public" virt="virtual"><scope>NMOS</scope><name>setID</name></member>
+      <member refid="class_component_1ac2de6d2183cd7cf70b28f20e0c42a2b0" prot="public" virt="virtual"><scope>NMOS</scope><name>setMaxValue</name></member>
+      <member refid="class_component_1a90ed6bf90df9b29af01b879bbcb5083f" prot="public" virt="virtual"><scope>NMOS</scope><name>setMinValue</name></member>
+      <member refid="class_three_terminal_1ad6ceefefe2c662046be0a577e8afa6e0" prot="protected" virt="virtual"><scope>NMOS</scope><name>setNetlist</name></member>
+      <member refid="class_component_1a8e131626e01c8549d3837a94e27a4249" prot="protected" virt="virtual"><scope>NMOS</scope><name>setSingleNetlistTerminal</name></member>
+      <member refid="class_three_terminal_1ab032469f2094578d60e2551fbde39c42" prot="public" virt="non-virtual"><scope>NMOS</scope><name>setSource</name></member>
+      <member refid="class_three_terminal_1a71c3a689f65d400ebeaa9eae96b84b11" prot="public" virt="non-virtual"><scope>NMOS</scope><name>ThreeTerminal</name></member>
+      <member refid="class_three_terminal_1ab24eede68f8c6fd5b91fa5b095dc15d5" prot="public" virt="non-virtual"><scope>NMOS</scope><name>ThreeTerminal</name></member>
+      <member refid="class_component_1af5e90af141f6c98be944cc9d02a61e34" prot="protected" virt="virtual"><scope>NMOS</scope><name>validComponentValues</name></member>
+      <member refid="class_three_terminal_1ada3f5b6dc4b55f4cdc4d547d41d73cf1" prot="protected" virt="virtual"><scope>NMOS</scope><name>validNetlist</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

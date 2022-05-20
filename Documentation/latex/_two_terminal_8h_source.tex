@@ -1,0 +1,21 @@
+\hypertarget{_two_terminal_8h_source}{}\doxysection{Two\+Terminal.\+h}
+\mbox{\hyperlink{_two_terminal_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_component_8h}{Component.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{keyword}{class }\mbox{\hyperlink{class_two_terminal}{TwoTerminal}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_component}{Component}} \{}
+\DoxyCodeLine{4 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{5     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_two_terminal_a8c728d34c9cfd5517ac2de7b73bd7be6}{validNetlist}}(map<string, string>\& \mbox{\hyperlink{class_component_ad4b4dcb01b0509ad5739ae2fa2209ff9}{netlist}});}
+\DoxyCodeLine{6     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_two_terminal_ab8ca14897020a7776b72522402d88763}{setNetlist}}(map<string, string>\& \mbox{\hyperlink{class_component_ad4b4dcb01b0509ad5739ae2fa2209ff9}{netlist}});}
+\DoxyCodeLine{7 \textcolor{keyword}{public}:}
+\DoxyCodeLine{8     \mbox{\hyperlink{class_two_terminal_a73f7440b07d890d06713b210d9bfad13}{TwoTerminal}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_two_terminal}{TwoTerminal}}\& other);}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_two_terminal_a73f7440b07d890d06713b210d9bfad13}{TwoTerminal}}( \textcolor{keywordtype}{string} \textcolor{keywordtype}{id}, map<string, string>\& \mbox{\hyperlink{class_component_ad4b4dcb01b0509ad5739ae2fa2209ff9}{netlist}}, map<string, double>\& info);}
+\DoxyCodeLine{10     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_two_terminal_a7bf70d6e3f2ca091b3f917a29bb7694a}{setT1}}(\textcolor{keywordtype}{string} terminal);}
+\DoxyCodeLine{11     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_two_terminal_aaddd792566aaa30c7df3eacb30e4e1c7}{setT2}}(\textcolor{keywordtype}{string} terminal);}
+\DoxyCodeLine{12     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_two_terminal_a8378a30d5b7caeae708431931da3118a}{connectedTo}}(\mbox{\hyperlink{class_component}{Component}}* component) \textcolor{keyword}{const};}
+\DoxyCodeLine{13     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_two_terminal_ab0830960996a7ead2bcd0dd6f44130fe}{getT1}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{14     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_two_terminal_a20afcb41e626f0d511cd8d2d19eecc3c}{getT2}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{15     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_two_terminal_a1ead3d83626a7a2bae5a90a29430b927}{printComponentInfo}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{16 \};}
+
+\end{DoxyCode}

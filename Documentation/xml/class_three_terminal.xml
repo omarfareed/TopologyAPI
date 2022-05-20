@@ -1,0 +1,343 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_three_terminal" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>ThreeTerminal</compoundname>
+    <basecompoundref refid="class_component" prot="public" virt="non-virtual">Component</basecompoundref>
+    <derivedcompoundref refid="class_n_m_o_s" prot="public" virt="non-virtual">NMOS</derivedcompoundref>
+    <derivedcompoundref refid="class_p_m_o_s" prot="public" virt="non-virtual">PMOS</derivedcompoundref>
+    <includes refid="_three_terminal_8h" local="no">ThreeTerminal.h</includes>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_three_terminal_1ada3f5b6dc4b55f4cdc4d547d41d73cf1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ThreeTerminal::validNetlist</definition>
+        <argsstring>(map&lt; string, string &gt; &amp;netlist)</argsstring>
+        <name>validNetlist</name>
+        <qualifiedname>ThreeTerminal::validNetlist</qualifiedname>
+        <reimplements refid="class_component_1a693ad7b28df940f48978539ab18cca5e">validNetlist</reimplements>
+        <param>
+          <type>map&lt; string, string &gt; &amp;</type>
+          <declname>netlist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ThreeTerminal.h" line="5" column="6" bodyfile="ThreeTerminal.cpp" bodystart="3" bodyend="6"/>
+        <references refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" compoundref="_component_8h" startline="19">Component::netlist</references>
+        <referencedby refid="class_three_terminal_1ad6ceefefe2c662046be0a577e8afa6e0" compoundref="_three_terminal_8cpp" startline="8" endline="15">setNetlist</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_three_terminal_1ad6ceefefe2c662046be0a577e8afa6e0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ThreeTerminal::setNetlist</definition>
+        <argsstring>(map&lt; string, string &gt; &amp;netlist)</argsstring>
+        <name>setNetlist</name>
+        <qualifiedname>ThreeTerminal::setNetlist</qualifiedname>
+        <reimplements refid="class_component_1a5243477401a46b5f7175a0b62807ae69">setNetlist</reimplements>
+        <param>
+          <type>map&lt; string, string &gt; &amp;</type>
+          <declname>netlist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ThreeTerminal.h" line="6" column="6" bodyfile="ThreeTerminal.cpp" bodystart="8" bodyend="15"/>
+        <references refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" compoundref="_component_8h" startline="19">Component::netlist</references>
+        <references refid="class_three_terminal_1ada3f5b6dc4b55f4cdc4d547d41d73cf1" compoundref="_three_terminal_8cpp" startline="3" endline="6">validNetlist</references>
+        <referencedby refid="class_three_terminal_1ab24eede68f8c6fd5b91fa5b095dc15d5" compoundref="_three_terminal_8cpp" startline="21" endline="25">ThreeTerminal</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_three_terminal_1a71c3a689f65d400ebeaa9eae96b84b11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ThreeTerminal::ThreeTerminal</definition>
+        <argsstring>(const ThreeTerminal &amp;other)</argsstring>
+        <name>ThreeTerminal</name>
+        <qualifiedname>ThreeTerminal::ThreeTerminal</qualifiedname>
+        <param>
+          <type>const <ref refid="class_three_terminal" kindref="compound">ThreeTerminal</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ThreeTerminal.h" line="8" column="1" bodyfile="ThreeTerminal.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_three_terminal_1ab24eede68f8c6fd5b91fa5b095dc15d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ThreeTerminal::ThreeTerminal</definition>
+        <argsstring>(string id, map&lt; string, string &gt; &amp;netlist, map&lt; string, double &gt; &amp;info)</argsstring>
+        <name>ThreeTerminal</name>
+        <qualifiedname>ThreeTerminal::ThreeTerminal</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>map&lt; string, string &gt; &amp;</type>
+          <declname>netlist</declname>
+        </param>
+        <param>
+          <type>map&lt; string, double &gt; &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ThreeTerminal.h" line="9" column="1" bodyfile="ThreeTerminal.cpp" bodystart="21" bodyend="25"/>
+        <references refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" compoundref="_component_8h" startline="19">Component::netlist</references>
+        <references refid="class_three_terminal_1ad6ceefefe2c662046be0a577e8afa6e0" compoundref="_three_terminal_8cpp" startline="8" endline="15">setNetlist</references>
+      </memberdef>
+      <memberdef kind="function" id="class_three_terminal_1a87330e8f18e5af37972a8b9edfb6172e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ThreeTerminal::connectedTo</definition>
+        <argsstring>(Component *component) const</argsstring>
+        <name>connectedTo</name>
+        <qualifiedname>ThreeTerminal::connectedTo</qualifiedname>
+        <reimplements refid="class_component_1ace23df4932822a6e64f2a9edf3004f53">connectedTo</reimplements>
+        <param>
+          <type><ref refid="class_component" kindref="compound">Component</ref> *</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ThreeTerminal.h" line="10" column="6" bodyfile="ThreeTerminal.cpp" bodystart="27" bodyend="31"/>
+        <references refid="class_three_terminal_1a47800c2de0297c7eddd7b987bd7842fd" compoundref="_three_terminal_8cpp" startline="48" endline="51">getDrain</references>
+        <references refid="class_three_terminal_1a799f07bc7941e6e5a7e86fe1a086f4bd" compoundref="_three_terminal_8cpp" startline="53" endline="56">getGate</references>
+        <references refid="class_component_1a2c3dfb75ae1f05a13a451b455dfef01a" compoundref="_component_8cpp" startline="59" endline="62">Component::getID</references>
+        <references refid="class_three_terminal_1af8adb54a621847ddf6d30051ee76e8bc" compoundref="_three_terminal_8cpp" startline="57" endline="60">getSource</references>
+      </memberdef>
+      <memberdef kind="function" id="class_three_terminal_1a0580bc4f6223903c559f2eed1bd5752c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ThreeTerminal::setDrain</definition>
+        <argsstring>(string terminal)</argsstring>
+        <name>setDrain</name>
+        <qualifiedname>ThreeTerminal::setDrain</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>terminal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ThreeTerminal.h" line="11" column="6" bodyfile="ThreeTerminal.cpp" bodystart="34" bodyend="37"/>
+        <references refid="class_component_1a8e131626e01c8549d3837a94e27a4249" compoundref="_component_8cpp" startline="108" endline="113">Component::setSingleNetlistTerminal</references>
+      </memberdef>
+      <memberdef kind="function" id="class_three_terminal_1ae4cb7666247802601ec5ca5ede38be06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ThreeTerminal::setGate</definition>
+        <argsstring>(string terminal)</argsstring>
+        <name>setGate</name>
+        <qualifiedname>ThreeTerminal::setGate</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>terminal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ThreeTerminal.h" line="12" column="6" bodyfile="ThreeTerminal.cpp" bodystart="39" bodyend="42"/>
+        <references refid="class_component_1a8e131626e01c8549d3837a94e27a4249" compoundref="_component_8cpp" startline="108" endline="113">Component::setSingleNetlistTerminal</references>
+      </memberdef>
+      <memberdef kind="function" id="class_three_terminal_1ab032469f2094578d60e2551fbde39c42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ThreeTerminal::setSource</definition>
+        <argsstring>(string terminal)</argsstring>
+        <name>setSource</name>
+        <qualifiedname>ThreeTerminal::setSource</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>terminal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ThreeTerminal.h" line="13" column="6" bodyfile="ThreeTerminal.cpp" bodystart="43" bodyend="46"/>
+        <references refid="class_component_1a8e131626e01c8549d3837a94e27a4249" compoundref="_component_8cpp" startline="108" endline="113">Component::setSingleNetlistTerminal</references>
+      </memberdef>
+      <memberdef kind="function" id="class_three_terminal_1a47800c2de0297c7eddd7b987bd7842fd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ThreeTerminal::getDrain</definition>
+        <argsstring>() const</argsstring>
+        <name>getDrain</name>
+        <qualifiedname>ThreeTerminal::getDrain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ThreeTerminal.h" line="14" column="8" bodyfile="ThreeTerminal.cpp" bodystart="48" bodyend="51"/>
+        <references refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" compoundref="_component_8h" startline="19">Component::netlist</references>
+        <referencedby refid="class_three_terminal_1a87330e8f18e5af37972a8b9edfb6172e" compoundref="_three_terminal_8cpp" startline="27" endline="31">connectedTo</referencedby>
+        <referencedby refid="class_n_m_o_s_1a53004bcb6a8406e92c0fe628b132baf0" compoundref="_n_m_o_s_8cpp" startline="19" endline="22">NMOS::printComponentInfo</referencedby>
+        <referencedby refid="class_p_m_o_s_1a7eab3bb9648f3ed3cea608d621c675c3" compoundref="_p_m_o_s_8cpp" startline="19" endline="23">PMOS::printComponentInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_three_terminal_1a799f07bc7941e6e5a7e86fe1a086f4bd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ThreeTerminal::getGate</definition>
+        <argsstring>() const</argsstring>
+        <name>getGate</name>
+        <qualifiedname>ThreeTerminal::getGate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ThreeTerminal.h" line="15" column="8" bodyfile="ThreeTerminal.cpp" bodystart="53" bodyend="56"/>
+        <references refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" compoundref="_component_8h" startline="19">Component::netlist</references>
+        <referencedby refid="class_three_terminal_1a87330e8f18e5af37972a8b9edfb6172e" compoundref="_three_terminal_8cpp" startline="27" endline="31">connectedTo</referencedby>
+        <referencedby refid="class_n_m_o_s_1a53004bcb6a8406e92c0fe628b132baf0" compoundref="_n_m_o_s_8cpp" startline="19" endline="22">NMOS::printComponentInfo</referencedby>
+        <referencedby refid="class_p_m_o_s_1a7eab3bb9648f3ed3cea608d621c675c3" compoundref="_p_m_o_s_8cpp" startline="19" endline="23">PMOS::printComponentInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_three_terminal_1af8adb54a621847ddf6d30051ee76e8bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ThreeTerminal::getSource</definition>
+        <argsstring>() const</argsstring>
+        <name>getSource</name>
+        <qualifiedname>ThreeTerminal::getSource</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ThreeTerminal.h" line="16" column="8" bodyfile="ThreeTerminal.cpp" bodystart="57" bodyend="60"/>
+        <references refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" compoundref="_component_8h" startline="19">Component::netlist</references>
+        <referencedby refid="class_three_terminal_1a87330e8f18e5af37972a8b9edfb6172e" compoundref="_three_terminal_8cpp" startline="27" endline="31">connectedTo</referencedby>
+        <referencedby refid="class_n_m_o_s_1a53004bcb6a8406e92c0fe628b132baf0" compoundref="_n_m_o_s_8cpp" startline="19" endline="22">NMOS::printComponentInfo</referencedby>
+        <referencedby refid="class_p_m_o_s_1a7eab3bb9648f3ed3cea608d621c675c3" compoundref="_p_m_o_s_8cpp" startline="19" endline="23">PMOS::printComponentInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_three_terminal_1ab8f2b105686079f3afbb56bba106db95" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ThreeTerminal::printComponentInfo</definition>
+        <argsstring>() const =0</argsstring>
+        <name>printComponentInfo</name>
+        <qualifiedname>ThreeTerminal::printComponentInfo</qualifiedname>
+        <reimplements refid="class_component_1ab852f7cd16fa85f201b72483b8b6e1b0">printComponentInfo</reimplements>
+        <reimplementedby refid="class_n_m_o_s_1a53004bcb6a8406e92c0fe628b132baf0">printComponentInfo</reimplementedby>
+        <reimplementedby refid="class_p_m_o_s_1a7eab3bb9648f3ed3cea608d621c675c3">printComponentInfo</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ThreeTerminal.h" line="17" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Component</label>
+        <link refid="class_component"/>
+      </node>
+      <node id="3">
+        <label>NMOS</label>
+        <link refid="class_n_m_o_s"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>PMOS</label>
+        <link refid="class_p_m_o_s"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ThreeTerminal</label>
+        <link refid="class_three_terminal"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Component</label>
+        <link refid="class_component"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>#id</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>#netlist</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ThreeTerminal</label>
+        <link refid="class_three_terminal"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>map&lt; string, string &gt;</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="ThreeTerminal.h" line="3" column="1" bodyfile="ThreeTerminal.h" bodystart="3" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_component_1a2e105083b89470639990cf744aa9cb13" prot="protected" virt="virtual"><scope>ThreeTerminal</scope><name>_copyComponentValues</name></member>
+      <member refid="class_component_1a889cb5b99bab68856f9b5a650669369c" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>Component</name></member>
+      <member refid="class_component_1ab87dce9b8fe3d12810c857d6decf57b5" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>Component</name></member>
+      <member refid="class_three_terminal_1a87330e8f18e5af37972a8b9edfb6172e" prot="public" virt="virtual"><scope>ThreeTerminal</scope><name>connectedTo</name></member>
+      <member refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" prot="protected" virt="non-virtual"><scope>ThreeTerminal</scope><name>defaultValue</name></member>
+      <member refid="class_component_1a2a61b9a076222666f914efbb5d2a57d4" prot="public" virt="virtual"><scope>ThreeTerminal</scope><name>getDefaultValue</name></member>
+      <member refid="class_three_terminal_1a47800c2de0297c7eddd7b987bd7842fd" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>getDrain</name></member>
+      <member refid="class_three_terminal_1a799f07bc7941e6e5a7e86fe1a086f4bd" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>getGate</name></member>
+      <member refid="class_component_1a2c3dfb75ae1f05a13a451b455dfef01a" prot="public" virt="virtual"><scope>ThreeTerminal</scope><name>getID</name></member>
+      <member refid="class_component_1a731f2fb15adcd16ddb6343dab21f5a39" prot="public" virt="virtual"><scope>ThreeTerminal</scope><name>getMaxValue</name></member>
+      <member refid="class_component_1a4f0d7c4c6f5e96c33c05feb39a2f8bb1" prot="public" virt="virtual"><scope>ThreeTerminal</scope><name>getMinValue</name></member>
+      <member refid="class_component_1aeb1e21523f1347a95efa4caf596cacf0" prot="public" virt="virtual"><scope>ThreeTerminal</scope><name>getNetlist</name></member>
+      <member refid="class_three_terminal_1af8adb54a621847ddf6d30051ee76e8bc" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>getSource</name></member>
+      <member refid="class_component_1a93d9044a39dfb0ccc0bca4cb5d3eb70e" prot="public" virt="pure-virtual"><scope>ThreeTerminal</scope><name>getType</name></member>
+      <member refid="class_component_1aa66f3e6ea8d4309ae836e5b4ccdeee1c" prot="protected" virt="non-virtual"><scope>ThreeTerminal</scope><name>id</name></member>
+      <member refid="class_component_1a2d0f12bfc606aed817a667db8346b229" prot="protected" virt="non-virtual"><scope>ThreeTerminal</scope><name>maxValue</name></member>
+      <member refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" prot="protected" virt="non-virtual"><scope>ThreeTerminal</scope><name>minValue</name></member>
+      <member refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" prot="protected" virt="non-virtual"><scope>ThreeTerminal</scope><name>netlist</name></member>
+      <member refid="class_component_1ab6639960bdfc791d3b6fc6c5e0bba0fe" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>operator==</name></member>
+      <member refid="class_three_terminal_1ab8f2b105686079f3afbb56bba106db95" prot="public" virt="pure-virtual"><scope>ThreeTerminal</scope><name>printComponentInfo</name></member>
+      <member refid="class_component_1a76c033320ee12d34be094ace64823d11" prot="public" virt="virtual"><scope>ThreeTerminal</scope><name>setComponentValues</name></member>
+      <member refid="class_component_1a60f880911ea927dc32b9226525355062" prot="public" virt="virtual"><scope>ThreeTerminal</scope><name>setDefaultValue</name></member>
+      <member refid="class_three_terminal_1a0580bc4f6223903c559f2eed1bd5752c" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>setDrain</name></member>
+      <member refid="class_three_terminal_1ae4cb7666247802601ec5ca5ede38be06" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>setGate</name></member>
+      <member refid="class_component_1a901f96875ec357b5e603e68c0f8f4095" prot="public" virt="virtual"><scope>ThreeTerminal</scope><name>setID</name></member>
+      <member refid="class_component_1ac2de6d2183cd7cf70b28f20e0c42a2b0" prot="public" virt="virtual"><scope>ThreeTerminal</scope><name>setMaxValue</name></member>
+      <member refid="class_component_1a90ed6bf90df9b29af01b879bbcb5083f" prot="public" virt="virtual"><scope>ThreeTerminal</scope><name>setMinValue</name></member>
+      <member refid="class_three_terminal_1ad6ceefefe2c662046be0a577e8afa6e0" prot="protected" virt="virtual"><scope>ThreeTerminal</scope><name>setNetlist</name></member>
+      <member refid="class_component_1a8e131626e01c8549d3837a94e27a4249" prot="protected" virt="virtual"><scope>ThreeTerminal</scope><name>setSingleNetlistTerminal</name></member>
+      <member refid="class_three_terminal_1ab032469f2094578d60e2551fbde39c42" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>setSource</name></member>
+      <member refid="class_three_terminal_1a71c3a689f65d400ebeaa9eae96b84b11" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>ThreeTerminal</name></member>
+      <member refid="class_three_terminal_1ab24eede68f8c6fd5b91fa5b095dc15d5" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>ThreeTerminal</name></member>
+      <member refid="class_component_1af5e90af141f6c98be944cc9d02a61e34" prot="protected" virt="virtual"><scope>ThreeTerminal</scope><name>validComponentValues</name></member>
+      <member refid="class_three_terminal_1ada3f5b6dc4b55f4cdc4d547d41d73cf1" prot="protected" virt="virtual"><scope>ThreeTerminal</scope><name>validNetlist</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,48 @@
+\hypertarget{_component_8h_source}{}\doxysection{Component.\+h}
+\mbox{\hyperlink{_component_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{6 \textcolor{keyword}{using }std::string;}
+\DoxyCodeLine{7 \textcolor{keyword}{using }std::endl;}
+\DoxyCodeLine{8 \textcolor{keyword}{using }std::cin;}
+\DoxyCodeLine{9 \textcolor{keyword}{using }std::cout;}
+\DoxyCodeLine{10 \textcolor{keyword}{using }std::vector;}
+\DoxyCodeLine{11 \textcolor{keyword}{using }std::map;}
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_component}{Component}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{15     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_component_aa66f3e6ea8d4309ae836e5b4ccdeee1c}{id}};}
+\DoxyCodeLine{16     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_component_ae87427a00fdf5426b7169a66d7ca6f30}{defaultValue}};}
+\DoxyCodeLine{17     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_component_a1d7cf78862de172eda96c0603c1b4903}{minValue}};}
+\DoxyCodeLine{18     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_component_a2d0f12bfc606aed817a667db8346b229}{maxValue}};}
+\DoxyCodeLine{19     map<string , string> \mbox{\hyperlink{class_component_ad4b4dcb01b0509ad5739ae2fa2209ff9}{netlist}};}
+\DoxyCodeLine{20     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_component_a693ad7b28df940f48978539ab18cca5e}{validNetlist}}(map<string,string>\&) = 0;}
+\DoxyCodeLine{21     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_component_a5243477401a46b5f7175a0b62807ae69}{setNetlist}}(map<string, string>\&) = 0;}
+\DoxyCodeLine{22     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_component_af5e90af141f6c98be944cc9d02a61e34}{validComponentValues}}(map<string, double>\& componentInfo);}
+\DoxyCodeLine{23     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_component_a8e131626e01c8549d3837a94e27a4249}{setSingleNetlistTerminal}}(\textcolor{keywordtype}{string} terminal , \textcolor{keywordtype}{string} value);}
+\DoxyCodeLine{24     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_component_a2e105083b89470639990cf744aa9cb13}{\_copyComponentValues}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_component}{Component}}\& other);}
+\DoxyCodeLine{25 \textcolor{keyword}{public}:}
+\DoxyCodeLine{26     \mbox{\hyperlink{class_component_a889cb5b99bab68856f9b5a650669369c}{Component}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_component}{Component}}\& other);}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_component_a889cb5b99bab68856f9b5a650669369c}{Component}}( \textcolor{keywordtype}{string} \textcolor{keywordtype}{id}, map<string, double>\& componentValues);}
+\DoxyCodeLine{28     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_component_ab6639960bdfc791d3b6fc6c5e0bba0fe}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_component}{Component}}\& other) \textcolor{keyword}{const};}
+\DoxyCodeLine{29     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_component_a76c033320ee12d34be094ace64823d11}{setComponentValues}}(map<string, double>\&);}
+\DoxyCodeLine{30     \textcolor{keyword}{virtual} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_component_a93d9044a39dfb0ccc0bca4cb5d3eb70e}{getType}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{31     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_component_a901f96875ec357b5e603e68c0f8f4095}{setID}}(\textcolor{keywordtype}{string} \textcolor{keywordtype}{id}) ;}
+\DoxyCodeLine{32     \textcolor{keyword}{virtual} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_component_a2c3dfb75ae1f05a13a451b455dfef01a}{getID}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{33     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_component_ac2de6d2183cd7cf70b28f20e0c42a2b0}{setMaxValue}}(\textcolor{keywordtype}{double} val);}
+\DoxyCodeLine{34     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_component_a731f2fb15adcd16ddb6343dab21f5a39}{getMaxValue}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{35     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_component_a90ed6bf90df9b29af01b879bbcb5083f}{setMinValue}}(\textcolor{keywordtype}{double} val);}
+\DoxyCodeLine{36     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_component_a4f0d7c4c6f5e96c33c05feb39a2f8bb1}{getMinValue}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{37     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_component_a60f880911ea927dc32b9226525355062}{setDefaultValue}}(\textcolor{keywordtype}{double} val);}
+\DoxyCodeLine{38     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_component_a2a61b9a076222666f914efbb5d2a57d4}{getDefaultValue}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{39     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_component_ab852f7cd16fa85f201b72483b8b6e1b0}{printComponentInfo}}() \textcolor{keyword}{const}= 0;}
+\DoxyCodeLine{40     \textcolor{keyword}{virtual} map<string, string> \mbox{\hyperlink{class_component_aeb1e21523f1347a95efa4caf596cacf0}{getNetlist}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{41     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_component_ace23df4932822a6e64f2a9edf3004f53}{connectedTo}}(\mbox{\hyperlink{class_component}{Component}}* component) \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{42 \};}
+\DoxyCodeLine{43 }
+
+\end{DoxyCode}

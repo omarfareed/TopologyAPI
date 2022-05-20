@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.4" xml:lang="en-US">
+  <compound refid="class_a_p_i" kind="class"><name>API</name>
+    <member refid="class_a_p_i_1a09c04367a642b864f1293961ff5a52f4" kind="variable"><name>topologyList</name></member>
+    <member refid="class_a_p_i_1a2fec1029af1acd1ad9029587e5b36f4f" kind="variable"><name>parser</name></member>
+    <member refid="class_a_p_i_1a6b52b248c1e83149a757e951f2dc322c" kind="function"><name>_getTopology</name></member>
+    <member refid="class_a_p_i_1a56489f419f0fb6517d003c47f9c7d4e7" kind="function"><name>readTopology</name></member>
+    <member refid="class_a_p_i_1a03cbecbd8bdee695b19fc6cd4a5d9a93" kind="function"><name>writeTopology</name></member>
+    <member refid="class_a_p_i_1aeb782ac76fb0779d97f2d7784688dc57" kind="function"><name>queueryTopologies</name></member>
+    <member refid="class_a_p_i_1ae61cf33d3771ccbe778f39446bd72525" kind="function"><name>deleteTopology</name></member>
+    <member refid="class_a_p_i_1a46f09b5c63cc0e7ee9fb759e3947671c" kind="function"><name>queryDevices</name></member>
+    <member refid="class_a_p_i_1a380efa1662170ab32c19c52ea8f47841" kind="function"><name>queryDevicesWithNetlistNodes</name></member>
+    <member refid="class_a_p_i_1a2c416d5e7142fcf5950ef305ce3bf8d9" kind="function"><name>printAllTopologies</name></member>
+  </compound>
+  <compound refid="class_component" kind="class"><name>Component</name>
+    <member refid="class_component_1aa66f3e6ea8d4309ae836e5b4ccdeee1c" kind="variable"><name>id</name></member>
+    <member refid="class_component_1ae87427a00fdf5426b7169a66d7ca6f30" kind="variable"><name>defaultValue</name></member>
+    <member refid="class_component_1a1d7cf78862de172eda96c0603c1b4903" kind="variable"><name>minValue</name></member>
+    <member refid="class_component_1a2d0f12bfc606aed817a667db8346b229" kind="variable"><name>maxValue</name></member>
+    <member refid="class_component_1ad4b4dcb01b0509ad5739ae2fa2209ff9" kind="variable"><name>netlist</name></member>
+    <member refid="class_component_1a693ad7b28df940f48978539ab18cca5e" kind="function"><name>validNetlist</name></member>
+    <member refid="class_component_1a5243477401a46b5f7175a0b62807ae69" kind="function"><name>setNetlist</name></member>
+    <member refid="class_component_1af5e90af141f6c98be944cc9d02a61e34" kind="function"><name>validComponentValues</name></member>
+    <member refid="class_component_1a8e131626e01c8549d3837a94e27a4249" kind="function"><name>setSingleNetlistTerminal</name></member>
+    <member refid="class_component_1a2e105083b89470639990cf744aa9cb13" kind="function"><name>_copyComponentValues</name></member>
+    <member refid="class_component_1a889cb5b99bab68856f9b5a650669369c" kind="function"><name>Component</name></member>
+    <member refid="class_component_1ab87dce9b8fe3d12810c857d6decf57b5" kind="function"><name>Component</name></member>
+    <member refid="class_component_1ab6639960bdfc791d3b6fc6c5e0bba0fe" kind="function"><name>operator==</name></member>
+    <member refid="class_component_1a76c033320ee12d34be094ace64823d11" kind="function"><name>setComponentValues</name></member>
+    <member refid="class_component_1a93d9044a39dfb0ccc0bca4cb5d3eb70e" kind="function"><name>getType</name></member>
+    <member refid="class_component_1a901f96875ec357b5e603e68c0f8f4095" kind="function"><name>setID</name></member>
+    <member refid="class_component_1a2c3dfb75ae1f05a13a451b455dfef01a" kind="function"><name>getID</name></member>
+    <member refid="class_component_1ac2de6d2183cd7cf70b28f20e0c42a2b0" kind="function"><name>setMaxValue</name></member>
+    <member refid="class_component_1a731f2fb15adcd16ddb6343dab21f5a39" kind="function"><name>getMaxValue</name></member>
+    <member refid="class_component_1a90ed6bf90df9b29af01b879bbcb5083f" kind="function"><name>setMinValue</name></member>
+    <member refid="class_component_1a4f0d7c4c6f5e96c33c05feb39a2f8bb1" kind="function"><name>getMinValue</name></member>
+    <member refid="class_component_1a60f880911ea927dc32b9226525355062" kind="function"><name>setDefaultValue</name></member>
+    <member refid="class_component_1a2a61b9a076222666f914efbb5d2a57d4" kind="function"><name>getDefaultValue</name></member>
+    <member refid="class_component_1ab852f7cd16fa85f201b72483b8b6e1b0" kind="function"><name>printComponentInfo</name></member>
+    <member refid="class_component_1aeb1e21523f1347a95efa4caf596cacf0" kind="function"><name>getNetlist</name></member>
+    <member refid="class_component_1ace23df4932822a6e64f2a9edf3004f53" kind="function"><name>connectedTo</name></member>
+  </compound>
+  <compound refid="class_current_source" kind="class"><name>CurrentSource</name>
+    <member refid="class_current_source_1aeb4ddaad0ca21c3d92b26e820825690a" kind="function"><name>CurrentSource</name></member>
+    <member refid="class_current_source_1a658360c7088ced958c7c03381855dd59" kind="function"><name>operator=</name></member>
+    <member refid="class_current_source_1a5715b0f3869c8580275ba5b2ab7b45ae" kind="function"><name>CurrentSource</name></member>
+    <member refid="class_current_source_1ac1cbf0845f2ee61b8360b4080a6cd836" kind="function"><name>getType</name></member>
+    <member refid="class_current_source_1acfc3c673e9da45f4f71fcf0893560c53" kind="function"><name>printComponentInfo</name></member>
+  </compound>
+  <compound refid="class_j_s_o_n" kind="class"><name>JSON</name>
+    <member refid="class_j_s_o_n_1a418c1a82fea896a4fd4a64c77542d65a" kind="function"><name>_createTopology</name></member>
+    <member refid="class_j_s_o_n_1a3e827bcf65e4c942142217eda2e6e433" kind="function"><name>_createComponents</name></member>
+    <member refid="class_j_s_o_n_1ad4ee5acc9d1b29c5a89db11e34781c0c" kind="function"><name>_createComponent</name></member>
+    <member refid="class_j_s_o_n_1ad2def689abbb980909790a10d16a2053" kind="function"><name>_createResistor</name></member>
+    <member refid="class_j_s_o_n_1aef6c115e94324653fc0b5085e2f62c99" kind="function"><name>_createNMOS</name></member>
+    <member refid="class_j_s_o_n_1ae84aaec9d82ae6fc0f922e1c45ed5f83" kind="function"><name>_writeTopologyComponents</name></member>
+    <member refid="class_j_s_o_n_1a07f5ab56ea3a6bcf79919ee1e7a9208f" kind="function"><name>_writeTopologyComponent</name></member>
+    <member refid="class_j_s_o_n_1afb9a1a45bf03703999c0e5aec2aa132d" kind="function"><name>_getTopologyInfo</name></member>
+    <member refid="class_j_s_o_n_1acf359a0f5efc57e6e844ad58abbd6480" kind="function"><name>JSON</name></member>
+    <member refid="class_j_s_o_n_1a05c031a8a70c3cc1c65509430c08cef3" kind="function"><name>JSON</name></member>
+    <member refid="class_j_s_o_n_1ad61eec9c5fac292be6e6d6bc4566b0a7" kind="function"><name>operator=</name></member>
+    <member refid="class_j_s_o_n_1a24f221b9202d745dc42a694697813eda" kind="function"><name>readTopology</name></member>
+    <member refid="class_j_s_o_n_1a8e9a88433e4ca77f3fb9bf18b04619cc" kind="function"><name>writeTopology</name></member>
+  </compound>
+  <compound refid="class_n_m_o_s" kind="class"><name>NMOS</name>
+    <member refid="class_n_m_o_s_1a9256579357bc706c95b7279bdf379cb6" kind="function"><name>operator=</name></member>
+    <member refid="class_n_m_o_s_1a95650d715eb2cc056cee0e38d60c1927" kind="function"><name>NMOS</name></member>
+    <member refid="class_n_m_o_s_1adf795ea18c66a11e1025bf5752dc096d" kind="function"><name>NMOS</name></member>
+    <member refid="class_n_m_o_s_1a33ec37bd4d014dfdd97a89ef45cf3c76" kind="function"><name>getType</name></member>
+    <member refid="class_n_m_o_s_1a53004bcb6a8406e92c0fe628b132baf0" kind="function"><name>printComponentInfo</name></member>
+  </compound>
+  <compound refid="class_p_m_o_s" kind="class"><name>PMOS</name>
+    <member refid="class_p_m_o_s_1acc40afe08d48abe85b192f10ce5f133c" kind="function"><name>PMOS</name></member>
+    <member refid="class_p_m_o_s_1a184d7774bc8046e3f1620cb0462eba94" kind="function"><name>operator=</name></member>
+    <member refid="class_p_m_o_s_1ac864dc20237e1f34b9c27dfce1282eb0" kind="function"><name>PMOS</name></member>
+    <member refid="class_p_m_o_s_1a02b873bd092545c7441ad595c1ee8e48" kind="function"><name>getType</name></member>
+    <member refid="class_p_m_o_s_1a7eab3bb9648f3ed3cea608d621c675c3" kind="function"><name>printComponentInfo</name></member>
+  </compound>
+  <compound refid="class_resistor" kind="class"><name>Resistor</name>
+    <member refid="class_resistor_1a6840635765bdc1b90d009b810003b4a0" kind="function"><name>Resistor</name></member>
+    <member refid="class_resistor_1a5dae2de6b0ef2d7d597963e20feba419" kind="function"><name>operator=</name></member>
+    <member refid="class_resistor_1af03f16cba3aad1d2a30414a831e4a45d" kind="function"><name>Resistor</name></member>
+    <member refid="class_resistor_1a1dcd19344e02a990aba6d62aa4a2fff6" kind="function"><name>getType</name></member>
+    <member refid="class_resistor_1a69290e67ec09dacfa9439bcad8838949" kind="function"><name>printComponentInfo</name></member>
+  </compound>
+  <compound refid="class_three_terminal" kind="class"><name>ThreeTerminal</name>
+    <member refid="class_three_terminal_1ada3f5b6dc4b55f4cdc4d547d41d73cf1" kind="function"><name>validNetlist</name></member>
+    <member refid="class_three_terminal_1ad6ceefefe2c662046be0a577e8afa6e0" kind="function"><name>setNetlist</name></member>
+    <member refid="class_three_terminal_1a71c3a689f65d400ebeaa9eae96b84b11" kind="function"><name>ThreeTerminal</name></member>
+    <member refid="class_three_terminal_1ab24eede68f8c6fd5b91fa5b095dc15d5" kind="function"><name>ThreeTerminal</name></member>
+    <member refid="class_three_terminal_1a87330e8f18e5af37972a8b9edfb6172e" kind="function"><name>connectedTo</name></member>
+    <member refid="class_three_terminal_1a0580bc4f6223903c559f2eed1bd5752c" kind="function"><name>setDrain</name></member>
+    <member refid="class_three_terminal_1ae4cb7666247802601ec5ca5ede38be06" kind="function"><name>setGate</name></member>
+    <member refid="class_three_terminal_1ab032469f2094578d60e2551fbde39c42" kind="function"><name>setSource</name></member>
+    <member refid="class_three_terminal_1a47800c2de0297c7eddd7b987bd7842fd" kind="function"><name>getDrain</name></member>
+    <member refid="class_three_terminal_1a799f07bc7941e6e5a7e86fe1a086f4bd" kind="function"><name>getGate</name></member>
+    <member refid="class_three_terminal_1af8adb54a621847ddf6d30051ee76e8bc" kind="function"><name>getSource</name></member>
+    <member refid="class_three_terminal_1ab8f2b105686079f3afbb56bba106db95" kind="function"><name>printComponentInfo</name></member>
+  </compound>
+  <compound refid="class_topology" kind="class"><name>Topology</name>
+    <member refid="class_topology_1a77d60b0f3dad374ac5ecbc54cffc0cbb" kind="variable"><name>id</name></member>
+    <member refid="class_topology_1a378c0fa24b260d7e00f0346b09716d16" kind="variable"><name>components</name></member>
+    <member refid="class_topology_1a10efafb41bd5564c06b0fc4851cbc5eb" kind="function"><name>_deleteAllComponents</name></member>
+    <member refid="class_topology_1af4a9e293931bb78166825532c12dc478" kind="function"><name>Topology</name></member>
+    <member refid="class_topology_1a4dfd067373ce08fa08f8bd4e72b3e1d1" kind="function"><name>Topology</name></member>
+    <member refid="class_topology_1ac7b36123304ae578155bd47c3714bda4" kind="function"><name>operator=</name></member>
+    <member refid="class_topology_1ae42fa0cf1b8a0f31a1d4849fcbf3017f" kind="function"><name>operator==</name></member>
+    <member refid="class_topology_1a10722b274f427a7b8ca3ccdb67d89ebe" kind="function"><name>getComponent</name></member>
+    <member refid="class_topology_1ad4ba550251112a2f63b10a306692fc11" kind="function"><name>addComponent</name></member>
+    <member refid="class_topology_1a7b9261604f37f43420d57435f7ac07ab" kind="function"><name>setComponents</name></member>
+    <member refid="class_topology_1a333ff1352e863bd9118879f1c07be78d" kind="function"><name>setID</name></member>
+    <member refid="class_topology_1af2f26bfb53b21b672fd2e6759752b12b" kind="function"><name>getID</name></member>
+    <member refid="class_topology_1a22eb41600ab4c15be29732cff616cca5" kind="function"><name>getComponents</name></member>
+    <member refid="class_topology_1a1fa99284d7854654f6834bd4796b67d0" kind="function"><name>getComponentsWithNetlistNode</name></member>
+    <member refid="class_topology_1a5f30401b0afdd299445ede9a3b0ca6ec" kind="function"><name>printComponents</name></member>
+    <member refid="class_topology_1a3e447669757c8311c7f6f8edc705abf2" kind="function"><name>~Topology</name></member>
+  </compound>
+  <compound refid="class_two_terminal" kind="class"><name>TwoTerminal</name>
+    <member refid="class_two_terminal_1a8c728d34c9cfd5517ac2de7b73bd7be6" kind="function"><name>validNetlist</name></member>
+    <member refid="class_two_terminal_1ab8ca14897020a7776b72522402d88763" kind="function"><name>setNetlist</name></member>
+    <member refid="class_two_terminal_1a73f7440b07d890d06713b210d9bfad13" kind="function"><name>TwoTerminal</name></member>
+    <member refid="class_two_terminal_1a72eca286775a8c42e999759e75e8485f" kind="function"><name>TwoTerminal</name></member>
+    <member refid="class_two_terminal_1a7bf70d6e3f2ca091b3f917a29bb7694a" kind="function"><name>setT1</name></member>
+    <member refid="class_two_terminal_1aaddd792566aaa30c7df3eacb30e4e1c7" kind="function"><name>setT2</name></member>
+    <member refid="class_two_terminal_1a8378a30d5b7caeae708431931da3118a" kind="function"><name>connectedTo</name></member>
+    <member refid="class_two_terminal_1ab0830960996a7ead2bcd0dd6f44130fe" kind="function"><name>getT1</name></member>
+    <member refid="class_two_terminal_1a20afcb41e626f0d511cd8d2d19eecc3c" kind="function"><name>getT2</name></member>
+    <member refid="class_two_terminal_1a1ead3d83626a7a2bae5a90a29430b927" kind="function"><name>printComponentInfo</name></member>
+  </compound>
+  <compound refid="class_voltage_source" kind="class"><name>VoltageSource</name>
+    <member refid="class_voltage_source_1a80d6a4b297b6f75d44a09ba68b9fddd3" kind="function"><name>VoltageSource</name></member>
+    <member refid="class_voltage_source_1a7491d524ed737f714987845ba01328f9" kind="function"><name>operator=</name></member>
+    <member refid="class_voltage_source_1a4f76219fcd97cfc9a79dc4fc0e6a1f8b" kind="function"><name>VoltageSource</name></member>
+    <member refid="class_voltage_source_1a2e809a9bbfeac910d90c02495270134e" kind="function"><name>getType</name></member>
+    <member refid="class_voltage_source_1af6208091a06b15e0eba261ea558e8ffc" kind="function"><name>printComponentInfo</name></member>
+  </compound>
+  <compound refid="_a_p_i_8cpp" kind="file"><name>API.cpp</name>
+  </compound>
+  <compound refid="_a_p_i_8h" kind="file"><name>API.h</name>
+  </compound>
+  <compound refid="_component_8cpp" kind="file"><name>Component.cpp</name>
+  </compound>
+  <compound refid="_component_8h" kind="file"><name>Component.h</name>
+  </compound>
+  <compound refid="_current_source_8cpp" kind="file"><name>CurrentSource.cpp</name>
+  </compound>
+  <compound refid="_current_source_8h" kind="file"><name>CurrentSource.h</name>
+  </compound>
+  <compound refid="_j_s_o_n_8cpp" kind="file"><name>JSON.cpp</name>
+    <member refid="_j_s_o_n_8cpp_1af08ec37a8c99d747fb60fa15bc28678b" kind="define"><name>_CRT_SECURE_NO_WARNINGS</name></member>
+  </compound>
+  <compound refid="_j_s_o_n_8h" kind="file"><name>JSON.h</name>
+    <member refid="_j_s_o_n_8h_1af08ec37a8c99d747fb60fa15bc28678b" kind="define"><name>_CRT_SECURE_NO_WARNINGS</name></member>
+    <member refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kind="typedef"><name>json</name></member>
+  </compound>
+  <compound refid="_n_m_o_s_8cpp" kind="file"><name>NMOS.cpp</name>
+  </compound>
+  <compound refid="_n_m_o_s_8h" kind="file"><name>NMOS.h</name>
+  </compound>
+  <compound refid="_p_m_o_s_8cpp" kind="file"><name>PMOS.cpp</name>
+  </compound>
+  <compound refid="_p_m_o_s_8h" kind="file"><name>PMOS.h</name>
+  </compound>
+  <compound refid="_resistor_8cpp" kind="file"><name>Resistor.cpp</name>
+  </compound>
+  <compound refid="_resistor_8h" kind="file"><name>Resistor.h</name>
+  </compound>
+  <compound refid="_three_terminal_8cpp" kind="file"><name>ThreeTerminal.cpp</name>
+  </compound>
+  <compound refid="_three_terminal_8h" kind="file"><name>ThreeTerminal.h</name>
+  </compound>
+  <compound refid="_topology_8cpp" kind="file"><name>Topology.cpp</name>
+  </compound>
+  <compound refid="_topology_8h" kind="file"><name>Topology.h</name>
+  </compound>
+  <compound refid="_two_terminal_8cpp" kind="file"><name>TwoTerminal.cpp</name>
+  </compound>
+  <compound refid="_two_terminal_8h" kind="file"><name>TwoTerminal.h</name>
+  </compound>
+  <compound refid="_voltage_source_8cpp" kind="file"><name>VoltageSource.cpp</name>
+  </compound>
+  <compound refid="_voltage_source_8h" kind="file"><name>VoltageSource.h</name>
+  </compound>
+</doxygenindex>

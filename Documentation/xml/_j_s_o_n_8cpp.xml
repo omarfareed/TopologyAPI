@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_j_s_o_n_8cpp" kind="file" language="C++">
+    <compoundname>JSON.cpp</compoundname>
+    <includes local="no">string</includes>
+    <includes refid="_j_s_o_n_8h" local="yes">JSON.h</includes>
+    <includes local="no">fstream</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>../Components/Resistor.h</label>
+      </node>
+      <node id="8">
+        <label>../Components/nmos.h</label>
+      </node>
+      <node id="6">
+        <label>../Topology/Topology.h</label>
+      </node>
+      <node id="1">
+        <label>JSON.cpp</label>
+        <link refid="_j_s_o_n_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>JSON.h</label>
+        <link refid="_j_s_o_n_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>fstream</label>
+      </node>
+      <node id="4">
+        <label>json.hpp</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_j_s_o_n_8cpp_1af08ec37a8c99d747fb60fa15bc28678b" prot="public" static="no">
+        <name>_CRT_SECURE_NO_WARNINGS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="JSON.cpp" line="1" column="9" bodyfile="JSON.cpp" bodystart="1" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="_j_s_o_n_8cpp_1af08ec37a8c99d747fb60fa15bc28678b" refkind="member"><highlight class="preprocessor">#define<sp/>_CRT_SECURE_NO_WARNINGS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_j_s_o_n_8h" kindref="compound">JSON.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="class_component" kindref="compound">Component</ref>*<sp/>JSON::_createComponent(<ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>componentParser)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>type<sp/>=<sp/>componentParser[</highlight><highlight class="stringliteral">&quot;type&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>componentParser[</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;resistor&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_createResistor(componentParser);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;nmos&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_createNMOS(componentParser);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;unexpected<sp/>component<sp/>type\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><ref refid="class_component" kindref="compound">Component</ref>*<sp/>JSON::_createResistor(<ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>componentParser)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>map&lt;string,<sp/>string&gt;<sp/>netlist<sp/>=<sp/>componentParser[</highlight><highlight class="stringliteral">&quot;netlist&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>map&lt;string,<sp/>double&gt;<sp/>info<sp/>=<sp/>componentParser[</highlight><highlight class="stringliteral">&quot;resistance&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>componentParser[</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_resistor" kindref="compound">Resistor</ref>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>netlist,<sp/>info);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><ref refid="class_component" kindref="compound">Component</ref>*<sp/>JSON::_createNMOS(<ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>componentParser)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>map&lt;string,<sp/>string&gt;<sp/>netlist<sp/>=<sp/>componentParser[</highlight><highlight class="stringliteral">&quot;netlist&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>map&lt;string,<sp/>double&gt;<sp/>info<sp/>=<sp/>componentParser[</highlight><highlight class="stringliteral">&quot;m(l)&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>componentParser[</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_n_m_o_s" kindref="compound">NMOS</ref>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>netlist,<sp/>info);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">vector&lt;Component*&gt;<sp/>JSON::_createComponents(<ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>componentsParser)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Component*&gt;<sp/>components;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>componentParser<sp/>:<sp/>componentsParser)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>components.push_back(this-&gt;_createComponent(componentParser));<sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>components;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><ref refid="class_topology" kindref="compound">Topology</ref>*<sp/>JSON::_createTopology(<ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>parser)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>parser[</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Component*&gt;<sp/>components<sp/>=<sp/>this-&gt;_createComponents(parser[</highlight><highlight class="stringliteral">&quot;components&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_topology" kindref="compound">Topology</ref>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>,<sp/>components);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44" refid="class_j_s_o_n_1acf359a0f5efc57e6e844ad58abbd6480" refkind="member"><highlight class="normal"><ref refid="class_j_s_o_n_1acf359a0f5efc57e6e844ad58abbd6480" kindref="member">JSON::JSON</ref>()</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_j_s_o_n_1a05c031a8a70c3cc1c65509430c08cef3" refkind="member"><highlight class="normal"><ref refid="class_j_s_o_n_1acf359a0f5efc57e6e844ad58abbd6480" kindref="member">JSON::JSON</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_j_s_o_n" kindref="compound">JSON</ref>&amp;<sp/>other)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="class_j_s_o_n_1ad61eec9c5fac292be6e6d6bc4566b0a7" refkind="member"><highlight class="normal"><ref refid="class_j_s_o_n" kindref="compound">JSON</ref><sp/><ref refid="class_j_s_o_n_1ad61eec9c5fac292be6e6d6bc4566b0a7" kindref="member">JSON::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_j_s_o_n" kindref="compound">JSON</ref>&amp;<sp/>other)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_j_s_o_n_1acf359a0f5efc57e6e844ad58abbd6480" kindref="member">JSON</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="class_j_s_o_n_1a24f221b9202d745dc42a694697813eda" refkind="member"><highlight class="normal"><ref refid="class_topology" kindref="compound">Topology</ref>*<sp/><ref refid="class_j_s_o_n_1a24f221b9202d745dc42a694697813eda" kindref="member">JSON::readTopology</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>fileName)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fileName.find(</highlight><highlight class="stringliteral">&quot;.json&quot;</highlight><highlight class="normal">)<sp/>==<sp/>string::npos)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;invalid<sp/>file<sp/>name&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ifstream<sp/>file(fileName);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>jsonParser<sp/>=<sp/>json::parse(file);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(jsonParser.empty())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_topology" kindref="compound">Topology</ref>*<sp/>topology<sp/>=<sp/>this-&gt;_createTopology(jsonParser);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>topology;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ex)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;there<sp/>exist<sp/>exception\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(...)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>Exception\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>JSON::_getTopologyInfo(<ref refid="class_component" kindref="compound">Component</ref>*<sp/>component)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>{</highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal"><sp/>,<sp/>component-&gt;<ref refid="class_component_1a2a61b9a076222666f914efbb5d2a57d4" kindref="member">getDefaultValue</ref>()}<sp/>,<sp/>{</highlight><highlight class="stringliteral">&quot;min&quot;</highlight><highlight class="normal"><sp/>,<sp/>component-&gt;<ref refid="class_component_1a4f0d7c4c6f5e96c33c05feb39a2f8bb1" kindref="member">getMinValue</ref>()<sp/>}<sp/>,<sp/>{</highlight><highlight class="stringliteral">&quot;max&quot;</highlight><highlight class="normal"><sp/>,<sp/>component-&gt;<ref refid="class_component_1a731f2fb15adcd16ddb6343dab21f5a39" kindref="member">getMaxValue</ref>()}<sp/>};</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>JSON::_writeTopologyComponent(<ref refid="class_component" kindref="compound">Component</ref>*<sp/>component)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>JSONComponent;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>component-&gt;<ref refid="class_component_1a2c3dfb75ae1f05a13a451b455dfef01a" kindref="member">getID</ref>();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>defaultVal<sp/>=<sp/>component-&gt;<ref refid="class_component_1a2a61b9a076222666f914efbb5d2a57d4" kindref="member">getDefaultValue</ref>(),<sp/>minVal<sp/>=<sp/>component-&gt;<ref refid="class_component_1a4f0d7c4c6f5e96c33c05feb39a2f8bb1" kindref="member">getMinValue</ref>(),<sp/>maxVal<sp/>=<sp/>component-&gt;<ref refid="class_component_1a731f2fb15adcd16ddb6343dab21f5a39" kindref="member">getMaxValue</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>JSONComponent<sp/>=<sp/>{<sp/>{</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>},<sp/>{</highlight><highlight class="stringliteral">&quot;netlist&quot;</highlight><highlight class="normal"><sp/>,<sp/>component-&gt;<ref refid="class_component_1aeb1e21523f1347a95efa4caf596cacf0" kindref="member">getNetlist</ref>()}<sp/>,{<sp/></highlight><highlight class="stringliteral">&quot;info&quot;</highlight><highlight class="normal"><sp/>,<sp/>this-&gt;_getTopologyInfo(component)}<sp/>};</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>JSONComponent;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>JSON::_writeTopologyComponents(<ref refid="class_topology" kindref="compound">Topology</ref>*<sp/>topology)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;json&gt;<sp/>components;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>component<sp/>:<sp/>topology-&gt;<ref refid="class_topology_1a22eb41600ab4c15be29732cff616cca5" kindref="member">getComponents</ref>())</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>components.push_back(_writeTopologyComponent(component));</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref>)components;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101" refid="class_j_s_o_n_1a8e9a88433e4ca77f3fb9bf18b04619cc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_j_s_o_n_1a8e9a88433e4ca77f3fb9bf18b04619cc" kindref="member">JSON::writeTopology</ref>(<sp/><ref refid="class_topology" kindref="compound">Topology</ref><sp/>*topology,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>fileName)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_j_s_o_n_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>outJson;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>outJson<sp/>=<sp/>{<sp/>{</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal"><sp/>,<sp/>topology-&gt;<ref refid="class_topology_1af2f26bfb53b21b672fd2e6759752b12b" kindref="member">getID</ref>()}<sp/>,{</highlight><highlight class="stringliteral">&quot;components&quot;</highlight><highlight class="normal"><sp/>,<sp/>this-&gt;_writeTopologyComponents(topology)}<sp/>};</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/><sp/>file(fileName);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>file<sp/>&lt;&lt;<sp/>outJson<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;JSON<sp/>file<sp/>created\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="JSON.cpp"/>
+  </compounddef>
+</doxygen>
