@@ -1,3 +1,4 @@
+#include "Testing/Test.h"
 #include "API/API.h"
 void printComponents(vector<Component*> components)
 {
@@ -17,6 +18,9 @@ int main()
 	if (!api.writeTopology(topology1->getID()))
 	{
 		cout << "Failed to write topology with id : " << topology1->getID() << endl;
+	}
+	else{
+		cout << "topology has been written at file ./topologyWrite.json" << endl;
 	}
 	string top1Id = topology1->getID();
 	if (api.deleteTopology(topology1->getID()))

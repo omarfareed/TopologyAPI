@@ -129,12 +129,6 @@ void Test::testTopology()
 void Test::testAPIReadTopology(API *api, string fileName, Topology *expectedTopology)
 {
 	Topology *topology = api->readTopology(fileName);
-	cout << topology->getID() << endl;
-	for (auto t : topology->getComponents())
-	{
-		cout << t->getID() << " ";
-	}
-	cout << endl;
 	tester.assertEqual<Topology>(*topology, *expectedTopology);
 }
 
