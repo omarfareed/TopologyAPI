@@ -45,4 +45,8 @@ same as above but use Testing class to test all units of the application
 
 ### API Example Output
 
-![API Output](./images/APIExampleResult.PNG)
+![API Output](./images/Result.PNG)
+
+## For more Documentation
+
+[Documentation](./Documentation/README.MD)
