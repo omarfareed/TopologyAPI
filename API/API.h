@@ -1,3 +1,4 @@
+#pragma once
 #include "../Topology/Topology.h"
 #include "../JSON/JSON.h"
 class API

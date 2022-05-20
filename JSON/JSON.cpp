@@ -104,5 +104,4 @@ void JSON::writeTopology( Topology *topology, string fileName)
 	outJson = { {"id" , topology->getID()} ,{"components" , this->_writeTopologyComponents(topology)} };
 	std::ofstream  file(fileName);
 	file << outJson << endl;
-	cout << "JSON file created\n";
 }

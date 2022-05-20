@@ -1,19 +1,18 @@
 #include "Topology.h"
 
-
 void Topology::_deleteAllComponents()
 {
 	for (auto component : this->components)
 		delete component;
 }
 
-Topology::Topology(const Topology& other)
+Topology::Topology(const Topology &other)
 {
 	this->id = other.id;
 	this->components = other.components;
 }
 
-Topology Topology::operator=(const Topology& other)
+Topology Topology::operator=(const Topology &other)
 {
 	if (this->components.size() != 0)
 		this->_deleteAllComponents();
@@ -22,25 +21,25 @@ Topology Topology::operator=(const Topology& other)
 	return *this;
 }
 
-bool Topology::operator==(const Topology& other) const
+bool Topology::operator==(const Topology &other) const
 {
 	if (this->components.size() != other.components.size())
 		return false;
 	for (int i = 0; i < this->components.size(); i++)
 	{
-		if (!(*this->components[i] == *other.components[i])) 
+		if (!(*this->components[i] == *other.components[i]))
 			return false;
 	}
 	return true;
 }
 
-Topology::Topology(string id, vector<Component*> components)
+Topology::Topology(string id, vector<Component *> components)
 {
 	setID(id);
 	setComponents(components);
 }
 
-Component* Topology::getComponent(string id) const
+Component *Topology::getComponent(string id) const
 {
 	for (auto component : this->components)
 	{
@@ -50,16 +49,12 @@ Component* Topology::getComponent(string id) const
 	return NULL;
 }
 
-
-
-
-void Topology::addComponent(Component* component)
+void Topology::addComponent(Component *component)
 {
 	this->components.push_back(component);
-	cout << "Component added : " << component->getID() << endl;
 }
 
-void Topology::setComponents(vector<Component*> components)
+void Topology::setComponents(vector<Component *> components)
 {
 	this->components = components;
 }
@@ -79,15 +74,15 @@ string Topology::getID() const
 	return this->id;
 }
 
-vector<Component*> Topology::getComponents() const
+vector<Component *> Topology::getComponents() const
 {
 	return this->components;
 }
 
-vector<Component*> Topology::getComponentsWithNetlistNode(string netlistNodeID) const
+vector<Component *> Topology::getComponentsWithNetlistNode(string netlistNodeID) const
 {
-	Component* netlistNode = getComponent(netlistNodeID);
-	vector<Component*> netlist;
+	Component *netlistNode = getComponent(netlistNodeID);
+	vector<Component *> netlist;
 	netlist.push_back(netlistNode);
 	for (auto component : this->components)
 	{

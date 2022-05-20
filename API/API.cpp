@@ -20,7 +20,6 @@ bool API::writeTopology(string topologyID)
 	if (topology == NULL)
 		return false;
 	parser.writeTopology(topology, "./topologyWrite.json");
-	cout << "topology has been written at file ./topologyWrite.json" << endl;
 	return true;
 }
 
